@@ -1,0 +1,1030 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amity University Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        .background-overlay {
+            background: linear-gradient(to right, 
+                rgba(0, 0, 0, 0.9) 0%, 
+                rgba(0, 0, 0, 0.7) 50%, 
+                rgba(0, 0, 0, 0.4) 100%);
+        }
+        
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.75);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .input-field {
+            background-color: rgba(30, 30, 30, 0.8);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 8px;
+            color: #fff;
+            padding: 14px 18px;
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .input-field:focus {
+            background-color: rgba(40, 40, 40, 0.9);
+            outline: none;
+            border: 1px solid #ffd700;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+        }
+        
+        .pin-container {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+        
+        .pin-input {
+            width: 55px;
+            height: 65px;
+            text-align: center;
+            font-size: 24px;
+            background-color: rgba(30, 30, 30, 0.8);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 8px;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        
+        .pin-input:focus {
+            background-color: rgba(40, 40, 40, 0.9);
+            outline: none;
+            border: 2px solid #ffd700;
+            box-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
+        }
+        
+        .tab-selector {
+            display: flex;
+            position: relative;
+            background-color: rgba(0, 87, 184, 0.3);
+            border-radius: 10px;
+            margin-bottom: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        
+        .tab-selector button {
+            flex: 1;
+            padding: 14px;
+            text-align: center;
+            z-index: 1;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .tab-selector .slider {
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.8), rgba(255, 165, 0, 0.8));
+            transition: transform 0.3s ease;
+            z-index: 0;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+        }
+        
+        .auth-toggle {
+            display: flex;
+            margin-bottom: 28px;
+        }
+        
+        .auth-toggle button {
+            flex: 1;
+            padding: 12px;
+            text-align: center;
+            background: transparent;
+            color: #777;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .auth-toggle button.active {
+            color: #ffd700;
+            border-bottom: 2px solid #ffd700;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #0057b8, #003366);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 215, 0, 0.5);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #0068d9, #004080);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        .submit-btn:disabled {
+            background: linear-gradient(135deg, #2a3f5f, #1c2b41);
+            cursor: not-allowed;
+            transform: none;
+            opacity: 0.7;
+        }
+        
+        /* Yellow and Blue Theme */
+        .yellow-blue-gradient {
+            background: linear-gradient(135deg, #0057b8, #003366);
+        }
+        
+        .yellow-accent {
+            color: #ffd700;
+        }
+        
+        .blue-accent {
+            color: #0057b8;
+        }
+        
+        /* Glow effects */
+        .glow-text {
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        
+        .logo-container {
+            position: relative;
+        }
+        
+        .logo-glow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, rgba(255, 215, 0, 0) 70%);
+            filter: blur(10px);
+            z-index: -1;
+        }
+        
+        /* Form animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .form-animation {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        
+        /* Custom select styling */
+        select.input-field {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffd700' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1em;
+        }
+        
+        /* Message styling */
+        .message {
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .message.show {
+            opacity: 1;
+        }
+        
+        .message-icon {
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .error-message {
+            background-color: rgba(220, 38, 38, 0.2);
+            border: 1px solid rgba(220, 38, 38, 0.3);
+            color: #f87171;
+        }
+        
+        .success-message {
+            background-color: rgba(16, 185, 129, 0.2);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #6ee7b7;
+        }
+        
+        /* Loading spinner */
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 215, 0, 0.3);
+            border-radius: 50%;
+            border-top-color: #ffd700;
+            animation: spin 1s ease-in-out infinite;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .pin-container {
+                gap: 8px;
+            }
+            
+            .pin-input {
+                width: 45px;
+                height: 55px;
+                font-size: 20px;
+            }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.z-0{z-index:0}.z-10{z-index:10}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-4{margin-right:1rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.block{display:block}.flex{display:flex}.hidden{display:none}.h-1{height:0.25rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-6{height:1.5rem}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-24{width:6rem}.w-32{width:8rem}.w-6{width:1.5rem}.w-full{width:100%}.max-w-6xl{max-width:72rem}.max-w-md{max-width:28rem}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.rounded-full{border-radius:9999px}.bg-blue-800{--tw-bg-opacity:1;background-color:rgb(30 64 175 / var(--tw-bg-opacity, 1))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-blue-600{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-800{--tw-gradient-to:#1e40af var(--tw-gradient-to-position)}.to-yellow-400{--tw-gradient-to:#facc15 var(--tw-gradient-to-position)}.bg-cover{background-size:cover}.bg-center{background-position:center}.p-4{padding:1rem}.p-8{padding:2rem}.text-center{text-align:center}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.text-yellow-500{--tw-text-opacity:1;color:rgb(234 179 8 / var(--tw-text-opacity, 1))}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:text-blue-300:hover{--tw-text-opacity:1;color:rgb(147 197 253 / var(--tw-text-opacity, 1))}.hover\:text-yellow-300:hover{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}@media (min-width: 1024px){.lg\:flex{display:flex}.lg\:w-1\/2{width:50%}.lg\:flex-col{flex-direction:column}}</style></head>
+<body>
+    <!-- Background Image with Overlay -->
+    <div class="fixed inset-0 z-0">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.shiksha.com/mediadata/images/1740466496phpODZnmF.jpeg');">
+            <div class="absolute inset-0 background-overlay"></div>
+        </div>
+    </div>
+    
+    <div class="min-h-screen flex items-center justify-center p-4 relative z-10">
+        <div class="flex w-full max-w-6xl">
+            <!-- Left side - University Info -->
+            <div class="hidden lg:flex lg:flex-col lg:w-1/2 p-8 justify-center">
+                <div class="mb-8">
+                    <div class="flex items-center mb-6">
+                    <img src="https://www.amity.edu/AIPHHA/images/footer-logo.png" alt="Amity University Logo" class="w-48 h-48 object-contain mr-4" />                 
+                        <h1 class="text-3xl font-bold">
+                            <span class="text-white">Amity University</span>
+                            <span class="text-yellow-400">Bengaluru</span>
+                        </h1>
+                    </div>
+                    <p class="text-lg text-gray-300 mb-4">Welcome to the Course-recommendation portal</p>
+                    <div class="h-1 w-32 bg-gradient-to-r from-blue-600 to-yellow-400 mb-6"></div>
+                </div>
+                
+                <div class="space-y-">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#ffd700">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-yellow-400">Academic Excellence</h3>
+                            <p class="text-gray-300">Access your courses, grades, and academic resources</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#ffd700">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-yellow-400">Student Portal</h3>
+                            <p class="text-gray-300">Manage your profile, view notifications, and more</p>
+                    </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#ffd700">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-yellow-400">Administrative Tools</h3>
+                            <p class="text-gray-300">Manage your curriculum via our Student Friendly Curriculum System</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-400">Follow us:</span>
+                        <a href="https://www.facebook.com/amityunibengaluru/" class="text-blue-400 hover:text-blue-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/amityunibengaluru_official" class="text-blue-400 hover:text-blue-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/amitybengaluru" class="text-blue-400 hover:text-blue-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right side - Login Form -->
+            <div class="w-full lg:w-1/2">
+                <div class="form-container p-8 w-full max-w-md mx-auto form-animation">
+                                       <div class="flex flex-col items-center text-center logo-container mb-2">
+                        <img src="https://www.amity.edu/AIPHHA/images/footer-logo.png" alt="Amity University Logo" class="w-32 h-33 object-contain mb-1" />
+                        <h1 class="text-3xl font-bold text-white glow-text">Amity University</h1>
+                        <p class="text-yellow-400 text-sm mt-1">Access your university account</p>
+                        <div class="h-1 w-24 bg-gradient-to-r from-blue-600 to-yellow-400 mx-auto mt-3"></div>
+                             
+                </div>
+                    <!-- Role Selector Tabs -->
+                    <div class="tab-selector">
+                        <div class="slider"></div>
+                        <button id="student-role" class="active">Student</button>
+                        <button id="admin-role">Admin</button>
+                    </div>
+                    
+                    <!-- Auth Mode Toggle -->
+                    <div class="auth-toggle">
+                        <button id="login-toggle" class="active">Login</button>
+                        <button id="signup-toggle">Signup</button>
+                    </div>
+                    
+                    <!-- Message Area -->
+                    <div id="message-container" class="hidden message">
+                        <span id="message-icon" class="message-icon"></span>
+                        <span id="message-text"></span>
+                    </div>
+                    
+                    <!-- Login Form -->
+                    <form id="login-form">
+                        <!-- Student Login Fields -->
+                        <div id="student-login-fields">
+                            <div class="mb-5">
+                                <label for="student-enrollment" class="block text-sm font-medium text-yellow-400 mb-2">Enrollment Number</label>
+                                <input type="text" id="student-enrollment" name="enrollment_number" class="input-field w-full" placeholder="Enter your enrollment number" required="">
+                            </div>
+                        </div>
+                        
+                        <!-- Admin Login Fields -->
+                        <div id="admin-login-fields" class="hidden">
+                            <div class="mb-5">
+                                <label for="admin-identifier" class="block text-sm font-medium text-yellow-400 mb-2">Email or Employee ID</label>
+                                <input type="text" id="admin-identifier" name="identifier" class="input-field w-full" placeholder="Enter your email or ID" required="">
+                            </div>
+                        </div>
+                        
+                        <!-- Common Login Fields -->
+                        <div class="mb-6">
+                            <label for="login-pin" class="block text-sm font-medium text-yellow-400 mb-3 text-center">4-Digit PIN</label>
+                            <div class="pin-container">
+                                <input type="password" class="pin-input" maxlength="1" data-index="0" inputmode="numeric" required="">
+                                <input type="password" class="pin-input" maxlength="1" data-index="1" inputmode="numeric" required="">
+                                <input type="password" class="pin-input" maxlength="1" data-index="2" inputmode="numeric" required="">
+                                <input type="password" class="pin-input" maxlength="1" data-index="3" inputmode="numeric" required="">
+                            </div>
+                            <input type="hidden" id="login-pin" name="pin">
+                            <p class="text-xs text-yellow-500 mt-3 text-center">Enter your 4-digit security PIN</p>
+                        </div>
+                        
+                        <button type="submit" id="login-btn" class="submit-btn w-full">
+                            <span id="login-btn-text">Login</span>
+                            <span id="login-spinner" class="spinner hidden"></span>
+                        </button>
+                    </form>
+                    
+                    <!-- Signup Form -->
+                    <form id="signup-form" class="hidden">
+                        <!-- Student Signup Fields -->
+                        <div id="student-signup-fields">
+                            <div class="mb-4">
+                                <label for="student-name" class="block text-sm font-medium text-yellow-400 mb-2">Full Name</label>
+                                <input type="text" id="student-name" name="name" class="input-field w-full" placeholder="Enter your full name" required="">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="student-enrollment-signup" class="block text-sm font-medium text-yellow-400 mb-2">Enrollment Number</label>
+                                <input type="text" id="student-enrollment-signup" name="enrollment_number" class="input-field w-full" placeholder="Enter your enrollment number" required="">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="student-Batch" class="block text-sm font-medium text-yellow-400 mb-2">Batch</label>
+                                <select id="student-Batch" name="Batch" class="input-field w-full" required="">
+                                    <option value="" disabled="" selected="">Select your Batch</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="B3">B3</option>
+                                    <option value="B4">B4</option>
+                                    <option value="B5">B5</option>
+                                    <option value="B6">B6</option>
+                                    <option value="B7">B7</option>
+                                    <option value="B8">B8</option>
+                                    <option value="B9">B9</option>
+                                    <option value="B10">B10</option>
+                                    <option value="B11">B11</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="student-specialization" class="block text-sm font-medium text-yellow-400 mb-2">Specialization</label>
+                                <select id="student-specialization" name="specialization" class="input-field w-full" required="">
+                                    <option value="" disabled="" selected="">Select your specialization</option>
+                                    <option value="cse_core">Computer Science and Engineering</option>
+                                    <option value="aiml">Artificial Intelligence and Machine Learning</option>
+                                    <option value="robotics">Robotics</option>
+                                    <option value="cyber_security">Cyber Security</option>
+                                    <option value="cloud_computing">Cloud computing</option>
+                                    <option value="iot">IoT</option>
+                                    <option value="data_analytics">Data Analytics</option>
+                                    <option value="big_data">Big data</option>
+                                    <option value="devops">DevOps</option>
+                                    <option value="Biotechnology">Bio Technology</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="student-cgpa" class="block text-sm font-medium text-yellow-400 mb-2">CGPA</label>
+                                <input type="number" id="student-cgpa" name="cgpa" class="input-field w-full" min="0" max="10" step="0.01" placeholder="Enter your CGPA" required="">
+                            </div>
+                        </div>
+                        
+                        <!-- Admin Signup Fields -->
+                        <div id="admin-signup-fields" class="hidden">
+                            <div class="mb-4">
+                                <label for="admin-name" class="block text-sm font-medium text-yellow-400 mb-2">Full Name</label>
+                                <input type="text" id="admin-name" name="name" class="input-field w-full" placeholder="Enter your full name" required="">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="admin-department" class="block text-sm font-medium text-yellow-400 mb-2">Department</label>
+                                <select id="admin-department" name="department" class="input-field w-full" required="">
+                                    <option value="" disabled="" selected="">Select your department</option>
+                                    <option value="Computer Science">Computer Science</option>
+                                    <option value="Engineering">Engineering</option>
+                                    <option value="Business">Business</option>
+                                    <option value="Law">Law</option>
+                                    <option value="Administration">Administration</option>
+                                    <option value="Finance">Finance</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="admin-designation" class="block text-sm font-medium text-yellow-400 mb-2">Designation</label>
+                                <input type="text" id="admin-designation" name="designation" class="input-field w-full" placeholder="Enter your designation" required="">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="admin-email" class="block text-sm font-medium text-yellow-400 mb-2">Email</label>
+                                <input type="email" id="admin-email" name="email" class="input-field w-full" placeholder="Enter your email" required="">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="admin-employee-id" class="block text-sm font-medium text-yellow-400 mb-2">Employee ID</label>
+                                <input type="text" id="admin-employee-id" name="employee_id" class="input-field w-full" placeholder="Enter your employee ID" required="">
+                            </div>
+                        </div>
+                        
+                        <!-- Common Signup Fields -->
+                        <div class="mb-5">
+                            <label for="signup-pin" class="block text-sm font-medium text-yellow-400 mb-3 text-center">Create 4-Digit PIN</label>
+                            <div class="pin-container">
+                                <input type="password" class="pin-input signup-pin" maxlength="1" data-index="0" inputmode="numeric" required="">
+                                <input type="password" class="pin-input signup-pin" maxlength="1" data-index="1" inputmode="numeric" required="">
+                                <input type="password" class="pin-input signup-pin" maxlength="1" data-index="2" inputmode="numeric" required="">
+                                <input type="password" class="pin-input signup-pin" maxlength="1" data-index="3" inputmode="numeric" required="">
+                            </div>
+                            <input type="hidden" id="signup-pin" name="pin">
+                            <p class="text-xs text-yellow-500 mt-3 text-center">Create a 4-digit security PIN</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="confirm-pin" class="block text-sm font-medium text-yellow-400 mb-3 text-center">Confirm PIN</label>
+                            <div class="pin-container">
+                                <input type="password" class="pin-input confirm-pin" maxlength="1" data-index="0" inputmode="numeric" required="">
+                                <input type="password" class="pin-input confirm-pin" maxlength="1" data-index="1" inputmode="numeric" required="">
+                                <input type="password" class="pin-input confirm-pin" maxlength="1" data-index="2" inputmode="numeric" required="">
+                                <input type="password" class="pin-input confirm-pin" maxlength="1" data-index="3" inputmode="numeric" required="">
+                            </div>
+                            <input type="hidden" id="confirm-pin" name="confirmPin">
+                        </div>
+                        
+                        <button type="submit" id="signup-btn" class="submit-btn w-full">
+                            <span id="signup-btn-text">Create Account</span>
+                            <span id="signup-spinner" class="spinner hidden"></span>
+                        </button>
+                    </form>
+                    
+                    <div class="mt-6 text-center">
+                        <p class="text-sm text-gray-400">
+                            <a href="#" id="forgot-pin-link" class="text-yellow-400 hover:underline hover:text-yellow-300 transition-colors">Forgot PIN?</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elements
+            const studentRoleBtn = document.getElementById('student-role');
+            const adminRoleBtn = document.getElementById('admin-role');
+            const loginToggleBtn = document.getElementById('login-toggle');
+            const signupToggleBtn = document.getElementById('signup-toggle');
+            const loginForm = document.getElementById('login-form');
+            const signupForm = document.getElementById('signup-form');
+            const studentLoginFields = document.getElementById('student-login-fields');
+            const adminLoginFields = document.getElementById('admin-login-fields');
+            const studentSignupFields = document.getElementById('student-signup-fields');
+            const adminSignupFields = document.getElementById('admin-signup-fields');
+            const slider = document.querySelector('.slider');
+            const messageContainer = document.getElementById('message-container');
+            const messageIcon = document.getElementById('message-icon');
+            const messageText = document.getElementById('message-text');
+            const loginBtn = document.getElementById('login-btn');
+            const signupBtn = document.getElementById('signup-btn');
+            const loginSpinner = document.getElementById('login-spinner');
+            const signupSpinner = document.getElementById('signup-spinner');
+            const loginBtnText = document.getElementById('login-btn-text');
+            const signupBtnText = document.getElementById('signup-btn-text');
+            
+            // Current state
+            let currentRole = 'student';
+            let currentMode = 'login';
+            
+            // PIN input handling
+            setupPinInputs('.pin-input', '#login-pin');
+            setupPinInputs('.signup-pin', '#signup-pin');
+            setupPinInputs('.confirm-pin', '#confirm-pin');
+            
+            function setupPinInputs(selector, hiddenInputId) {
+                const pinInputs = document.querySelectorAll(selector);
+                const hiddenInput = document.querySelector(hiddenInputId);
+                
+                pinInputs.forEach((input, index) => {
+                    // Only allow numbers
+                    input.addEventListener('input', function(e) {
+                        this.value = this.value.replace(/[^0-9]/g, '');
+                        
+                        // Move to next input
+                        if (this.value && index < pinInputs.length - 1) {
+                            pinInputs[index + 1].focus();
+                        }
+                        
+                        // Update hidden input with combined value
+                        updateHiddenPinInput(pinInputs, hiddenInput);
+                    });
+                    
+                    // Handle backspace
+                    input.addEventListener('keydown', function(e) {
+                        if (e.key === 'Backspace' && !this.value && index > 0) {
+                            pinInputs[index - 1].focus();
+                            pinInputs[index - 1].value = '';
+                            updateHiddenPinInput(pinInputs, hiddenInput);
+                        }
+                    });
+                    
+                    // Handle paste
+                    input.addEventListener('paste', function(e) {
+                        e.preventDefault();
+                        const pastedData = e.clipboardData.getData('text').replace(/[^0-9]/g, '').substring(0, pinInputs.length);
+                        
+                        if (pastedData) {
+                            for (let i = 0; i < pastedData.length; i++) {
+                                if (i + index < pinInputs.length) {
+                                    pinInputs[i + index].value = pastedData[i];
+                                }
+                            }
+                            
+                            // Focus on the next empty input or the last one
+                            const nextIndex = Math.min(index + pastedData.length, pinInputs.length - 1);
+                            pinInputs[nextIndex].focus();
+                            
+                            updateHiddenPinInput(pinInputs, hiddenInput);
+                        }
+                    });
+                });
+            }
+            
+            function updateHiddenPinInput(pinInputs, hiddenInput) {
+                let combinedValue = '';
+                pinInputs.forEach(input => {
+                    combinedValue += input.value;
+                });
+                hiddenInput.value = combinedValue;
+            }
+            
+            // Role toggle
+            studentRoleBtn.addEventListener('click', () => {
+                currentRole = 'student';
+                slider.style.transform = 'translateX(0)';
+                studentRoleBtn.classList.add('active');
+                adminRoleBtn.classList.remove('active');
+                
+                if (currentMode === 'login') {
+                    studentLoginFields.classList.remove('hidden');
+                    adminLoginFields.classList.add('hidden');
+                } else {
+                    studentSignupFields.classList.remove('hidden');
+                    adminSignupFields.classList.add('hidden');
+                }
+                
+                clearMessage();
+            });
+            
+            adminRoleBtn.addEventListener('click', () => {
+                currentRole = 'admin';
+                slider.style.transform = 'translateX(100%)';
+                adminRoleBtn.classList.add('active');
+                studentRoleBtn.classList.remove('active');
+                
+                if (currentMode === 'login') {
+                    adminLoginFields.classList.remove('hidden');
+                    studentLoginFields.classList.add('hidden');
+                } else {
+                    adminSignupFields.classList.remove('hidden');
+                    studentSignupFields.classList.add('hidden');
+                }
+                
+                clearMessage();
+            });
+            
+            // Auth mode toggle
+            loginToggleBtn.addEventListener('click', () => {
+                currentMode = 'login';
+                loginToggleBtn.classList.add('active');
+                signupToggleBtn.classList.remove('active');
+                loginForm.classList.remove('hidden');
+                signupForm.classList.add('hidden');
+                
+                if (currentRole === 'student') {
+                    studentLoginFields.classList.remove('hidden');
+                    adminLoginFields.classList.add('hidden');
+                } else {
+                    adminLoginFields.classList.remove('hidden');
+                    studentLoginFields.classList.add('hidden');
+                }
+                
+                clearMessage();
+                clearPinInputs();
+            });
+            
+            signupToggleBtn.addEventListener('click', () => {
+                currentMode = 'signup';
+                signupToggleBtn.classList.add('active');
+                loginToggleBtn.classList.remove('active');
+                signupForm.classList.remove('hidden');
+                loginForm.classList.add('hidden');
+                
+                if (currentRole === 'student') {
+                    studentSignupFields.classList.remove('hidden');
+                    adminSignupFields.classList.add('hidden');
+                } else {
+                    adminSignupFields.classList.remove('hidden');
+                    studentSignupFields.classList.add('hidden');
+                }
+                
+                clearMessage();
+                clearPinInputs();
+            });
+            
+            function clearPinInputs() {
+                document.querySelectorAll('.pin-input').forEach(input => {
+                    input.value = '';
+                });
+                document.getElementById('login-pin').value = '';
+                document.getElementById('signup-pin').value = '';
+                document.getElementById('confirm-pin').value = '';
+            }
+            
+            // Form submissions
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                clearMessage();
+                
+                // Validate PIN
+                const pin = document.getElementById('login-pin').value;
+                
+                if (pin.length !== 4 || !/^\d{4}$/.test(pin)) {
+                    showError('PIN must be exactly 4 digits');
+                    return;
+                }
+                
+                let loginData = {
+                    pin: pin
+                };
+                
+                if (currentRole === 'student') {
+                    const enrollment_number = document.getElementById('student-enrollment').value;
+                    if (!enrollment_number) {
+                        showError('Please enter your enrollment number');
+                        return;
+                    }
+                    loginData.enrollment_number = enrollment_number;
+                    loginData.role = 'student';
+                } else {
+                    const identifier = document.getElementById('admin-identifier').value;
+                    if (!identifier) {
+                        showError('Please enter your email or employee ID');
+                        return;
+                    }
+                    
+                    // Check if identifier is an email or employee ID
+                    if (identifier.includes('@')) {
+                        loginData.email = identifier;
+                    } else {
+                        loginData.employee_id = identifier;
+                    }
+                    loginData.role = 'admin';
+                }
+                
+                // Show loading state
+                setLoading(true, 'login');
+                
+                // Make API call to /api/login
+                fetch('http://localhost:3000/api/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(loginData)
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(data => {
+                            throw new Error(data.message || 'Login failed. Please check your credentials.');
+                        });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Store user data in localStorage (excluding PIN hash)
+                    const userData = { ...data.user };
+                    delete userData.pinHash; // Don't store the PIN hash
+                    localStorage.setItem('user', JSON.stringify(userData));
+                    if (data.token) {
+                        localStorage.setItem('token', data.token);
+                    }
+                    
+                    showSuccess('Login successful! Redirecting...');
+                    
+                    // Redirect based on role
+                    setTimeout(() => {
+                        if (data.user.role === 'student') {
+                            window.location.href = 'finalui.html';
+                        } else {
+                            window.location.href = 'admin-dashboard.html';
+                        }
+                    }, 1500);
+                })
+                .catch(error => {
+                    showError(error.message || 'Login failed. Please try again.');
+                })
+                .finally(() => {
+                    setLoading(false, 'login');
+                });
+            });
+            
+            signupForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                clearMessage();
+                
+                // Validate PIN
+                const signupPin = document.getElementById('signup-pin').value;
+                const confirmPin = document.getElementById('confirm-pin').value;
+                
+                if (signupPin.length !== 4 || !/^\d{4}$/.test(signupPin)) {
+                    showError('PIN must be exactly 4 digits');
+                    return;
+                }
+                
+                if (signupPin !== confirmPin) {
+                    showError('PINs do not match');
+                    return;
+                }
+                
+                let signupData = {
+                    pin: signupPin
+                };
+                
+                if (currentRole === 'student') {
+                    const name = document.getElementById('student-name').value;
+                    const enrollment_number = document.getElementById('student-enrollment-signup').value;
+                    const Batch = document.getElementById('student-Batch').value;
+                    const specialization = document.getElementById('student-specialization').value;
+                    const cgpa = document.getElementById('student-cgpa').value;
+                    
+                    if (!name || !enrollment_number || !Batch || !specialization || !cgpa) {
+                        showError('Please fill in all required fields');
+                        return;
+                    }
+                    
+                    signupData = {
+                        ...signupData,
+                        name,
+                        enrollment_number,
+                        Batch,
+                        specialization,
+                        cgpa,
+                        role: 'student'
+                    };
+                } else {
+                    const name = document.getElementById('admin-name').value;
+                    const department = document.getElementById('admin-department').value;
+                    const designation = document.getElementById('admin-designation').value;
+                    const email = document.getElementById('admin-email').value;
+                    const employee_id = document.getElementById('admin-employee-id').value;
+                    
+                    if (!name || !department || !designation || !email || !employee_id) {
+                        showError('Please fill in all required fields');
+                        return;
+                    }
+                    
+                    signupData = {
+                        ...signupData,
+                        name,
+                        department,
+                        designation,
+                        email,
+                        employee_id,
+                        role: 'admin'
+                    };
+                }
+                
+                // Show loading state
+                setLoading(true, 'signup');
+                console.log('Signup Data:', signupData);
+
+                // Validate CGPA is a valid number for students
+                if (signupData.role === 'student' && (isNaN(parseFloat(signupData.cgpa)) || signupData.cgpa === '')) {
+                    console.error('❌ Invalid CGPA:', signupData.cgpa);
+                    showError('Please enter a valid CGPA value (number)');
+                    setLoading(false, 'signup');
+                    return;
+                }
+                
+                // Make API call to /api/register
+                fetch('http://localhost:3000/api/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(signupData)
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(data => {
+                            console.error('❌ Registration error:', data);
+                            throw new Error(data.error || 'Registration failed. Please try again.');
+                        });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('✅ Signup successful:', data);
+                    // Store user data for direct redirection (excluding PIN)
+                    const userData = { ...signupData };
+                    delete userData.pin; // Remove the PIN
+                    delete userData.confirmPin; // Remove confirm PIN if exists
+                    
+                    // Store in localStorage for the next page
+                    localStorage.setItem('newUserData', JSON.stringify(userData));
+                    
+                    showSuccess('Account created successfully!');
+                    
+                    // Redirect based on role after successful signup
+                    setTimeout(() => {
+                        if (currentRole === 'student') {
+                            // Redirect to finalui.html with student data
+                            window.location.href = 'finalui.html';
+                        } else {
+                            // Redirect to admin-dashboard.html with admin data
+                            window.location.href = 'admin-dashboard.html';
+                        }
+                    }, 1500);
+                })
+                .catch(error => {
+                    showError(error.message || 'Registration failed. Please try again.');
+                })
+                .finally(() => {
+                    setLoading(false, 'signup');
+                });
+            });
+            
+            // Helper functions
+            function showError(message) {
+                messageContainer.className = 'message error-message';
+                messageIcon.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                    </svg>
+                `;
+                messageText.textContent = message;
+                messageContainer.classList.remove('hidden');
+                setTimeout(() => {
+                    messageContainer.classList.add('show');
+                }, 10);
+            }
+            
+            function showSuccess(message) {
+                messageContainer.className = 'message success-message';
+                messageIcon.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                `;
+                messageText.textContent = message;
+                messageContainer.classList.remove('hidden');
+                setTimeout(() => {
+                    messageContainer.classList.add('show');
+                }, 10);
+            }
+            
+            function clearMessage() {
+                messageContainer.classList.remove('show');
+                setTimeout(() => {
+                    messageContainer.classList.add('hidden');
+                }, 300);
+            }
+            
+            function setLoading(isLoading, formType) {
+                if (formType === 'login') {
+                    loginBtn.disabled = isLoading;
+                    if (isLoading) {
+                        loginBtnText.classList.add('hidden');
+                        loginSpinner.classList.remove('hidden');
+                    } else {
+                        loginBtnText.classList.remove('hidden');
+                        loginSpinner.classList.add('hidden');
+                    }
+                } else {
+                    signupBtn.disabled = isLoading;
+                    if (isLoading) {
+                        signupBtnText.classList.add('hidden');
+                        signupSpinner.classList.remove('hidden');
+                    } else {
+                        signupBtnText.classList.remove('hidden');
+                        signupSpinner.classList.add('hidden');
+                    }
+                }
+            }
+            
+            // Forgot PIN link
+            document.getElementById('forgot-pin-link').addEventListener('click', function(e) {
+                e.preventDefault();
+                showMessage('Please contact the university administration to reset your PIN.', 'info');
+            });
+            
+            function showMessage(message, type) {
+                messageContainer.className = `message ${type === 'error' ? 'error-message' : type === 'success' ? 'success-message' : 'bg-blue-900 bg-opacity-50 text-blue-300 border border-blue-700'}`;
+                
+                if (type === 'info') {
+                    messageIcon.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                        </svg>
+                    `;
+                }
+                
+                messageText.textContent = message;
+                messageContainer.classList.remove('hidden');
+                setTimeout(() => {
+                    messageContainer.classList.add('show');
+                }, 10);
+            }
+            
+            // Check if there's already a user in localStorage (for auto-login)
+            const storedUser = localStorage.getItem('user');
+            const storedToken = localStorage.getItem('token');
+            
+            if (storedUser && storedToken) {
+                const user = JSON.parse(storedUser);
+                // Auto-redirect if user is already logged in
+                if (user.role === 'student') {
+                    window.location.href = 'finalui.html';
+                } else if (user.role === 'admin') {
+                    window.location.href = 'admin-dashboard.html';
+                }
+            }
+        });
+    </script>
+
+</body></html>

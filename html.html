@@ -1,0 +1,498 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amity University Course Selection Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Dragging styles */
+    .dragging {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <header class="w-full">
+    <div
+      class="w-full flex flex-col items-center justify-center py-6"
+      style="background: linear-gradient(90deg, #d99a00 0%, #1a3f7a 100%)"
+    >
+      <i class="fas fa-graduation-cap text-white text-3xl mb-1"></i>
+      <h1 class="text-white font-extrabold text-lg leading-5">Amity University</h1>
+      <p class="text-white text-xs leading-3 mt-1">Course Selection Portal</p>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-12">
+    <section class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+      <div>
+        <h2 class="font-semibold text-gray-900 text-sm leading-5 mb-1">
+          Course Selection
+        </h2>
+        <p class="text-gray-700 text-xs leading-4">
+          B.Tech Computer Science &amp; Engineering - 2023-2027
+        </p>
+      </div>
+      <div class="text-right text-xs text-gray-700 leading-4 mt-4 md:mt-0">
+        <p>Student ID: AMT2023CS104</p>
+        <p>Student: Alex Johnson</p>
+      </div>
+    </section>
+
+    <section aria-label="Progress steps" class="mb-10">
+      <ol class="flex justify-between items-center text-xs font-semibold text-gray-700">
+        <li class="flex flex-col items-center w-full relative">
+          <div
+            class="flex items-center justify-center w-6 h-6 rounded-full bg-green-600 text-white font-bold z-10"
+          >
+            1
+          </div>
+          <div class="mt-1 text-center">
+            <p class="leading-4">Semester 1</p>
+            <p class="leading-4 text-green-600">Completed</p>
+          </div>
+          <div
+            class="absolute top-3 left-1/2 w-full h-0.5 bg-green-600 -translate-x-1/2"
+            style="z-index: 0"
+          ></div>
+        </li>
+        <li class="flex flex-col items-center w-full relative">
+          <div
+            class="flex items-center justify-center w-6 h-6 rounded-full bg-green-600 text-white font-bold z-10"
+          >
+            2
+          </div>
+          <div class="mt-1 text-center">
+            <p class="leading-4">Semester 2</p>
+            <p class="leading-4 text-green-600">Completed</p>
+          </div>
+          <div
+            class="absolute top-3 left-1/2 w-full h-0.5 bg-green-600 -translate-x-1/2"
+            style="z-index: 0"
+          ></div>
+        </li>
+        <li class="flex flex-col items-center w-full relative">
+          <div
+            class="flex items-center justify-center w-6 h-6 rounded-full bg-blue-900 text-white font-bold z-10"
+          >
+            3
+          </div>
+          <div class="mt-1 text-center">
+            <p class="leading-4">Course</p>
+            <p class="leading-4">Selection</p>
+          </div>
+          <div
+            class="absolute top-3 left-1/2 w-full h-0.5 bg-gray-300 -translate-x-1/2"
+            style="z-index: 0"
+          ></div>
+        </li>
+        <li class="flex flex-col items-center w-full relative">
+          <div
+            class="flex items-center justify-center w-6 h-6 rounded-full bg-gray-300 text-gray-400 font-bold z-10"
+          >
+            4
+          </div>
+          <div class="mt-1 text-center">
+            <p class="leading-4">Review &amp;</p>
+            <p class="leading-4">Submit</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Semester 1 Completed Courses -->
+    <section class="mb-8">
+      <h3 class="text-gray-900 font-semibold text-sm mb-3 flex items-center gap-2">
+        <span
+          class="inline-block w-8 h-0.5 bg-yellow-500 rounded-sm"
+          aria-hidden="true"
+        ></span>
+        Semester 1 Completed Courses
+      </h3>
+      <div id="sem1Courses" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+      <div class="mt-4">
+        <button
+          id="sem1NextBtn"
+          class="bg-blue-700 text-white text-xs font-semibold px-4 py-2 rounded hover:bg-blue-800 transition"
+          type="button"
+        >
+          Next
+        </button>
+      </div>
+    </section>
+
+    <!-- Semester 2 Completed Courses with search and drag -->
+    <section class="mb-8">
+      <h3 class="text-gray-900 font-semibold text-sm mb-3 flex items-center gap-2">
+        <span
+          class="inline-block w-8 h-0.5 bg-green-600 rounded-sm"
+          aria-hidden="true"
+        ></span>
+        Semester 2 Completed Courses
+      </h3>
+      <input
+        type="text"
+        id="sem2Search"
+        placeholder="Search Semester 2 courses..."
+        class="mb-4 w-full max-w-md border border-gray-300 rounded px-3 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-green-600"
+      />
+      <div
+        id="sem2Courses"
+        class="grid grid-cols-1 md:grid-cols-2 gap-4"
+        aria-label="Semester 2 courses draggable list"
+      ></div>
+      <div class="mt-4">
+        <button
+          id="sem2NextBtn"
+          class="bg-blue-700 text-white text-xs font-semibold px-4 py-2 rounded hover:bg-blue-800 transition"
+          type="button"
+        >
+          Next
+        </button>
+      </div>
+    </section>
+
+    <!-- Semester 3 Recommended Courses with search and drag -->
+    <section>
+      <h3 class="text-gray-900 font-semibold text-sm mb-2 flex items-center gap-2">
+        <span
+          class="inline-block w-8 h-0.5 bg-yellow-500 rounded-sm"
+          aria-hidden="true"
+        ></span>
+        Recommended Courses for Semester 3
+      </h3>
+      <p class="text-gray-700 text-[10px] mb-4 max-w-4xl">
+        Based on your academic path and previous courses, we recommend the
+        following courses for your next semester. Select your preferred courses
+        below.
+      </p>
+
+      <h4 class="text-gray-900 font-semibold text-xs mb-2">Core Courses (Required)</h4>
+
+      <input
+        type="text"
+        id="sem3Search"
+        placeholder="Search Semester 3 courses..."
+        class="mb-4 w-full max-w-md border border-gray-300 rounded px-3 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-yellow-500"
+      />
+      <div
+        id="sem3Courses"
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl"
+        aria-label="Semester 3 recommended courses draggable list"
+      ></div>
+      <div class="mt-4">
+        <button
+          id="sem3NextBtn"
+          class="bg-blue-700 text-white text-xs font-semibold px-4 py-2 rounded hover:bg-blue-800 transition"
+          type="button"
+        >
+          Next
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Sample courses.json data simulation
+    const coursesData = {
+      batch: "2023-2027",
+      sem1: [
+        {
+          code: "CS101",
+          title: "Introduction to Programming",
+          credits: 4,
+          type: "Core Course",
+          description:
+            "Fundamentals of programming using C++, algorithms, and data structures.",
+          status: "Completed",
+        },
+        {
+          code: "MA101",
+          title: "Engineering Mathematics I",
+          credits: 4,
+          type: "Core Course",
+          description: "Calculus, differential equations, and linear algebra.",
+          status: "Completed",
+        },
+        {
+          code: "PH101",
+          title: "Engineering Physics",
+          credits: 3,
+          type: "Core Course",
+          description: "Mechanics, electromagnetism, and modern physics.",
+          status: "Completed",
+        },
+        {
+          code: "CH101",
+          title: "Engineering Chemistry",
+          credits: 3,
+          type: "Core Course",
+          description: "Atomic structure, chemical bonding, and thermodynamics.",
+          status: "Completed",
+        },
+      ],
+      sem2: [
+        {
+          code: "CS102",
+          title: "Data Structures",
+          credits: 4,
+          type: "Core Course",
+          description: "Advanced data structures and algorithms implementation.",
+          status: "Completed",
+        },
+        {
+          code: "MA102",
+          title: "Engineering Mathematics II",
+          credits: 4,
+          type: "Core Course",
+          description: "Probability, statistics, and numerical methods.",
+          status: "Completed",
+        },
+        {
+          code: "CS103",
+          title: "Object-Oriented Programming",
+          credits: 4,
+          type: "Core Course",
+          description: "OOP concepts using Java and software design principles.",
+          status: "Completed",
+        },
+        {
+          code: "CS104",
+          title: "Computer Architecture",
+          credits: 3,
+          type: "Core Course",
+          description:
+            "Computer organization, memory systems, and processor design.",
+          status: "Completed",
+        },
+      ],
+      sem3: [
+        {
+          code: "CS201",
+          title: "Database Management Systems",
+          credits: 4,
+          type: "Core Course",
+          description:
+            "Relational databases, SQL, and database design principles.",
+          prerequisites: "CS102",
+          required: true,
+        },
+        {
+          code: "CS202",
+          title: "Operating Systems",
+          credits: 4,
+          type: "Core Course",
+          description: "Process management, memory management, and file systems.",
+          prerequisites: "CS104",
+          required: false,
+        },
+        {
+          code: "CS203",
+          title: "Computer Networks",
+          credits: 3,
+          type: "Core Course",
+          description: "Network protocols, architecture, and security.",
+          prerequisites: "CS104",
+          required: false,
+        },
+        {
+          code: "CS204",
+          title: "Software Engineering",
+          credits: 3,
+          type: "Core Course",
+          description: "Software development lifecycle and methodologies.",
+          prerequisites: "CS103",
+          required: false,
+        },
+      ],
+    };
+
+    // Function to create a course card element
+    function createCourseCard(course, isCompleted = true, isRequired = false) {
+      const article = document.createElement("article");
+      article.className =
+        "border rounded-md p-4 flex flex-col justify-between cursor-move select-none";
+
+      // Border color based on status or required
+      if (isCompleted) {
+        article.classList.add("border-green-400");
+      } else if (isRequired) {
+        article.classList.add("border-blue-300");
+      } else {
+        article.classList.add("border-gray-300");
+      }
+
+      // Drag attributes for sem2 and sem3
+      if (!isCompleted) {
+        article.setAttribute("draggable", "true");
+      }
+
+      // Inner HTML structure
+      article.innerHTML = `
+        <div>
+          <h4 class="font-semibold text-xs text-gray-900 mb-1">${course.code}: ${course.title}</h4>
+          <p class="text-gray-700 text-[10px] mb-1">Credits: ${course.credits} | ${course.type}</p>
+          <p class="text-gray-700 text-[10px]">${course.description}</p>
+          ${
+            course.prerequisites
+              ? `<p class="text-gray-400 text-[9px] mt-1">Prerequisites: ${course.prerequisites}</p>`
+              : ""
+          }
+        </div>
+        ${
+          isCompleted
+            ? `<span class="self-start mt-3 px-2 py-0.5 text-[10px] font-semibold text-green-600 bg-green-100 rounded-full">Completed</span>`
+            : isRequired
+            ? `<span class="self-start mt-3 px-2 py-0.5 text-[10px] font-semibold text-blue-600 bg-blue-100 rounded-full whitespace-nowrap">Required</span>`
+            : `<button type="button" class="text-xs text-blue-700 border border-blue-700 rounded px-3 py-1 hover:bg-blue-700 hover:text-white transition mt-3 self-start">Select Course</button>`
+        }
+      `;
+      return article;
+    }
+
+    // Render Semester 1 courses based on batch number logic (simulate batch check)
+    function renderSem1Courses(batch) {
+      const container = document.getElementById("sem1Courses");
+      container.innerHTML = "";
+      // Simulate batch logic: only show sem1 courses if batch matches
+      if (batch === coursesData.batch) {
+        coursesData.sem1.forEach((course) => {
+          const card = createCourseCard(course, true);
+          container.appendChild(card);
+        });
+      } else {
+        container.innerHTML =
+          '<p class="text-xs text-gray-500">No Semester 1 courses available for this batch.</p>';
+      }
+    }
+
+    // Render Semester 2 courses with search and drag
+    function renderSem2Courses(filter = "") {
+      const container = document.getElementById("sem2Courses");
+      container.innerHTML = "";
+      const filtered = coursesData.sem2.filter((course) =>
+        (course.code + " " + course.title)
+          .toLowerCase()
+          .includes(filter.toLowerCase())
+      );
+      filtered.forEach((course) => {
+        const card = createCourseCard(course, false);
+        container.appendChild(card);
+      });
+      addDragAndDropListeners(container);
+    }
+
+    // Render Semester 3 courses with search and drag
+    function renderSem3Courses(filter = "") {
+      const container = document.getElementById("sem3Courses");
+      container.innerHTML = "";
+      const filtered = coursesData.sem3.filter((course) =>
+        (course.code + " " + course.title)
+          .toLowerCase()
+          .includes(filter.toLowerCase())
+      );
+      filtered.forEach((course) => {
+        const card = createCourseCard(course, false, course.required);
+        container.appendChild(card);
+      });
+      addDragAndDropListeners(container);
+    }
+
+    // Drag and Drop logic for sem2 and sem3 courses
+    function addDragAndDropListeners(container) {
+      let dragSrcEl = null;
+
+      function handleDragStart(e) {
+        dragSrcEl = this;
+        e.dataTransfer.effectAllowed = "move";
+        e.dataTransfer.setData("text/html", this.outerHTML);
+        this.classList.add("dragging");
+      }
+
+      function handleDragOver(e) {
+        if (e.preventDefault) {
+          e.preventDefault();
+        }
+        e.dataTransfer.dropEffect = "move";
+        return false;
+      }
+
+      function handleDragEnter() {
+        this.classList.add("bg-gray-100");
+      }
+
+      function handleDragLeave() {
+        this.classList.remove("bg-gray-100");
+      }
+
+      function handleDrop(e) {
+        if (e.stopPropagation) {
+          e.stopPropagation();
+        }
+        if (dragSrcEl !== this) {
+          // Swap the dragged and dropped elements
+          const draggedHTML = e.dataTransfer.getData("text/html");
+          this.insertAdjacentHTML("beforebegin", draggedHTML);
+          dragSrcEl.remove();
+          this.remove();
+          // Re-add drag listeners to new elements
+          renderSem2Courses(document.getElementById("sem2Search").value);
+          renderSem3Courses(document.getElementById("sem3Search").value);
+        }
+        return false;
+      }
+
+      function handleDragEnd() {
+        this.classList.remove("dragging");
+        const items = container.querySelectorAll("article");
+        items.forEach((item) => item.classList.remove("bg-gray-100"));
+      }
+
+      const items = container.querySelectorAll("article");
+      items.forEach(function (item) {
+        item.addEventListener("dragstart", handleDragStart, false);
+        item.addEventListener("dragenter", handleDragEnter, false);
+        item.addEventListener("dragover", handleDragOver, false);
+        item.addEventListener("dragleave", handleDragLeave, false);
+        item.addEventListener("drop", handleDrop, false);
+        item.addEventListener("dragend", handleDragEnd, false);
+      });
+    }
+
+    // Event listeners for search inputs
+    document.getElementById("sem2Search").addEventListener("input", (e) => {
+      renderSem2Courses(e.target.value);
+    });
+    document.getElementById("sem3Search").addEventListener("input", (e) => {
+      renderSem3Courses(e.target.value);
+    });
+
+    // Next buttons event handlers (example: alert or console log)
+    document.getElementById("sem1NextBtn").addEventListener("click", () => {
+      alert("Proceeding from Semester 1 to Semester 2");
+    });
+    document.getElementById("sem2NextBtn").addEventListener("click", () => {
+      alert("Proceeding from Semester 2 to Semester 3");
+    });
+    document.getElementById("sem3NextBtn").addEventListener("click", () => {
+      alert("Proceeding from Semester 3 to Review & Submit");
+    });
+
+    // Initial render
+    renderSem1Courses("2023-2027");
+    renderSem2Courses();
+    renderSem3Courses();
+  </script>
+</body>
+</html>

@@ -1,0 +1,5234 @@
+[
+  {
+    "enrollment_number": "A23456783456",
+    "name": "john",
+    "Batch": "B8",
+    "specialization": "Computer Science engineering",
+    "cgpa": 9.8,
+    "sem1_done": [
+      "CSE1005",
+      "MAT1001",
+      "ECE1001",
+      "PSY1001",
+      "KAN1001",
+      "ENG1001"
+    ],
+    "sem2_done": [
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [
+      {
+        "course_code": "CSE2001",
+        "course_name": "Data Structures and Algorithms",
+        "labs_per_week": 2,
+        "classes_per_week": 3,
+        "credits": 4
+      },
+      {
+        "course_code": "CSE3002",
+        "course_name": "Fundamentals of Artificial Intelligence and Machine Learning",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "finalized": true,
+    "selected_sem3_courses": [
+      {
+        "course_code": "CSE2001",
+        "course_name": "Data Structures and Algorithms",
+        "labs_per_week": 2,
+        "classes_per_week": 3,
+        "credits": 4
+      },
+      {
+        "course_code": "CSE3002",
+        "course_name": "Fundamentals of Artificial Intelligence and Machine Learning",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "selected_credits": 7,
+    "final_credits": 7
+  },
+  {
+    "enrollment_number": "1234567",
+    "name": "hamaa",
+    "Batch": "B2",
+    "specialization": "cse_core",
+    "cgpa": 7.9,
+    "sem1_done": [
+      "CSE1005",
+      "MAT1001",
+      "FRE1001",
+      "PHY1001",
+      "ENG1002",
+      "CHE1001"
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "1234509877",
+    "name": "jahnavi",
+    "Batch": "B2",
+    "specialization": "cloud_computing",
+    "cgpa": 6.7,
+    "sem1_done": [
+      "CSE1005",
+      "MAT1001",
+      "FRE1001",
+      "PHY1001",
+      "ENG1002",
+      "CHE1001"
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A50979274567",
+    "name": "Espresso",
+    "Batch": "B3",
+    "specialization": "aiml",
+    "cgpa": 8,
+    "sem1_done": [
+      "CSE1005",
+      "MAT1001",
+      "FRE1001",
+      "PHY1001",
+      "ENG1002",
+      "CHE1001"
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "12052013456",
+    "name": "kanakangi",
+    "Batch": "B5",
+    "specialization": "computer Science Engineering",
+    "cgpa": 8.2,
+    "sem1_done": [
+      {
+        "course_code": "BIT1001",
+        "course_name": "Introduction to Biotechnology",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      }
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A5674325798",
+    "name": "Ganamurthy",
+    "Batch": "B7",
+    "specialization": "cloud_computing",
+    "cgpa": 10,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A8615230356",
+    "name": "hamaan",
+    "Batch": "B2",
+    "specialization": "aiml",
+    "cgpa": 10,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A50979274589",
+    "name": "jaspp",
+    "Batch": "B5",
+    "specialization": "cyber_security",
+    "cgpa": 9.7,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "098765",
+    "name": "lkjhgv",
+    "Batch": "B3",
+    "specialization": "robotics",
+    "cgpa": 9,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "098765123456",
+    "name": "dfgbh",
+    "Batch": "B1",
+    "specialization": "cse_core",
+    "cgpa": 9,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A509792790224",
+    "name": "Jahnavi Krishnan",
+    "Batch": "B10",
+    "specialization": "iot",
+    "cgpa": 9.36,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE1017",
+        "course_name": "Programming in C and C++",
+        "labs_per_week": 4,
+        "classes_per_week": 2,
+        "credits": 4
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "MAT1011",
+        "course_name": "Applied Biostatistics",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MGT1503",
+        "course_name": "Foundations of Economics",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "BIT1003",
+        "course_name": "Bridge Course for Biology",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE1017",
+        "course_name": "Programming in C and C++",
+        "labs_per_week": 4,
+        "classes_per_week": 2,
+        "credits": 4,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MAT1011",
+        "course_name": "Applied Biostatistics",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MGT1503",
+        "course_name": "Foundations of Economics",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "BIT1003",
+        "course_name": "Bridge Course for Biology",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2001",
+        "course_name": "Data Structures and Algorithms",
+        "labs_per_week": 2,
+        "classes_per_week": 3,
+        "credits": 4,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE1006",
+        "course_name": "Software Engineering",
+        "labs_per_week": 3,
+        "classes_per_week": 0,
+        "credits": 3,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE2045",
+        "course_name": "Algorithmic Design and Analysis",
+        "labs_per_week": 3,
+        "classes_per_week": 2,
+        "credits": 4,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE2001",
+        "course_name": "IoT: Sensors and Actuators",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "open_elective"
+      },
+      {
+        "course_code": "CSE2011",
+        "course_name": "Wireless Communication in IoT",
+        "labs_per_week": 3,
+        "classes_per_week": 0,
+        "credits": 3,
+        "category": "open_elective"
+      }
+    ],
+    "finalized": true,
+    "final_credits": 54,
+    "selected_sem3_courses": [
+      {
+        "course_code": "CSE2001",
+        "course_name": "Data Structures and Algorithms",
+        "labs_per_week": 2,
+        "classes_per_week": 3,
+        "credits": 4
+      },
+      {
+        "course_code": "CSE1006",
+        "course_name": "Software Engineering",
+        "labs_per_week": 3,
+        "classes_per_week": 0,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE2045",
+        "course_name": "Algorithmic Design and Analysis",
+        "labs_per_week": 3,
+        "classes_per_week": 2,
+        "credits": 4
+      }
+    ],
+    "selected_open_electives": [
+      {
+        "course_code": "CSE2001",
+        "course_name": "IoT: Sensors and Actuators",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE2011",
+        "course_name": "Wireless Communication in IoT",
+        "labs_per_week": 3,
+        "classes_per_week": 0,
+        "credits": 3
+      }
+    ],
+    "selected_credits": 11,
+    "open_electives_selected_credits": 6
+  },
+  {
+    "enrollment_number": "A509792709875",
+    "name": "Espressa",
+    "Batch": "B3",
+    "specialization": "cyber_security",
+    "cgpa": 8,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A5097927345876",
+    "name": "Espressi",
+    "Batch": "B3",
+    "specialization": "cyber_security",
+    "cgpa": 8,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A5097927345123",
+    "name": "Espressu",
+    "Batch": "B5",
+    "specialization": "iot",
+    "cgpa": 8,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A5097927345456",
+    "name": "Espresssa",
+    "Batch": "B8",
+    "specialization": "big_data",
+    "cgpa": 8,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A835314978",
+    "name": "Vanilla Ice-cream",
+    "Batch": "B7",
+    "specialization": "iot",
+    "cgpa": 9,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "zswe45",
+    "name": "wertyu",
+    "Batch": "B7",
+    "specialization": "cyber_security",
+    "cgpa": 7,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "21346yj7t.o697",
+    "name": "jahnavi",
+    "Batch": "B6",
+    "specialization": "cyber_security",
+    "cgpa": 3,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "21346yj7t.o3456",
+    "name": "jahnawws",
+    "Batch": "B6",
+    "specialization": "cyber_security",
+    "cgpa": 3,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "123456789098765432",
+    "name": "jahnavi",
+    "Batch": "B5",
+    "specialization": "aiml",
+    "cgpa": 9,
+    "totalCredits": 0,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "123456789098765431",
+    "name": "hehehehe",
+    "Batch": "B8",
+    "specialization": "cloud_computing",
+    "cgpa": 7,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A509792791245354",
+    "name": "hehehehehhe",
+    "Batch": "B6",
+    "specialization": "robotics",
+    "cgpa": 8,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "12345678902",
+    "name": "jahnawwsy",
+    "Batch": "B6",
+    "specialization": "cse_core",
+    "cgpa": 4,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "KAN1002",
+        "course_name": "Communicative Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [
+      {
+        "course_code": "CSE2007",
+        "course_name": "Relational Database Management System",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ECE2006",
+        "course_name": "Computer Organization and Architecture",
+        "labs_per_week": 3,
+        "classes_per_week": 0,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE3004",
+        "course_name": "Parallel and Distributed Computing",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "finalized": true,
+    "selected_sem3_courses": [
+      {
+        "course_code": "CSE2007",
+        "course_name": "Relational Database Management System",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ECE2006",
+        "course_name": "Computer Organization and Architecture",
+        "labs_per_week": 3,
+        "classes_per_week": 0,
+        "credits": 3
+      }
+    ],
+    "selected_credits": 6,
+    "open_electives_selected_credits": 3,
+    "selected_open_electives": [
+      {
+        "course_code": "CSE3004",
+        "course_name": "Parallel and Distributed Computing",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "final_credits": 24
+  },
+  {
+    "enrollment_number": "A86601234587",
+    "name": "Espressaaa",
+    "Batch": "B5",
+    "specialization": "iot",
+    "cgpa": 5,
+    "sem1_done": [
+      {
+        "course_code": "BIT1001",
+        "course_name": "Introduction to Biotechnology",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A86605224098",
+    "name": "Vanilla Ice-cream",
+    "Batch": "B5",
+    "specialization": "Biotechnology",
+    "cgpa": 6.9,
+    "sem1_done": [
+      {
+        "course_code": "BIT1001",
+        "course_name": "Introduction to Biotechnology",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A8096123544",
+    "name": "Jahnavi Krishnan",
+    "Batch": "B6",
+    "specialization": "aiml",
+    "cgpa": 8,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "KAN1002",
+        "course_name": "Communicative Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A86605224258",
+    "name": "Nisha R S",
+    "Batch": "B8",
+    "specialization": "cse_core",
+    "cgpa": 8.64,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "KAN1001",
+        "course_name": "Communicative Kannada / Advanced Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "ENG1001",
+        "course_name": "Technical English Communication",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A86605224254",
+    "name": "Nisha R ",
+    "Batch": "B6",
+    "specialization": "cse_core",
+    "cgpa": 8.64,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "KAN1002",
+        "course_name": "Communicative Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A8660524271",
+    "name": "Dhruvadhar S",
+    "Batch": "B4",
+    "specialization": "robotics",
+    "cgpa": 9,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "fff",
+    "name": "ffdd",
+    "Batch": "B11",
+    "specialization": "devops",
+    "cgpa": 7.8,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "KAN1001",
+        "course_name": "Communicative Kannada / Advanced Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "ENG1001",
+        "course_name": "Technical English Communication",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "123",
+    "name": "asdf",
+    "Batch": "B2",
+    "specialization": "aiml",
+    "cgpa": 6.7,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      }
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "123456789098765",
+    "name": "jahnavi",
+    "Batch": "B4",
+    "specialization": "cloud_computing",
+    "cgpa": 9,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      }
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A86245839234",
+    "name": "kanaka",
+    "Batch": "B5",
+    "specialization": "Artificial Intelligence and Machine Learning",
+    "cgpa": 9,
+    "sem1_done": [
+      {
+        "course_code": "BIT1001",
+        "course_name": "Introduction to Biotechnology",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      }
+    ],
+    "sem2_done": "ECE1001",
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "S12345678G",
+    "name": "jahnavi",
+    "Batch": "B2",
+    "specialization": "aiml",
+    "cgpa": 9,
+    "totalCredits": 0,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "B86605224098",
+    "name": "kanyaka",
+    "Batch": "B5",
+    "specialization": "Biotechnology",
+    "cgpa": 9,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "BIT1001",
+        "course_name": "Introduction to Biotechnology",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      }
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A86605274635",
+    "name": "Nishitha",
+    "Batch": "B9",
+    "specialization": "cyber_security",
+    "cgpa": 9,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "KAN1001",
+        "course_name": "Communicative Kannada / Advanced Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "ENG1001",
+        "course_name": "Technical English Communication",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "PSY1002",
+        "course_name": "Dynamics of Human Behaviour",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A927613204",
+    "name": "Ratna Pitambari Satyendranath",
+    "Batch": "B5",
+    "specialization": "Biotechnology",
+    "cgpa": 9.5,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "BIT1001",
+        "course_name": "Introduction to Biotechnology",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE1017",
+        "course_name": "Programming in C and C++",
+        "labs_per_week": 4,
+        "classes_per_week": 2,
+        "credits": 4
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A927613207",
+    "name": "Dhruvadhar ",
+    "Batch": "B7",
+    "specialization": "cloud_computing",
+    "cgpa": 9.5,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "KAN1002",
+        "course_name": "Communicative Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A86605211103",
+    "name": "Maradani Nishitha",
+    "Batch": "B5",
+    "specialization": "Biotechnology",
+    "cgpa": 7.6,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "BIT1004",
+        "course_name": "Introduction to Life Sciences",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "BIT1003",
+        "course_name": "Bridge Course for Biology",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A86605201103",
+    "name": "Maradani Nishitha",
+    "Batch": "B5",
+    "specialization": "Biotechnology",
+    "cgpa": 7.6,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "BIT1001",
+        "course_name": "Introduction to Biotechnology",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "CHE1002",
+        "course_name": "Chemistry for Biologists",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 4
+      },
+      {
+        "course_code": "PHY1006",
+        "course_name": "Physics for Biologists",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 4
+      },
+      {
+        "course_code": "MAT1011",
+        "course_name": "Applied Biostatistics",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "BIT1004",
+        "course_name": "Introduction to Life Sciences",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A86605251103",
+    "name": "Maradani Nishitha TN",
+    "Batch": "B6",
+    "specialization": "robotics",
+    "cgpa": 7.6,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "KAN1002",
+        "course_name": "Communicative Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CSE1017",
+        "course_name": "Programming in C and C++",
+        "labs_per_week": 4,
+        "classes_per_week": 2,
+        "credits": 4
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A86605221103",
+    "name": "Maradani Nishitha J",
+    "Batch": "B2",
+    "specialization": "devops",
+    "cgpa": 7.6,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A86605224099",
+    "name": "Priyanshu Ranjan Singh ",
+    "Batch": "B2",
+    "specialization": "cloud_computing",
+    "cgpa": 9.8,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1011",
+        "course_name": "Applied Biostatistics",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A86605224096",
+    "name": "Priyanshu Ranjan Singh ",
+    "Batch": "B4",
+    "specialization": "cloud_computing",
+    "cgpa": 9.8,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "MGT1503",
+        "course_name": "Foundations of Economics",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": true,
+    "final_credits": 29
+  },
+  {
+    "enrollment_number": "A8069125780",
+    "name": "Kanakangi",
+    "Batch": "B4",
+    "specialization": "robotics",
+    "cgpa": 9.36,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": true,
+    "final_credits": 19
+  },
+  {
+    "enrollment_number": "A8069125781",
+    "name": "ratnaangi",
+    "Batch": "B3",
+    "specialization": "aiml",
+    "cgpa": 9.36,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "CSE1017",
+        "course_name": "Programming in C and C++",
+        "labs_per_week": 4,
+        "classes_per_week": 2,
+        "credits": 4
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE1017",
+        "course_name": "Programming in C and C++",
+        "labs_per_week": 4,
+        "classes_per_week": 2,
+        "credits": 4,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      }
+    ],
+    "finalized": true,
+    "final_credits": 23
+  },
+  {
+    "enrollment_number": "A8069125782",
+    "name": "Ganamurthy",
+    "Batch": "B6",
+    "specialization": "cyber_security",
+    "cgpa": 9.36,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "KAN1002",
+        "course_name": "Communicative Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "KAN1002",
+        "course_name": "Communicative Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE3001",
+        "course_name": "Object Oriented System Design",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 4,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem3_core_courses"
+      }
+    ],
+    "finalized": true,
+    "selected_sem3_courses": [
+      {
+        "course_code": "CSE3001",
+        "course_name": "Object Oriented System Design",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 4
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "selected_open_electives": [],
+    "selected_credits": 9,
+    "open_electives_selected_credits": 0,
+    "final_credits": 30
+  },
+  {
+    "enrollment_number": "A8069125783",
+    "name": "vachaspathi",
+    "Batch": "B4",
+    "specialization": "cse_core",
+    "cgpa": 9.36,
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "KAN1004",
+        "course_name": "Kannada Literature",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "GER1001",
+        "course_name": "Basic German",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "BIT1003",
+        "course_name": "Bridge Course for Biology",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0,
+        "category": "sem3_core_courses"
+      }
+    ],
+    "finalized": true,
+    "selected_sem3_courses": [
+      {
+        "course_code": "KAN1004",
+        "course_name": "Kannada Literature",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "GER1001",
+        "course_name": "Basic German",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "BIT1003",
+        "course_name": "Bridge Course for Biology",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "selected_open_electives": [],
+    "selected_credits": 8,
+    "open_electives_selected_credits": 0,
+    "final_credits": 28
+  },
+  {
+    "enrollment_number": "A12345678",
+    "name": "John Doe",
+    "Batch": "B2",
+    "specialization": "Cloud Computing",
+    "cgpa": 8.7,
+    "pinHash": "$2b$10$FjfvWZynU7TnDp.VEgm0jugjNON0E3hWeLoa6bt4r4r40ThhujlGe",
+    "totalCredits": 0,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A8069125785",
+    "name": "manavathi",
+    "Batch": "B4",
+    "specialization": "aiml",
+    "cgpa": "9.36",
+    "pinHash": "$2b$10$crgbo/sYXy0JN1/RMY.Q7OBjLOY7Mb8hlZtE2e7t3brRDX33WerJu",
+    "totalCredits": 0,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A8069125786",
+    "name": "Tanarupi",
+    "Batch": "B3",
+    "specialization": "robotics",
+    "cgpa": "9.36",
+    "pinHash": "$2b$10$l2mxVIcB1l9PgE8PWA2kWenmvyOfpkWtth5kWQV8qCKkLakVA5Vde",
+    "totalCredits": 0,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A8069125787",
+    "name": "Senavati",
+    "Batch": "B4",
+    "specialization": "aiml",
+    "cgpa": "9.36",
+    "pinHash": "$2b$10$G5k5i5Ks7VNWpq1HtT7yfeuvMNRMgSfksgBqLz5/sWD2TWGOe5OfC",
+    "totalCredits": 0,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A8069125788",
+    "name": "Hanumatodi",
+    "Batch": "B2",
+    "specialization": "cyber_security",
+    "cgpa": "9.36",
+    "pinHash": "$2b$10$gFyr1oOujsNNsuVY15YXSu1LTqcyNg4c1ywnbbaKoZFJRDK4bKFYW",
+    "totalCredits": 0,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A8069125789",
+    "name": "Dhenuka",
+    "Batch": "B6",
+    "specialization": "aiml",
+    "cgpa": "9.36",
+    "pinHash": "$2b$10$tXWTvAPT5FYwiQjOU5bpHetNclP/Cklab5UyTsqk4H1LR5UQiIk..",
+    "totalCredits": 0,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A80691257810",
+    "name": "Natakapriya",
+    "Batch": "B3",
+    "specialization": "cse_core",
+    "cgpa": "9.36",
+    "pinHash": "$2b$10$uQleKhA.ljgmsLm0xYGjt.mM2dQc8kxg8/fjbe9hXXLlWOH0otDA.",
+    "totalCredits": 0,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A80691257814",
+    "name": "Natakapriya",
+    "Batch": "B1",
+    "specialization": "robotics",
+    "cgpa": "9.36",
+    "pinHash": "$2b$10$vbQDnljtKURxsl4Z5hCo4OKTc913mXxFWVUOmx5d2vjjLcuAzBZv6",
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CSE1017",
+        "course_name": "Programming in C and C++",
+        "labs_per_week": 4,
+        "classes_per_week": 2,
+        "credits": 4
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "MGT1503",
+        "course_name": "Foundations of Economics",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 2
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE1017",
+        "course_name": "Programming in C and C++",
+        "labs_per_week": 4,
+        "classes_per_week": 2,
+        "credits": 4,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MGT1503",
+        "course_name": "Foundations of Economics",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2001",
+        "course_name": "Data Structures and Algorithms",
+        "labs_per_week": 2,
+        "classes_per_week": 3,
+        "credits": 4,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE2009",
+        "course_name": "Data analytics and Visualization",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE2046",
+        "course_name": "Operating Systems with Linux Internals",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "ECE1003",
+        "course_name": "Digital Design, Microprocessors and Microcontrollers",
+        "labs_per_week": 3,
+        "classes_per_week": 2,
+        "credits": 4,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE3008",
+        "course_name": "Computer Vision",
+        "labs_per_week": 3,
+        "classes_per_week": 0,
+        "credits": 3,
+        "category": "sem3_core_courses"
+      }
+    ],
+    "finalized": true,
+    "selected_sem3_courses": [
+      {
+        "course_code": "CSE2001",
+        "course_name": "Data Structures and Algorithms",
+        "labs_per_week": 2,
+        "classes_per_week": 3,
+        "credits": 4
+      },
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CSE2009",
+        "course_name": "Data analytics and Visualization",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE2046",
+        "course_name": "Operating Systems with Linux Internals",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ECE1003",
+        "course_name": "Digital Design, Microprocessors and Microcontrollers",
+        "labs_per_week": 3,
+        "classes_per_week": 2,
+        "credits": 4
+      },
+      {
+        "course_code": "CSE3008",
+        "course_name": "Computer Vision",
+        "labs_per_week": 3,
+        "classes_per_week": 0,
+        "credits": 3
+      }
+    ],
+    "selected_open_electives": [],
+    "selected_credits": 18,
+    "open_electives_selected_credits": 0,
+    "final_credits": 43
+  },
+  {
+    "enrollment_number": "A869012345",
+    "name": "Shanmukhapriya",
+    "Batch": "B6",
+    "specialization": "cloud_computing",
+    "cgpa": "9",
+    "pinHash": "$2b$10$Zd43pbsh/WjecweRxgdmRezgUxZCI5rcHEIPhLe1b7Q8ZjL974H0G",
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "KAN1002",
+        "course_name": "Communicative Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "KAN1002",
+        "course_name": "Communicative Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem3_core_courses"
+      }
+    ],
+    "finalized": true,
+    "selected_sem3_courses": [
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "selected_open_electives": [],
+    "selected_credits": 4,
+    "open_electives_selected_credits": 0,
+    "final_credits": 19
+  },
+  {
+    "enrollment_number": "A8690123456",
+    "name": "Shanmukhapriya",
+    "Batch": "B2",
+    "specialization": "cyber_security",
+    "cgpa": "9",
+    "pinHash": "$2b$10$m2r9EDUgi16bIdZjVmbrDeXLF9WGk4SfmGtGbrqVEVTWJL216F51W",
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "BIT1004",
+        "course_name": "Introduction to Life Sciences",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "PSY1002",
+        "course_name": "Dynamics of Human Behaviour",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "MGT1503",
+        "course_name": "Foundations of Economics",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "BIT1004",
+        "course_name": "Introduction to Life Sciences",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "PSY1002",
+        "course_name": "Dynamics of Human Behaviour",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MGT1503",
+        "course_name": "Foundations of Economics",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE1017",
+        "course_name": "Programming in C and C++",
+        "labs_per_week": 4,
+        "classes_per_week": 2,
+        "credits": 4,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "GER1001",
+        "course_name": "Basic German",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "PHY1006",
+        "course_name": "Physics for Biologists",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 4,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE2001",
+        "course_name": "Data Structures and Algorithms",
+        "labs_per_week": 2,
+        "classes_per_week": 3,
+        "credits": 4,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE3016",
+        "course_name": "Object Oriented Modelling Design using UML",
+        "labs_per_week": 3,
+        "classes_per_week": 0,
+        "credits": 3,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE2009",
+        "course_name": "Data analytics and Visualization",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem3_core_courses"
+      }
+    ],
+    "finalized": true,
+    "selected_sem3_courses": [
+      {
+        "course_code": "CSE1017",
+        "course_name": "Programming in C and C++",
+        "labs_per_week": 4,
+        "classes_per_week": 2,
+        "credits": 4
+      },
+      {
+        "course_code": "GER1001",
+        "course_name": "Basic German",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1006",
+        "course_name": "Physics for Biologists",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 4
+      },
+      {
+        "course_code": "CSE2001",
+        "course_name": "Data Structures and Algorithms",
+        "labs_per_week": 2,
+        "classes_per_week": 3,
+        "credits": 4
+      },
+      {
+        "course_code": "CSE3016",
+        "course_name": "Object Oriented Modelling Design using UML",
+        "labs_per_week": 3,
+        "classes_per_week": 0,
+        "credits": 3
+      },
+      {
+        "course_code": "CSE2009",
+        "course_name": "Data analytics and Visualization",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "selected_open_electives": [],
+    "selected_credits": 20,
+    "open_electives_selected_credits": 0,
+    "final_credits": 50
+  },
+  {
+    "enrollment_number": "1a234567",
+    "name": "smnkjnc",
+    "Batch": "B5",
+    "specialization": "aiml",
+    "cgpa": "9.2",
+    "pinHash": "$2b$10$ZrPM02bvTnxKs.Bf18S3fu9iOQAvTZe/CNYS.fL6Bv4Xct/ShQA5G",
+    "totalCredits": 0,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "12345",
+    "name": "2345",
+    "Batch": "B7",
+    "specialization": "cloud_computing",
+    "cgpa": "2.5",
+    "pinHash": "$2b$10$2MsLdjeCVkTDGw1iH63eFulxcqYxKCNR2XSk3DLYQb4XGsmqDCgLe",
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "KAN1002",
+        "course_name": "Communicative Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "KAN1002",
+        "course_name": "Communicative Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE3002",
+        "course_name": "Computer Organization and Architecture",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 4,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "KAN1004",
+        "course_name": "Kannada Literature",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "PSY1002",
+        "course_name": "Dynamics of Human Behaviour",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem3_core_courses"
+      }
+    ],
+    "finalized": true,
+    "selected_sem3_courses": [
+      {
+        "course_code": "CSE3002",
+        "course_name": "Computer Organization and Architecture",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 4
+      },
+      {
+        "course_code": "KAN1004",
+        "course_name": "Kannada Literature",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "PSY1002",
+        "course_name": "Dynamics of Human Behaviour",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "selected_open_electives": [],
+    "selected_credits": 9,
+    "open_electives_selected_credits": 0,
+    "final_credits": 28
+  },
+  {
+    "enrollment_number": "A8662345234",
+    "name": "njbujyh",
+    "Batch": "B4",
+    "specialization": "cloud_computing",
+    "cgpa": "1.23",
+    "pinHash": "$2b$10$pc1NyRLmOS0nHW6QN4SXH.Y975zq2JrEzRJ3AyudwDrda.V9PvXgW",
+    "totalCredits": 0,
+    "sem1_done": [],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A123456789",
+    "name": "naanu",
+    "Batch": "B6",
+    "specialization": "aiml",
+    "cgpa": "9.98",
+    "pinHash": "$2b$10$ve6B8aDqK.wQ3KW5NNMCWutH7H7CUi7.X7rcKr4o2sggRHZdQkGBS",
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "KAN1002",
+        "course_name": "Communicative Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "CSE1017",
+        "course_name": "Programming in C and C++",
+        "labs_per_week": 4,
+        "classes_per_week": 2,
+        "credits": 4
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MGT1503",
+        "course_name": "Foundations of Economics",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "KAN1002",
+        "course_name": "Communicative Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "CSE1017",
+        "course_name": "Programming in C and C++",
+        "labs_per_week": 4,
+        "classes_per_week": 2,
+        "credits": 4,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MGT1503",
+        "course_name": "Foundations of Economics",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2001",
+        "course_name": "Data Structures and Algorithms",
+        "labs_per_week": 2,
+        "classes_per_week": 3,
+        "credits": 4,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE3001",
+        "course_name": "Object Oriented System Design",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 4,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "KAN1004",
+        "course_name": "Kannada Literature",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem3_core_courses"
+      }
+    ],
+    "finalized": true,
+    "selected_sem3_courses": [
+      {
+        "course_code": "CSE2001",
+        "course_name": "Data Structures and Algorithms",
+        "labs_per_week": 2,
+        "classes_per_week": 3,
+        "credits": 4
+      },
+      {
+        "course_code": "CSE3001",
+        "course_name": "Object Oriented System Design",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 4
+      },
+      {
+        "course_code": "KAN1004",
+        "course_name": "Kannada Literature",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "SSK1001",
+        "course_name": "Being Corporate Ready",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "selected_open_electives": [],
+    "selected_credits": 13,
+    "open_electives_selected_credits": 0,
+    "final_credits": 45
+  },
+  {
+    "enrollment_number": "A123456785",
+    "name": "naanuuuuuu",
+    "Batch": "B4",
+    "specialization": "robotics",
+    "cgpa": "9.98",
+    "pinHash": "$2b$10$7f8ExW8Wq0MEy/Qx9FT6O.NfRwtfCKGBZJfu86VrLLFYachyNUwWK",
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "MGT1503",
+        "course_name": "Foundations of Economics",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "CHE1002",
+        "course_name": "Chemistry for Biologists",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 4
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "MGT1503",
+        "course_name": "Foundations of Economics",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CHE1002",
+        "course_name": "Chemistry for Biologists",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 4,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem3_core_courses"
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem3_core_courses"
+      }
+    ],
+    "finalized": true,
+    "selected_sem3_courses": [
+      {
+        "course_code": "CSE2002",
+        "course_name": "Web Technology",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "ENG1003",
+        "course_name": "Professional English",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "selected_open_electives": [],
+    "selected_credits": 5,
+    "open_electives_selected_credits": 0,
+    "final_credits": 36
+  },
+  {
+    "enrollment_number": "A123456787",
+    "name": "jahnavi",
+    "Batch": "B4",
+    "specialization": "cyber_security",
+    "cgpa": "9.97",
+    "pinHash": "$2b$10$YMj.aVq6ydD9WY2KdvFDBund.Yc4K3EHwKevcveRZEt7XaLSpCxT2",
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "FRE1001",
+        "course_name": "Basic French",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "PHY1001",
+        "course_name": "Physics of Opto Electronic Devices",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "ENG1002",
+        "course_name": "Communicative English",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "CHE1001",
+        "course_name": "Environmental Studies",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 0
+      }
+    ],
+    "sem2_done": [],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [],
+    "finalized": false
+  },
+  {
+    "enrollment_number": "A1234567854",
+    "name": "jahnavi",
+    "Batch": "B10",
+    "specialization": "cloud_computing",
+    "cgpa": "9.97",
+    "pinHash": "$2b$10$EqqkD1ZRH.5FAx25HOSqt.lvchQ3ZxYqnVERVAPIjB6Oe2dWhZZFe",
+    "totalCredits": 0,
+    "sem1_done": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "KAN1001",
+        "course_name": "Communicative Kannada / Advanced Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "ENG1001",
+        "course_name": "Technical English Communication",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "sem2_done": [
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1
+      }
+    ],
+    "selected_courses": [],
+    "open_electives": [],
+    "final_courses": [
+      {
+        "course_code": "CSE1005",
+        "course_name": "Programming in Python",
+        "labs_per_week": 4,
+        "classes_per_week": 0,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "MAT1001",
+        "course_name": "Linear Algebra and Calculus",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 2,
+        "classes_per_week": 2,
+        "credits": 3,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "PSY1001",
+        "course_name": "Understanding Self for Effectiveness",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "KAN1001",
+        "course_name": "Communicative Kannada / Advanced Kannada",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "ENG1001",
+        "course_name": "Technical English Communication",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem1_done"
+      },
+      {
+        "course_code": "MAT1002",
+        "course_name": "Differential Equations and Transform Techniques",
+        "labs_per_week": 0,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "BIT1001",
+        "course_name": "Basic Human Nutrition",
+        "labs_per_week": 0,
+        "classes_per_week": 2,
+        "credits": 2,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2015",
+        "course_name": "Source Code Management",
+        "labs_per_week": 2,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "ECE1001",
+        "course_name": "Fundamentals of Electrical and Electronics Engineering",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 3,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "KAN1005",
+        "course_name": "Kannada Kali",
+        "labs_per_week": 1,
+        "classes_per_week": 0,
+        "credits": 1,
+        "category": "sem2_done"
+      },
+      {
+        "course_code": "CSE2020",
+        "course_name": "Middleware Technologies",
+        "labs_per_week": 3,
+        "classes_per_week": 0,
+        "credits": 3,
+        "category": "sem3_core_courses"
+      }
+    ],
+    "finalized": true,
+    "selected_sem3_courses": [
+      {
+        "course_code": "CSE2020",
+        "course_name": "Middleware Technologies",
+        "labs_per_week": 3,
+        "classes_per_week": 0,
+        "credits": 3
+      }
+    ],
+    "selected_open_electives": [],
+    "selected_credits": 3,
+    "open_electives_selected_credits": 0,
+    "final_credits": 25,
+    "finalized_date": "2026-04-17T06:58:36.627Z"
+  }
+]

@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selector - Amity University Bengaluru</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        .amity-gradient {
+            background: -webkit-linear-gradient(0deg, #ffb702, #0a4e95);
+            background: linear-gradient(90deg, #ffb702, #0a4e95);
+        }
+
+        .amity-blue {
+            color: #0a4e95;
+        }
+
+        .amity-gold {
+            color: #ffb702;
+        }
+
+        .login-container, .content-container {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            background: white;
+            overflow: hidden;
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        .input-field {
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 12px 16px;
+            transition: all 0.3s ease;
+        }
+
+        .input-field:focus {
+            border-color: #0a4e95;
+            box-shadow: 0 0 0 3px rgba(10, 78, 149, 0.1);
+            outline: none;
+        }
+
+        .btn-amity {
+            background: -webkit-linear-gradient(0deg, #ffb702, #0a4e95);
+            background: linear-gradient(90deg, #ffb702, #0a4e95);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-amity:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(10, 78, 149, 0.2);
+        }
+
+        .section-header {
+            position: relative;
+        }
+
+        .section-header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: -webkit-linear-gradient(0deg, #ffb702, #0a4e95);
+            background: linear-gradient(90deg, #ffb702, #0a4e95);
+        }
+
+        .sample-notice {
+            background-color: rgba(255, 183, 2, 0.1);
+            border-left: 4px solid #ffb702;
+            padding: 8px 16px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        @media (min-width: 768px) {
+            .form-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+        }
+
+        .header-wrapper,
+        .footer-wrapper {
+            max-width: 900px;
+            width: 100%;
+            margin: 2rem auto 0 auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-wrapper {
+            margin: 1.5rem auto 2rem auto;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #ffb702 0%, #0a4e95 100%);
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            gap: 1rem;
+            color: white;
+        }
+        .header-logo {
+            height: 50px;
+            width: auto;
+        }
+        .header-text {
+            font-family: "Constantia", serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            user-select: none;
+        }
+
+        footer.amity-gradient {
+            padding: 0.75rem 1rem;
+            text-align: center;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 500;
+            background: linear-gradient(90deg, #ffb702 0%, #0a4e95 100%);
+        }
+
+        body {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.347), #ffb702 0%, #0a4e95 100%);
+            min-height: 100vh;
+            position:relative;
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            font-family: system-ui, sans-serif;
+        }
+
+        .page {
+            display: none;
+            width: 100%;
+            max-width: 900px;
+            position: relative;
+        }
+        .page.active {
+            display: block;
+        }
+
+        .tab-active {
+            color: #0a4e95;
+            border-bottom: 3px solid #ffb702;
+            font-weight: 600;
+        }
+
+        .loader {
+            border-top-color: #0a4e95;
+            -webkit-animation: spinner 1.5s linear infinite;
+            animation: spinner 1.5s linear infinite;
+        }
+        @-webkit-keyframes spinner {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spinner {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .btn-outline {
+            border: 1px solid #0a4e95;
+            color: #0a4e95;
+            transition: all 0.3s ease;
+        }
+        .btn-outline:hover {
+            background-color: rgba(10, 78, 149, 0.1);
+            transform: translateY(-1px);
+        }
+
+        .btn-remove {
+            background-color: rgba(239, 68, 68, 0.1);
+            color: rgb(185, 28, 28);
+            transition: all 0.3s ease;
+        }
+        .btn-remove:hover {
+            background-color: rgba(239, 68, 68, 0.2);
+        }
+
+        .btn-add {
+            background-color: rgba(255, 183, 2, 0.2);
+            color: #0a4e95;
+            transition: all 0.3s ease;
+        }
+        .btn-add:hover {
+            background-color: rgba(255, 183, 2, 0.3);
+        }
+
+        .semester-tab {
+            cursor: pointer;
+            padding: 0.75rem 1rem;
+            transition: all 0.3s ease;
+        }
+        .semester-tab:hover:not(.tab-active) {
+            color: #0a4e95;
+            background-color: rgba(255, 183, 2, 0.1);
+        }
+
+        .roadmap-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            position: relative;
+            padding: 0 40px;
+        }
+
+        .roadmap-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #f3f4f6;
+            border: 2px solid #d1d5db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: #6b7280;
+            position: relative;
+            z-index: 2;
+            transition: all 0.5s ease;
+        }
+
+        .roadmap-circle.active {
+            background: linear-gradient(90deg, #ffb702 0%, #0a4e95 100%);
+            border-color: #0a4e95;
+            color: white;
+            box-shadow: 0 4px 10px rgba(10, 78, 149, 0.3);
+        }
+
+        .roadmap-line {
+            height: 3px;
+            background-color: #d1d5db;
+            flex-grow: 1;
+            margin: 0 10px;
+            position: relative;
+            z-index: 1;
+            transition: all 0.5s ease;
+        }
+
+        .roadmap-line.active {
+            background: linear-gradient(90deg, #ffb702 0%, #0a4e95 100%);
+        }
+
+        .roadmap-label {
+            position: relative ;
+            top: 70px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #6b7280;
+            text-align: center;
+            width: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            display:flex;
+            transition: all 0.5s ease;
+            overflow: hidden;
+            white-space: normal;
+        }
+
+        .roadmap-circle.active .roadmap-label {
+            color: #0a4e95;
+            font-weight: 600;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 183, 2, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 183, 2, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 183, 2, 0);
+            }
+        }
+
+        .roadmap-circle.active.pulse {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <section id="loading" class="page active">
+        <div class="loader w-16 h-16 border-4 border-gray-200 rounded-full mx-auto mt-20"></div>
+        <h2 class="text-center mt-4 text-xl font-semibold amity-blue">Loading...</h2>
+        <p class="text-center text-gray-600 mt-2">Please wait while we process your request.</p>
+    </section>
+
+    <div class="header-wrapper">
+    <div class="header">
+        <img src="https://www.amity.edu/images/logo.png" alt="Amity University Logo" class="header-logo">
+        <span class="header-text">Amity University Bengaluru</span>
+        <div class="ml-auto text-right">
+            <p class="font-semibold" id="name">Loading...</p> <!-- ✅ Placeholder until data loads -->
+            <p class="text-sm" id="enrollment">Loading...</p>
+            <a href="#" class="text-white underline text-sm hover:text-gray-200" onclick="logout()">Logout</a>
+        </div>
+    </div>
+</div>
+
+    <section id="course-selection" class="page content-container">
+        <div class="container p-6">
+            <h2 class="text-2xl font-bold text-center mb-4 amity-blue section-header">Student Course Selection Portal</h2>
+            <div class="flex justify-center space-x-4 mb-6">
+                <div class="semester-tab tab-active" onclick="showTab('select-courses')">Select Courses</div>
+                <div class="semester-tab" onclick="showTab('review')">Review</div>
+                <div class="semester-tab" onclick="showTab('complete')">Complete</div>
+            </div>
+
+            <div id="select-courses" class="page active">
+                <div class="progress-bar roadmap-container">
+                    <div class="step1">
+                        <div class="roadmap-circle active pulse">1</div>
+                        <span class="roadmap-label">Login</span>
+                    </div>
+                    <div class="roadmap-line active"></div>
+                    <div class="step2">
+                        <div class="roadmap-circle active pulse">2</div>
+                        <span class="roadmap-label">Select Courses</span>
+                    </div>
+                    <div class="roadmap-line"></div>
+                    <div class="step3">
+                        <div class="roadmap-circle">3</div>
+                        <span class="roadmap-label">Review</span>
+                    </div>
+                    <div class="roadmap-line"></div>
+                    <div class="step4">
+                        <div class="roadmap-circle">4</div>
+                        <span class="roadmap-label">Complete</span>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-semibold amity-blue mb-2">Course Selection</h3>
+                <button class="btn-amity px-6 py-2 rounded-lg" onclick="showTab('review')">Review & Finalize</button>
+
+                <div class="flex justify-center space-x-4 mb-6 mt-6">
+                    <div class="semester-tab tab-active" onclick="showSemesterTab('semester1-core')">Semester 1 (Core)</div>
+                    <div class="semester-tab" onclick="showSemesterTab('semester2')">Semester 2 (Core) </div>
+                    <div class="semester-tab" onclick="showSemesterTab('semester3-recommended')">Semester 3 (Recommendations)</div>
+                    <div class="semester-tab" onclick="showSemesterTab('semester3-electives')">Semester 3 (select-courses)</div>
+                </div>
+
+                <div id="semester1-core" class="page active">
+                    <h4 class="text-lg font-semibold amity-blue mb-2">Core Courses (Automatically Assigned)</h4>
+                    <p class="text-gray-600 mb-4">These courses are mandatory for your program</p>
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border p-2 text-left">Course Code</th>
+                                <th class="border p-2 text-left">Course Name</th>
+                                <th class="border p-2 text-left">Labs</th>
+                                <th class="border p-2 text-left">Theory</th>
+                                <th class="border p-2 text-left">Credits</th>
+                                <th class="border p-2 text-left">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="core-courses"></tbody>
+                    </table>
+                </div>
+
+                <div id="semester2" class="page">
+    <h4 class="text-lg font-semibold amity-blue mb-2">Semester-2 (Core)</h4>
+    <p class="text-gray-600 mb-4">Select the courses you've chosen in Sem-2</p>
+
+    <!-- ✅ Search Field + Add Course Button -->
+    <div class="flex gap-2 mb-4">
+        <input type="text" id="search-courses" placeholder="Search" class="input-field w-full" oninput="searchCourses()">
+        <button onclick="openAddCourseModal('semester2')" class="px-3 py-1 bg-blue-500 text-white rounded">+ Add Course</button>
+    </div>
+
+    <!-- ✅ Course Table -->
+    <table class="w-full border-collapse">
+        <thead>
+            <tr class="bg-gray-100">
+                <th class="border p-2 text-left">Course Code</th>
+                <th class="border p-2 text-left">Course Name</th>
+                <th class="border p-2 text-left">Labs</th>
+                <th class="border p-2 text-left">Theory</th>
+                <th class="border p-2 text-left">Credits</th>
+            </tr>
+        </thead>
+        <tbody id="Core-courses"></tbody>
+    </table>
+</div>
+
+                
+                <div id="semester3-recommended" class="page">
+                    <h4 class="text-lg font-semibold amity-blue mb-2">Semester-3 Recommended Courses</h4>
+                    <p class="text-gray-600 mb-4">Based on your profile and academic performance</p>
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border p-2 text-left">Course Code</th>
+                                <th class="border p-2 text-left">Course Name</th>
+                                <th class="border p-2 text-left">Theory</th>
+                                <th class="border p-2 text-left">Labs</th>
+                                <th class="border p-2 text-left">Credits</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recommended-courses"></tbody>
+                    </table>
+                </div>
+            </div>
+
+                <div id="semester3-electives" class="page">
+                    <h4 class="text-lg font-semibold amity-blue mb-2">Semester-3(Select)</h4>
+                    <p class="text-gray-600 mb-4">Select the courses you would want for the next sem</p>
+                    <input type="text" id="search-electives" placeholder="Checkbox" class="input-field w-full mb-4" oninput="searchCourses()">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border p-2 text-left">Course Code</th>
+                                <th class="border p-2 text-left">Course Name</th>
+                                <th class="border p-2 text-left">Labs</th>
+                                <th class="border p-2 text-left">Theory</th>
+                                <th class="border p-2 text-left">Credits</th>
+                            </tr>
+                        </thead>
+                        <tbody id="core+elective-courses"></tbody>
+                    </table>
+                </div>
+            <div id="review" class="page">
+                <div class="progress-bar roadmap-container">
+                    <div class="step">
+                        <div class="roadmap-circle active">1</div>
+                        <span class="roadmap-label">Login</span>
+                    </div>
+                    <div class="roadmap-line active"></div>
+                    <div class="step">
+                        <div class="roadmap-circle active">2</div>
+                        <span class="roadmap-label">Select Courses</span>
+                    </div>
+                    <div class="roadmap-line active"></div>
+                    <div class="step">
+                        <div class="roadmap-circle active pulse">3</div>
+                        <span class="roadmap-label">Review</span>
+                    </div>
+                    <div class="roadmap-line"></div>
+                    <div class="step">
+                        <div class="roadmap-circle">4</div>
+                        <span class="roadmap-label">Complete</span>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-semibold amity-blue mb-2">Review & Finalize Selection</h3>
+                <p class="text-gray-700 mb-4">Total Credits Selected: <span id="review-credits">0</span>/45</p>
+                <div class="flex space-x-4">
+                    <button class="btn-outline px-6 py-2 rounded-lg" onclick="showTab('select-courses')">Back to Selection</button>
+                    <button class="btn-amity px-6 py-2 rounded-lg" onclick="showTab('complete')">Finalize Selection</button>
+                </div>
+
+                <div id="review-semester1" class="mt-6">
+                    <h4 class="text-lg font-semibold amity-blue mb-2">Semester 1 (Core Courses)</h4>
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border p-2 text-left">Course Code</th>
+                                <th class="border p-2 text-left">Course Name</th>
+                                <th class="border p-2 text-left">Theory</th>
+                                <th class="border p-2 text-left">Labs</th>
+                                <th class="border p-2 text-left">Credits</th>
+                                <th class="border p-2 text-left"><span>---</span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="review-core"></tbody>
+                    </table>
+                </div>
+
+                <div id="review-semester2" class="mt-6">
+                    <h4 class="text-lg font-semibold amity-blue mb-2">Semester 2 core courses</h4>
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border p-2 text-left">Course Code</th>
+                                <th class="border p-2 text-left">Course Name</th>
+                                <th class="border p-2 text-left">Theory</th>
+                                <th class="border p-2 text-left">Labs</th>
+                                <th class="border p-2 text-left">Credits</th>
+                                <th class="border p-2 text-left"><span>---</span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="review-electives"></tbody>
+                    </table>
+                </div>
+
+                <div id="review-semester3" class="mt-6">
+                    <h4 class="text-lg font-semibold amity-blue mb-2">Semester 3 (Recommended Courses)</h4>
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border p-2 text-left">Course Code</th>
+                                <th class="border p-2 text-left">Course Name</th>
+                                <th class="border p-2 text-left">Theory</th>
+                                <th class="border p-2 text-left">Labs</th>
+                                <th class="border p-2 text-left">Credits</th>
+                                <th class="border p-2 text-left"><span>---</span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="review-recommended"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="complete" class="page">
+                <div class="progress-bar roadmap-container"role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="2" aria-label="Course selection progress">
+                    <div class="step">
+        <div class="roadmap-circle active pulse" aria-current="step" tabindex="0">1</div>
+        <span class="roadmap-label">Login</span>
+      </div>
+      <div class="roadmap-line active" aria-hidden="true"></div>
+      <div class="step">
+        <div class="roadmap-circle active pulse" aria-current="step" tabindex="0">2</div>
+        <span class="roadmap-label">Select Courses</span>
+      </div>
+      <div class="roadmap-line" aria-hidden="true"></div>
+      <div class="step">
+        <div class="roadmap-circle" tabindex="-1">3</div>
+        <span class="roadmap-label">Review</span>
+      </div>
+      <div class="roadmap-line" aria-hidden="true"></div>
+      <div class="step">
+        <div class="roadmap-circle" tabindex="-1">4</div>
+        <span class="roadmap-label">Complete</span>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-semibold amity-blue mb-2">Course Selection Complete</h3>
+                <p class="text-gray-700 mb-2">Congratulations!</p>
+                <p class="text-gray-700 mb-4">Your course selection has been successfully finalized. You can download your course list as a CSV file.</p>
+                <div class="flex space-x-4">
+                    <button class="btn-amity px-6 py-2 rounded-lg" onclick="downloadCSV()">Download Course List (CSV)</button>
+                    <button class="btn-outline px-6 py-2 rounded-lg" onclick="logout()">Logout</button>
+                </div>
+
+                <div class="summary mt-6">
+                    <h4 class="text-lg font-semibold amity-blue mb-2">Course Selection Summary</h4>
+                    <p class="text-gray-700">Total Courses: <span id="total-courses">0</span></p>
+                    <p class="text-gray-700">Total Credits: <span id="complete-credits">0</span></p>
+                    <p class="text-gray-700">Submission Date: <span id="submission-date"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-wrapper">
+        <footer class="amity-gradient">
+            <p>© 2023 Amity University Bengaluru. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Variables
+         // ✅ Initialize Global Variables
+let studentData = JSON.parse(localStorage.getItem("studentData")) || {};
+let currentUser = null;
+let selectedCourses = {
+    sem1_done: [],
+  sem2_done: [],
+  selected_courses: [],
+  open_electives: [],
+  final_courses: [],
+  
+};
+let finalized = false; // Track if courses are finalized
+let courseCredits = {
+    semester1: [],
+    semester2: [],
+    semester3: []
+};
+
+// Persist finalized status to localStorage
+function setFinalizedStatus(status) {
+    isFinalized = status === true;
+    localStorage.setItem("isFinalized", JSON.stringify(isFinalized));
+}
+
+// Load finalized status from localStorage on page load
+let storedFinalized = localStorage.getItem("isFinalized");
+if (storedFinalized !== null) {
+    isFinalized = JSON.parse(storedFinalized);
+}
+let isFinalized = false; // Track if courses are finalized
+
+function setFinalizedStatus(status) {
+    isFinalized = status === true;
+}
+
+let totalCredits = 0;
+const MAX_CREDITS = 45;
+let currentProgress = 1; // Track current progress step (1-4)
+
+// ✅ Ensure Student Data is Set Properly
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("🔥 Checking studentData BEFORE Redirect:", studentData);
+   // studentData.name= "SIRI";
+let storedData = JSON.parse(localStorage.getItem("studentData")) || {}; 
+    //if (!studentData.enrollment_number) {
+        const params = new URLSearchParams(window.location.search);
+        studentData.enrollment_number = params.get("enrollment_number");
+        studentData.specialization = params.get("specialization");
+        studentData.Batch = params.get("Batch");
+        studentData.cgpa = params.get("cgpa");
+        studentData.name = params.get("name");
+
+        localStorage.setItem("studentData", JSON.stringify(studentData)); // ✅ Store for persistence
+   // }
+
+    console.log("🔥 Final Student Data Used:", studentData);
+
+    // ✅ Ensure elements exist before updating
+    if (studentData.name && studentData.enrollment_number) {
+        document.getElementById("name").textContent = studentData.name;
+        document.getElementById("enrollment").textContent = studentData.enrollment_number;
+    } else {
+        console.warn("⚠️ Missing studentData, redirecting to login!");
+        window.location.href = "login.html";
+    }
+});
+
+// ✅ Fetch Student Info (API Call)
+async function fetchStudentInfo() {
+    console.log("🔥 Fetching Student Info for:", studentData.enrollment_number);
+
+    try {
+        const response = await fetch(`http://localhost:3000/api/student/${studentData.enrollment_number}`, {
+            method: "GET" // ✅ Correct placement
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        currentUser = data;
+        document.getElementById("name").textContent = currentUser.name || "name";
+        document.getElementById("enrollment_number").textContent = `Enrollment Number: ${currentUser.enrollment_number}`;
+        document.getElementById("specialization").textContent = `Specialization: ${currentUser.specialization || "N/A"}`;
+        document.getElementById("batch").textContent = `Batch: ${currentUser.Batch || "N/A"}`;
+        document.getElementById("cgpa").textContent = `CGPA: ${currentUser.cgpa || "N/A"}`;
+        console.log("✅ Student Info Fetched:", currentUser);
+
+    } catch (error) {
+        console.error("❌ Error fetching student info:", error);
+        alert("#Unexpected error occurred. Redirecting...");
+        window.location.href = "login.html";
+    }
+}
+
+
+        // Initialize page
+        window.onload = () => {
+            setTimeout(() => {
+                document.getElementById("loading").classList.remove("active");
+                document.getElementById("course-selection").classList.add("active");
+                loadCourses();
+            }, 2000);
+        };
+ 
+        // Load Courses for All Semesters
+        async function loadCourses() {
+            await loadSemester1Courses();
+            await loadSemester2Courses();
+            await loadSemester3Courses();
+        }
+async function loadSemester1Courses() {
+    const courseTable = document.getElementById("core-courses");
+    courseTable.innerHTML = ""; // ✅ Clear previous data
+
+    if (!studentData || !studentData.enrollment_number) {
+        console.error("⚠️ Enrollment number missing! Cannot fetch courses.");
+        return;
+    }
+try {
+    const response = await fetch(`http://localhost:3000/api/student/${studentData.enrollment_number}/sem1-courses`, {
+        method: "GET"
+    });
+
+    console.log("📡 Raw Fetch Response:", response);
+
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log("✅ Parsed JSON Response:", data);
+} catch (error) {
+    console.error("❌ Fetch Error:", error);
+}
+
+        // ✅ Access courses correctly
+        const sem1_courses = Array.isArray(data?.studentData?.sem1_done) ? data.studentData.sem1_done : [];
+            console.warn("⚠️ No core courses found for this batch.", sem1_courses.length);
+        if (sem1_courses.length === 0) {
+            console.warn("⚠️ No core courses found for this batch.");
+            courseTable.innerHTML = '<tr><td colspan="6" class="border p-2 text-center text-gray-500">No core courses found for this batch</td></tr>';
+        } else {
+            sem1_courses.forEach(course => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td class="border p-2">${course.course_code || "N/A"}</td>
+                    <td class="border p-2">${course.course_name || "Unnamed Course"}</td>
+                    <td class="border p-2">${course.labs_per_week ?? "N/A"}</td>
+                    <td class="border p-2">${course.classes_per_week ?? "N/A"}</td>
+                    <td class="border p-2">${course.credits ?? "0"}</td>
+                    <td class="border p-2"><span class="text-gray-600">Assigned</span></td>
+                `;
+                courseTable.appendChild(row);
+            });
+            updateTotalCredits(); // ✅ Only called when courses exist
+            console.log("🔍 API Response Data:", data);
+            console.log("🔍 Student Data in Response:", data.studentData);
+            console.log("🔍 sem1_done in Response:", data?.studentData?.sem1_done);
+        }
+    } catch (error) {
+        console.error("❌ Error fetching Semester 1 courses:", error);
+        alert("Unexpected error occurred while fetching Semester 1 courses.");
+    }
+}
+
+async function loadSemester2Courses() 
+{
+// ✅ Semester 2: Update Courses Based on Keyword Match
+if (!keyword || keyword.trim() === "") {
+    showToast("Please enter a valid search keyword.", true);
+}
+        // ✅ Filter courses based on the keyword (`course_code` or `course_name`)
+        const filteredCourses = selectedCourses[semester].filter(course =>
+            course.course_code.includes(keyword) || course.course_name.toLowerCase().includes(keyword.toLowerCase())
+        );
+
+        if (filteredCourses.length === 0) {
+            showToast("No matching courses found for update.", true);
+        }
+
+        // ✅ Update UI Immediately
+        const tableBody = document.getElementById("Core-courses");
+        tableBody.innerHTML = "";
+
+        filteredCourses.forEach(course => {
+            const buttonClass = course.isSelected ? "btn-remove" : "btn-add";
+            const buttonText = course.isSelected ? "Remove" : "Add";
+            const buttonAction = course.isSelected 
+                ? `removeCourse('${semester}', '${course.id}')` 
+                : `addCourse('${semester}', '${JSON.stringify(course).replace(/"/g, "&quot;")}')`;
+
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td class="border p-2">${course.course_code}</td> 
+                <td class="border p-2">${course.course_name}</td>
+                <td class="border p-2">${course.labs_per_week || ""}</td>
+                <td class="border p-2">${course.classes_per_week || ""}</td>
+                <td class="border p-2">${course.credits}</td>
+                <td class="border p-2"><button onclick="${buttonAction}" class="px-3 py-1 rounded ${buttonClass}">${buttonText}</button></td>
+            `;
+            tableBody.appendChild(row);
+        });
+{
+        showToast("Matching courses updated successfully!", false);
+    } 
+        console.error("❌ Error updating Semester 2 courses:", error);
+        showToast("Failed to update courses.", true);
+} 
+// ✅ Semester 3: Get Recommendations
+async function getSem3Recommendations() {
+   const courseTable = document.getElementById("core-courses");
+    courseTable.innerHTML = ""; // ✅ Clear previous data
+
+    if (!studentData || !studentData.enrollment_number) {
+        console.error("⚠️ Enrollment number missing! Cannot fetch courses.");
+        return;
+    }
+
+    try {
+        const response = await fetch(`http://localhost:3000/api/student/${studentData.enrollment_number}/sem3-recommendations`, {
+            method: "GET"
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log("✅ Semester 3 reccomendations Fetched:", data);
+
+        // ✅ Access courses from `studentData.sem1_courses`
+        const sem3_recommended_courses = data.courses.sem3_recommended || [];
+const sem3_core_courses = data.courses.sem3_core || [];
+const sem2_offered_courses = data.courses.sem2_offered || [];
+const open_electives = data.courses.open_electives || [];
+
+// ✅ Combine all relevant Semester 3 courses
+const sem3_courses = [
+    ...sem3_recommended_courses,
+    ...sem3_core_courses,
+    ...sem2_offered_courses,
+    ...open_electives
+];
+        if (sem3_courses.length === 0) {
+            courseTable.innerHTML += '<tr><td colspan="5" class="border p-2 text-center text-gray-500">No core courses found for this batch</td></tr>';
+        } else {
+            sem3_courses.forEach(course => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td class="border p-2">${course.course_code}</td>
+                    <td class="border p-2">${course.course_name}</td>
+                    <td class="border p-2">${course.labs_per_week}</td>
+                    <td class="border p-2">${course.classes_per_week}</td>
+                    <td class="border p-2">${course.credits}</td>
+                    <td class="border p-2"><span class="text-gray-600">Assigned</span></td>
+                `;
+                courseTable.appendChild(row);
+            });
+        }
+        updateTotalCredits();
+
+    } catch (error) {
+        console.error("❌ Error fetching Semester 1 courses:", error);
+        alert("Unexpected error occurred while fetching Semester 3 reccomendations.");
+    }
+}
+
+ 
+
+// ✅ Semester 3: Search for Courses
+async function searchSemester3Courses() {
+    const query = document.getElementById("search-semester3").value; 
+    const tableBody = document.getElementById("semester3-courses");
+    tableBody.innerHTML = "";
+
+    const response = await fetchCourses(query, "semester3");
+
+    if (!response.success) {
+        tableBody.innerHTML = '<tr><td colspan="6" class="border p-2 text-center text-gray-500">Failed to search courses</td></tr>';
+        showToast(response.message, true);
+        return;
+    }
+
+    if (response.courses.length === 0) {
+        tableBody.innerHTML = '<tr><td colspan="6" class="border p-2 text-center text-gray-500">No courses found matching your search</td></tr>';
+        return;
+    }
+
+    response.courses.forEach(course => {
+        const buttonClass = course.isSelected ? "btn-remove" : "btn-add";
+        const buttonText = course.isSelected ? "Remove" : "Add";
+        const buttonAction = course.isSelected 
+            ? `removeCourse('semester3', '${course.id}')` 
+            : `addCourse('semester3', '${JSON.stringify(course).replace(/"/g, "&quot;")}')`;
+
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td class="border p-2">${course.course_code || course.code}</td>
+            <td class="border p-2">${course.course_name || course.name}</td>
+            <td class="border p-2">${course.labs_per_week || ""}</td>
+            <td class="border p-2">${course.classes_per_week || ""}</td>
+            <td class="border p-2">${course.credits}</td>
+            <td class="border p-2"><button onclick="${buttonAction}" class="px-3 py-1 rounded ${buttonClass}">${buttonText}</button></td>
+        `;
+        tableBody.appendChild(row);
+    });
+}
+
+// ✅ Semester 3: Select & Update Courses
+async function updateSem3Courses(semester, courses) {
+    try {
+        const response = await fetch(`http://localhost:3000/api/student/${studentData.enrollment_number}/select-sem3-courses`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ semester, courses })
+        });
+
+        const data = await response.json();
+        if (data.success) {
+            showToast("Semester 3 courses updated successfully!");
+        } else {
+            showToast(data.message, true);
+        }
+    } catch (error) {
+        console.error("❌ Error updating Semester 3 courses:", error);
+        showToast("Failed to update courses.", true);
+    }
+}
+
+        //populate Review Section (API 8: GET /student/:enrollment_number/finallist)
+        async function populateReview() {
+            const response = await fetch(`http://localhost:3000/api/student/${studentData.enrollment_number}/finallist`
+                ,{method: "GET"}
+            );
+            if (!response.success) {
+                showToast(response.message, true);
+                return;
+            }
+
+            selectedCourses = response.selectedCourses || { semester1: [], semester2: [], semester3: [] };
+            updateTotalCredits();
+
+            const reviewCore = document.getElementById("review-core");
+            reviewCore.innerHTML = "";
+            selectedCourses.semester1.forEach(course => {
+                const row = reviewCore.insertRow();
+                row.innerHTML = `
+                    <td class="border p-2">${course.course_code}</td>
+                    <td class="border p-2">${course.course_name}</td>
+                    <td class="border p-2">${course.labs_per_week}</td>
+                    <td class="border p-2">${course.classes_per_week}</td>
+                    <td class="border p-2">${course.credits}</td>
+                    <td class="border p-2"><button onclick="removeCourseAndReload('semester1', '${course.id}')" class="px-3 py-1 rounded btn-remove">Remove</button></td>
+                `;
+            }); 
+
+            const reviewElectives = document.getElementById("review-electives");
+            reviewElectives.innerHTML = "";
+            selectedCourses.semester2.forEach(course => {
+                const row = reviewElectives.insertRow();
+                row.innerHTML = `
+               <td class="border p-2">${course.course_code}</td>
+                    <td class="border p-2">${course.course_name}</td>
+                    <td class="border p-2">${course.labs_per_week}</td>
+                    <td class="border p-2">${course.classes_per_week}</td>
+                    <td class="border p-2">${course.credits}</td>
+                    <td class="border p-2"><button onclick="removeCourseAndReload('semester2', '${course.id}')" class="px-3 py-1 rounded btn-remove">Remove</button></td>
+                `;
+            });
+
+            const reviewRecommended = document.getElementById("review-recommended");
+            reviewRecommended.innerHTML = "";
+            selectedCourses.semester3.forEach(course => {
+                const row = reviewRecommended.insertRow();
+                row.innerHTML = `
+                    <td class="border p-2">${course.course_code}</td>
+                    <td class="border p-2">${course.course_name}</td>
+                    <td class="border p-2">${course.labs_per_week}</td>
+                    <td class="border p-2">${course.classes_per_week}</td>
+                    <td class="border p-2">${course.credits}</td>
+                    <td class="border p-2"><button onclick="removeCourseAndReload('semester3', '${course.id}')" class="px-3 py-1 rounded btn-remove">Remove</button></td>
+                `;
+            });
+        }
+
+        // Finalize Course Selection (API 7: POST /student/:enrollment_number/finalize)
+        async function finalizeSelection() {
+            if (totalCredits > MAX_CREDITS) {
+                showToast(`You have exceeded the maximum allowed credits (${MAX_CREDITS})`, true);
+                return;
+            }
+
+            const response = await fetchCourses(`http://localhost:3000/api/student/${studentData.enrollment_number}/finalize`, 'POST');
+            if (response.success) {
+                showToast("Course selection finalized successfully!");
+                const date = new Date().toLocaleDateString("en-US", { timeZone: "Asia/Kolkata" });
+                document.getElementById("submission-date").textContent = date;
+            } else {
+                showToast(response.message, true);
+            }
+        }
+
+        // Download CSV (API 9: GET /student/:enrollment_number/download)
+        async function downloadCSV() {
+            const response = await fetchCourses(`http://localhost:3000/api/student/${studentData.enrollment_number}/download`);
+            if (!response.success) {
+                showToast(response.message, true);
+                return;
+            }
+
+            let csv = "Course Code,Course Name,Credits,Type\n";
+            response.courses.forEach(course => {
+                const type = course.type || (course.matchScore ? "Recommended" : "Elective");
+                csv += `${course.code},${course.name},${course.credits},${type}\n`;
+            });
+
+            const blob = new Blob([csv], { type: "text/csv" });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `course-selection_${studentData.enrollment_number}.csv`;
+            a.click();
+            window.URL.revokeObjectURL(url);
+            showToast("CSV file downloaded successfully");
+        }
+
+        // Logout
+        function logout() {
+            currentUser = null;
+            selectedCourses = { semester1: [], semester2: [], semester3: [] };
+            totalCredits = 0;
+            window.location.href = "login.html";
+            showToast("Logged out successfully");
+        }
+
+        // Helper Functions
+        const getCoreCoursesBySpecialization = (specialization, courses) => {
+    return courses.core_courses?.[specialization] || [];
+};
+        function updateTotalCredits() {
+            console.log("🔍 Selected Courses Data:", selectedCourses);
+            totalCredits = 0;
+            
+            selectedCourses.sem1_courses.forEach(course => totalCredits += course.credits || 0);
+            selectedCourses.semester2.forEach(course => totalCredits += course.credits || 0);
+            selectedCourses.semester3.forEach(course => totalCredits += course.credits || 0);
+            document.getElementById("review-credits").textContent = totalCredits;
+            document.getElementById("complete-credits").textContent = totalCredits;
+        }
+
+        function getSpecializationPrefix(specialization) {
+            switch (specialization) {
+                case 'Computer Science Engineering': return 'cse_core';
+                case 'Robotics': return 'robotics';
+                case 'iot': return 'iot';
+                case 'Artificial Intelligence and Machine Learning': return 'aiml';
+                case 'Data Analytics': return 'data_analytics';
+                case 'Cyber Security': return 'cyber_security';
+                case 'Cloud Computing': return 'cloud_computing';
+                case 'devops': return 'devops';
+                case 'Big Data': return 'big_data';
+                default: return 'GEN';
+            }
+        }
+
+        // Fetch API Helper
+      async function fetchData(endpoint, method = 'GET', data = null) {
+    try {
+        document.getElementById("loading").classList.add("active");
+
+        const response = await fetch(endpoint, {
+            method,
+            headers: { "Content-Type": "application/json" },
+            body: data ? JSON.stringify(data) : null
+        });
+
+        document.getElementById("loading").classList.remove("active");
+
+        // ✅ Ensure response is valid before parsing
+        const contentType = response.headers.get("Content-Type");
+        if (!contentType || !contentType.includes("application/json")) {
+            throw new Error("Invalid response format! Expected JSON.");
+        }
+
+        const result = await response.json();
+        return response.ok ? { success: true, ...result } : { success: false, message: result.message || "API request failed" };
+    
+    } catch (error) {
+        document.getElementById("loading").classList.remove("active");
+        console.error("❌ Error fetching:", error);
+        return { success: false, message: "Network error or invalid response format" };
+    }
+}
+
+
+        // UI Functions
+        function showTab(tabId) {
+            document.querySelectorAll("#course-selection .page").forEach(section => {
+                section.classList.remove("active");
+            });
+            document.querySelectorAll(".semester-tab").forEach(tab => {
+                tab.classList.remove("tab-active");
+            });
+            document.getElementById(tabId).classList.add("active");
+            document.querySelector(`.semester-tab[onclick="showTab('${tabId}')"]`).classList.add("tab-active");
+
+            // Update roadmap
+            const steps = document.querySelectorAll(`#${tabId} .progress-bar .step`);
+            const lines = document.querySelectorAll(`#${tabId} .progress-bar .roadmap-line`);
+            const stepOrder = ["select-courses", "review", "complete"];
+            const currentStep = stepOrder.indexOf(tabId) + 2;
+            steps.forEach((step, index) => {
+                const circle = step.querySelector(".roadmap-circle");
+                if (index + 1 <= currentStep) {
+                    circle.classList.add("active");
+                    if (index + 1 === currentStep) {
+                        circle.classList.add("pulse");
+                    } else {
+                        circle.classList.remove("pulse");
+                    }
+                } else {
+                    circle.classList.remove("active", "pulse");
+                }
+            });
+            lines.forEach((line, index) => {
+                if (index + 1 < currentStep) {
+                    line.classList.add("active");
+                } else {
+                    line.classList.remove("active");
+                }
+            });
+
+            if (tabId === "review") {
+                populateReview();
+            } else if (tabId === "complete") {
+                finalizeSelection();
+            }
+        }
+
+        function showSemesterTab(tabId) {
+            document.querySelectorAll("#select-courses .page").forEach(section => {
+                section.classList.remove("active");
+            });
+            document.querySelectorAll("#select-courses .semester-tab").forEach(tab => {
+                tab.classList.remove("tab-active");
+            });
+            document.getElementById(tabId).classList.add("active");
+            document.querySelector(`#select-courses .semester-tab[onclick="showSemesterTab('${tabId}')"]`).classList.add("tab-active");
+        }
+
+        function showToast(message, isError = false) {
+            const toast = document.createElement("div");
+            toast.className = `fixed bottom-4 right-4 p-4 rounded-lg shadow-lg text-white ${isError ? "bg-red-500" : "bg-green-500"}`;
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

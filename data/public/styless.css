@@ -1,0 +1,210 @@
+/* 🌟 Global Styles */
+body {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.35), #ffb702, #0a4e95);
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+/* 🌟 Header */
+.header {
+  background: linear-gradient(90deg, #ffb702, #0a4e95);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  color: white;
+}
+
+.header-logo {
+  height: 50px;
+  width: auto;
+}
+
+.header-text {
+  font-family: "Constantia", serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* 🌟 Main Container */
+.main-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 1rem auto;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 🌟 Tab Navigation */
+.tab-container {
+  display: flex;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tab {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  border-bottom: 3px solid #0a4e95;
+  color: #0a4e95;
+  background-color: white;
+}
+
+.tab:hover:not(.active) {
+  background-color: #edf2f7;
+  border-bottom: 3px solid #ffb702;
+}
+
+/* 🌟 Step Indicator */
+.step-indicator {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.step-indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #e2e8f0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.step {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+
+.step.active {
+  border-color: #0a4e95;
+  background: #0a4e95;
+  color: white;
+}
+
+.step.completed {
+  border-color: #48bb78;
+  background: #48bb78;
+  color: white;
+}
+
+/* 🌟 Course List */
+.course-list {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.course-item {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  align-items: center;
+}
+
+.course-item:hover {
+  background-color: #f8f9fa;
+}
+
+.course-checkbox {
+  margin-right: 1rem;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+/* 🌟 Credit Counter */
+.credit-counter {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.credit-progress {
+  flex: 1;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.credit-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #ffb702, #0a4e95);
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* 🌟 Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-next {
+  background: linear-gradient(90deg, #ffb702, #0a4e95);
+  color: white;
+  border: none;
+}
+
+.btn-next:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(10, 78, 149, 0.2);
+}
+
+.btn-back {
+  background: white;
+  border: 1px solid #e2e8f0;
+}
+
+.btn-back:hover {
+  background: #f8f9fa;
+}
+
+/* 🌟 Footer */
+footer.amity-gradient {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.35), #ffb702, #0a4e95);
+}

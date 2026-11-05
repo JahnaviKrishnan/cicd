@@ -1,0 +1,1134 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Selection Portal - Amity University Bengaluru</title>
+  <style>
+    .amity-gradient {
+      background: -webkit-linear-gradient(0deg, #ffb702, #0a4e95);
+      background: linear-gradient(90deg, #ffb702, #0a4e95);
+    }
+
+    .amity-blue {
+      color: #0a4e95;
+    }
+
+    .amity-gold {
+      color: #ffb702;
+    }
+
+    .login-container {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      background: white;
+      overflow: hidden;
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .input-field {
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 12px 16px;
+      transition: all 0.3s ease;
+    }
+
+    .input-field:focus {
+      border-color: #0a4e95;
+      box-shadow: 0 0 0 3px rgba(10, 78, 149, 0.1);
+      outline: none;
+    }
+
+    .btn-login {
+      background: -webkit-linear-gradient(0deg, #ffb702, #0a4e95);
+      background: linear-gradient(90deg, #ffb702, #0a4e95);
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .btn-login:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(10, 78, 149, 0.2);
+    }
+
+    .login-header {
+      position: relative;
+    }
+
+    .login-header::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: -webkit-linear-gradient(0deg, #ffb702, #0a4e95);
+      background: linear-gradient(90deg, #ffb702, #0a4e95);
+    }
+
+    .sample-notice {
+      background-color: rgba(255, 183, 2, 0.1);
+      border-left: 4px solid #ffb702;
+      padding: 8px 16px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    @media (min-width: 768px) {
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+    }
+
+    /* Header styling */
+    .header-wrapper,
+    .footer-wrapper {
+      max-width: 900px;
+      width: 100%;
+      margin: 2rem auto 0 auto; /* default top margin */
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-wrapper {
+      margin: 1.5rem auto 2rem auto; /* footer margin */
+    }
+
+    .header {
+      background: linear-gradient(90deg, #ffb702 0%, #0a4e95 100%);
+      display: flex;
+      align-items: center; /* vertical center */
+      padding: 1rem 1.5rem;
+      gap: 1rem;
+      color: white;
+    }
+    .header-logo {
+      height: 50px;
+      width: auto;
+    }
+    .header-text {
+      font-family: "Constantia", serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      user-select: none;
+    }
+
+    footer.amity-gradient {
+      padding: 0.75rem 1rem;
+      text-align: center;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 500;
+      background: linear-gradient(90deg,rgba(0, 0, 0, 0.347), #ffb702 0%, #0a4e95 100%);
+    }
+
+    body {
+     background: linear-gradient(135deg, rgba(0, 0, 0, 0.347), #ffb702 0%, #0a4e95 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      font-family: system-ui, sans-serif;
+    }
+
+    /* Course selection styling */
+    .main-container {
+      max-width: 900px;
+      width: 100%;
+      margin: 1rem auto;
+      background: white;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .tab-container {
+      display: flex;
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .tab {
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    .tab.active {
+      border-bottom: 3px solid #0a4e95;
+      color: #0a4e95;
+      background-color: white;
+    }
+
+    .tab:hover:not(.active) {
+      background-color: #edf2f7;
+      border-bottom: 3px solid #ffb702;
+    }
+
+    .content-container {
+      padding: 1.5rem;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .step-indicator {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .step-indicator::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #e2e8f0;
+      z-index: 1;
+    }
+
+    .step {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: white;
+      border: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      position: relative;
+      z-index: 2;
+    }
+
+    .step.active {
+      border-color: #0a4e95;
+      background: #0a4e95;
+      color: white;
+    }
+
+    .step.completed {
+      border-color: #48bb78;
+      background: #48bb78;
+      color: white;
+    }
+
+    .step-label {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .batch-selector {
+      margin-bottom: 1.5rem;
+    }
+
+    .batch-btn {
+      padding: 0.5rem 1rem;
+      margin-right: 0.5rem;
+      border: 1px solid #e2e8f0;
+      background: white;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .batch-btn.active {
+      background: #0a4e95;
+      color: white;
+      border-color: #0a4e95;
+    }
+
+    .course-list {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+
+    .course-item {
+      display: flex;
+      padding: 1rem;
+      border-bottom: 1px solid #e2e8f0;
+      align-items: center;
+      transition: background-color 0.2s;
+    }
+
+    .course-item:last-child {
+      border-bottom: none;
+    }
+
+    .course-item:hover {
+      background-color: #f8f9fa;
+    }
+
+    .course-checkbox {
+      margin-right: 1rem;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    .course-info {
+      flex: 1;
+    }
+
+    .course-code {
+      font-weight: 600;
+      color: #0a4e95;
+      margin-bottom: 0.25rem;
+    }
+
+    .course-name {
+      margin-bottom: 0.25rem;
+    }
+
+    .course-credits {
+      font-size: 0.875rem;
+      color: #4a5568;
+    }
+
+    .credit-counter {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .credit-progress {
+      flex: 1;
+      height: 8px;
+      background: #e2e8f0;
+      border-radius: 4px;
+      margin: 0 1rem;
+      overflow: hidden;
+    }
+
+    .credit-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #ffb702, #0a4e95);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .action-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-next {
+      background: linear-gradient(90deg, #ffb702, #0a4e95);
+      color: white;
+      border: none;
+    }
+
+    .btn-next:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(10, 78, 149, 0.2);
+    }
+
+    .btn-back {
+      background: white;
+      border: 1px solid #e2e8f0;
+    }
+
+    .btn-back:hover {
+      background: #f8f9fa;
+    }
+
+    .search-container {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.75rem 1rem 0.75rem 2.5rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #a0aec0;
+    }
+
+    .selected-courses {
+      margin-top: 1.5rem;
+    }
+
+    .selected-course-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem;
+      background: #f8f9fa;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+
+    .remove-course {
+      color: #e53e3e;
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+
+    .remove-course:hover {
+      background: #fed7d7;
+    }
+
+    .recommendation-tag {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      background: #ebf8ff;
+      color: #2b6cb0;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      margin-left: 0.5rem;
+    }
+
+    .specialization-selector {
+      margin-bottom: 1.5rem;
+    }
+
+    .specialization-selector select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      font-size: 1rem;
+      background-color: white;
+    }
+
+    .summary-container {
+      margin-top: 1.5rem;
+    }
+
+    .summary-semester {
+      margin-bottom: 1.5rem;
+    }
+
+    .summary-heading {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .summary-course-list {
+      padding-left: 1.5rem;
+    }
+
+    .summary-course-item {
+      margin-bottom: 0.5rem;
+    }
+
+    .summary-credits {
+      font-weight: 600;
+      margin-top: 0.5rem;
+      text-align: right;
+    }
+
+    .print-btn {
+      background: #0a4e95;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .print-btn:hover {
+      background: #083b72;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-wrapper">
+    <header class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Amity_University_logo.png/250px-Amity_University_logo.png" alt="Amity University Bengaluru Logo" class="header-logo">
+      <div class="header-text">Amity University Bengaluru</div>
+    </header>
+  </div>
+
+  <div class="main-container">
+    <div class="tab-container">
+      <div class="tab active" data-tab="course-selection">Course Selection</div>
+      <div class="tab" data-tab="roadmap">Selection Roadmap</div>
+    </div>
+
+    <div class="content-container">
+      <div class="tab-content active" id="course-selection">
+        <div class="step-indicator">
+          <div class="step active" id="step1">
+            1
+            <span class="step-label">Semester 1</span>
+          </div>
+          <div class="step" id="step2">
+            2
+            <span class="step-label">Semester 2</span>
+          </div>
+          <div class="step" id="step3">
+            3
+            <span class="step-label">Semester 3</span>
+          </div>
+          <div class="step" id="step4">
+            4
+            <span class="step-label">Summary</span>
+          </div>
+        </div>
+
+        <!-- Step 1: Semester 1 Course Selection -->
+        <div class="step-content active" id="step1-content">
+          <h2 class="text-xl font-bold mb-4 amity-blue">Semester 1 Course Selection</h2>
+          
+          <div class="sample-notice">
+            Select your batch to view available courses for Semester 1.
+          </div>
+          
+          <div class="batch-selector">
+            <button class="batch-btn active" data-batch="1-4">Batch 1-4</button>
+            <button class="batch-btn" data-batch="5">Batch 5</button>
+            <button class="batch-btn" data-batch="6-11">Batch 6-11</button>
+          </div>
+          
+          <div class="credit-counter">
+            <div>Selected Credits: <span id="sem1-credits">10</span>/45</div>
+            <div class="credit-progress">
+              <div class="credit-bar" id="sem1-credit-bar" style="width: 22.2222%;"></div>
+            </div>
+            <div>45</div>
+          </div>
+          
+          <div class="course-list" id="sem1-course-list"></div>
+          
+          <div class="action-buttons">
+            <div></div> <!-- Empty div for spacing -->
+            <button class="btn btn-next" id="sem1-next">Next: Semester 2</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Semester 2 Course Selection -->
+        <div class="step-content" id="step2-content">
+          <h2 class="text-xl font-bold mb-4 amity-blue">Semester 2 Course Selection</h2>
+          
+          <div class="sample-notice">
+            Search for courses you've already completed in Semester 2.
+          </div>
+          
+          <div class="search-container">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M19 19L14.65 14.65" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <input type="text" class="search-input" id="sem2-search" placeholder="Search for courses...">
+          </div>
+          
+          <div class="credit-counter">
+            <div>Selected Credits: <span id="sem2-credits">0</span>/45</div>
+            <div class="credit-progress">
+              <div class="credit-bar" id="sem2-credit-bar"></div>
+            </div>
+            <div>45</div>
+          </div>
+          
+          <div class="course-list" id="sem2-course-list">
+            <!-- Courses will be populated here -->
+          </div>
+          
+          <div class="action-buttons">
+            <button class="btn btn-back" id="sem2-back">Back: Semester 1</button>
+            <button class="btn btn-next" id="sem2-next">Next: Semester 3</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Semester 3 Course Selection -->
+        <div class="step-content" id="step3-content">
+          <h2 class="text-xl font-bold mb-4 amity-blue">Semester 3 Course Selection</h2>
+          
+          <div class="sample-notice">
+            Select your specialization to get course recommendations for Semester 3.
+          </div>
+          
+          <div class="specialization-selector">
+            <select id="specialization-select">
+              <option value="">Select your specialization</option>
+              <option value="data-science">Data Science</option>
+              <option value="ai-ml">Artificial Intelligence &amp; Machine Learning</option>
+              <option value="cyber-security">Cyber Security</option>
+              <option value="cloud-computing">Cloud Computing</option>
+            </select>
+          </div>
+          
+          <div class="credit-counter">
+            <div>Selected Credits: <span id="sem3-credits">0</span>/45</div>
+            <div class="credit-progress">
+              <div class="credit-bar" id="sem3-credit-bar"></div>
+            </div>
+            <div>45</div>
+          </div>
+          
+          <div class="course-list" id="sem3-course-list">
+            <!-- Courses will be populated here -->
+          </div>
+          
+          <div class="action-buttons">
+            <button class="btn btn-back" id="sem3-back">Back: Semester 2</button>
+            <button class="btn btn-next" id="sem3-next">Next: Summary</button>
+          </div>
+        </div>
+
+        <!-- Step 4: Summary -->
+        <div class="step-content" id="step4-content">
+          <h2 class="text-xl font-bold mb-4 amity-blue">Course Selection Summary</h2>
+          
+          <div class="sample-notice">
+            Review your course selections for all semesters.
+          </div>
+          
+          <div class="summary-container">
+            <div class="summary-semester">
+              <div class="summary-heading">Semester 1</div>
+              <div class="summary-course-list" id="summary-sem1">
+                <!-- Semester 1 courses will be listed here -->
+              </div>
+              <div class="summary-credits">Total Credits: <span id="summary-sem1-credits">0</span></div>
+            </div>
+            
+            <div class="summary-semester">
+              <div class="summary-heading">Semester 2</div>
+              <div class="summary-course-list" id="summary-sem2">
+                <!-- Semester 2 courses will be listed here -->
+              </div>
+              <div class="summary-credits">Total Credits: <span id="summary-sem2-credits">0</span></div>
+            </div>
+            
+            <div class="summary-semester">
+              <div class="summary-heading">Semester 3</div>
+              <div class="summary-course-list" id="summary-sem3">
+                <!-- Semester 3 courses will be listed here -->
+              </div>
+              <div class="summary-credits">Total Credits: <span id="summary-sem3-credits">0</span></div>
+            </div>
+            
+            <div class="summary-credits">Overall Total Credits: <span id="summary-total-credits">0</span></div>
+          </div>
+          
+          <div class="action-buttons">
+            <button class="btn btn-back" id="summary-back">Back: Semester 3</button>
+            <button class="print-btn" id="print-summary">Print Course Plan</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="roadmap">
+        <h2 class="text-xl font-bold mb-4 amity-blue">Course Selection Roadmap</h2>
+        
+        <div class="sample-notice">
+          Follow this roadmap to complete your course selection process.
+        </div>
+        
+        <div class="p-4 bg-gray-50 rounded-lg mb-4">
+          <h3 class="font-semibold mb-2">Step 1: Semester 1 Course Selection</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Select your batch (1-4, 5, or 6-11)</li>
+            <li>View available courses for your batch</li>
+            <li>Select courses up to a maximum of 45 credits</li>
+            <li>Proceed to Semester 2 selection</li>
+          </ul>
+        </div>
+        
+        <div class="p-4 bg-gray-50 rounded-lg mb-4">
+          <h3 class="font-semibold mb-2">Step 2: Semester 2 Course Selection</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Search for courses you've already completed in Semester 2</li>
+            <li>Select all relevant courses</li>
+            <li>Ensure you don't exceed 45 credits for the semester</li>
+            <li>Proceed to Semester 3 selection</li>
+          </ul>
+        </div>
+        
+        <div class="p-4 bg-gray-50 rounded-lg mb-4">
+          <h3 class="font-semibold mb-2">Step 3: Semester 3 Course Selection</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Select your specialization</li>
+            <li>View recommended courses based on your specialization and core requirements</li>
+            <li>Select courses up to a maximum of 45 credits</li>
+            <li>Proceed to the summary page</li>
+          </ul>
+        </div>
+        
+        <div class="p-4 bg-gray-50 rounded-lg mb-4">
+          <h3 class="font-semibold mb-2">Step 4: Review and Submit</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Review your course selections for all three semesters</li>
+            <li>Verify credit counts for each semester</li>
+            <li>Print your course plan for your records</li>
+            <li>Make changes if needed by going back to previous steps</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-wrapper">
+    <footer class="amity-gradient">
+      © 2023 Amity University Bengaluru. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // Sample course data (would normally be fetched from courses.json)
+    const coursesData = {
+      semester1: {
+        "batch1-4": [
+        ],
+        "batch5": [
+        ],
+        "batch6-11": [
+        ]
+      },
+      semester2: [
+       
+      ],
+      semester3: {
+        core: [
+        ],
+        specializations: {
+          "data-science": [
+          ],
+          "ai-ml": [
+          ],
+          "cyber-security": [
+          ],
+          "cloud-computing": [
+          ]
+        }
+      }
+    };
+
+    // State management
+    const state = {
+      currentStep: 1,
+      selectedBatch: "batch1-4",
+      selectedCourses: {
+        semester1: [],
+        semester2: [],
+        semester3: []
+      },
+      specialization: ""
+    };
+
+    // DOM Elements
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+    const steps = document.querySelectorAll('.step');
+    const stepContents = document.querySelectorAll('.step-content');
+    const batchButtons = document.querySelectorAll('.batch-btn');
+    
+    // Tab switching
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const tabId = tab.getAttribute('data-tab');
+        
+        // Update active tab
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        // Show corresponding content
+        tabContents.forEach(content => {
+          content.classList.remove('active');
+          if (content.id === tabId) {
+            content.classList.add('active');
+          }
+        });
+      });
+    });
+
+    // Step navigation
+    function goToStep(stepNumber) {
+      // Update step indicators
+      steps.forEach((step, index) => {
+        if (index + 1 < stepNumber) {
+          step.classList.remove('active');
+          step.classList.add('completed');
+        } else if (index + 1 === stepNumber) {
+          step.classList.add('active');
+          step.classList.remove('completed');
+        } else {
+          step.classList.remove('active', 'completed');
+        }
+      });
+      
+      // Show corresponding step content
+      stepContents.forEach((content, index) => {
+        content.classList.remove('active');
+        if (index + 1 === stepNumber) {
+          content.classList.add('active');
+        }
+      });
+      
+      state.currentStep = stepNumber;
+    }
+
+    // Batch selection
+    batchButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        batchButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        state.selectedBatch = button.getAttribute('data-batch').replace('-', '');
+        loadSemester1Courses();
+      });
+    });
+
+    // Load Semester 1 courses based on batch
+    function loadSemester1Courses() {
+      const courseList = document.getElementById('sem1-course-list');
+      courseList.innerHTML = '';
+      
+      let batchKey = state.selectedBatch;
+      if (batchKey === "batch14") batchKey = "batch1-4";
+      if (batchKey === "batch611") batchKey = "batch6-11";
+      
+      coursesData.semester1[batchKey].forEach(course => {
+        const isSelected = state.selectedCourses.semester1.some(c => c.code === course.code);
+        
+        const courseItem = document.createElement('div');
+        courseItem.className = 'course-item';
+        courseItem.innerHTML = `
+          <input type="checkbox" class="course-checkbox" data-code="${course.code}" data-credits="${course.credits}" ${isSelected ? 'checked' : ''} ${course.required ? 'disabled checked' : ''}>
+          <div class="course-info">
+            <div class="course-code">${course.code}</div>
+            <div class="course-name">${course.name}</div>
+            <div class="course-credits">${course.credits} credit${course.credits > 1 ? 's' : ''} ${course.required ? '(Required)' : ''}</div>
+          </div>
+        `;
+        
+        courseList.appendChild(courseItem);
+        
+        // Add event listener to checkbox
+        const checkbox = courseItem.querySelector('.course-checkbox');
+        checkbox.addEventListener('change', () => {
+          if (checkbox.checked) {
+            // Add course to selected courses
+            if (!state.selectedCourses.semester1.some(c => c.code === course.code)) {
+              state.selectedCourses.semester1.push(course);
+            }
+          } else {
+            // Remove course from selected courses
+            state.selectedCourses.semester1 = state.selectedCourses.semester1.filter(c => c.code !== course.code);
+          }
+          
+          updateSemester1Credits();
+        });
+      });
+      
+      // Add required courses automatically if not already selected
+      coursesData.semester1[batchKey].forEach(course => {
+        if (course.required && !state.selectedCourses.semester1.some(c => c.code === course.code)) {
+          state.selectedCourses.semester1.push(course);
+        }
+      });
+      
+      updateSemester1Credits();
+    }
+
+    // Update Semester 1 credit counter
+    function updateSemester1Credits() {
+      const totalCredits = state.selectedCourses.semester1.reduce((sum, course) => sum + course.credits, 0);
+      document.getElementById('sem1-credits').textContent = totalCredits;
+      
+      const percentage = Math.min((totalCredits / 45) * 100, 100);
+      document.getElementById('sem1-credit-bar').style.width = `${percentage}%`;
+    }
+
+    // Load Semester 2 courses
+    function loadSemester2Courses() {
+      const courseList = document.getElementById('sem2-course-list');
+      courseList.innerHTML = '';
+      
+      coursesData.semester2.forEach(course => {
+        const isSelected = state.selectedCourses.semester2.some(c => c.code === course.code);
+        
+        const courseItem = document.createElement('div');
+        courseItem.className = 'course-item';
+        courseItem.innerHTML = `
+          <input type="checkbox" class="course-checkbox" data-code="${course.code}" data-credits="${course.credits}" ${isSelected ? 'checked' : ''}>
+          <div class="course-info">
+            <div class="course-code">${course.code}</div>
+            <div class="course-name">${course.name}</div>
+            <div class="course-credits">${course.credits} credit${course.credits > 1 ? 's' : ''}</div>
+          </div>
+        `;
+        
+        courseList.appendChild(courseItem);
+        
+        // Add event listener to checkbox
+        const checkbox = courseItem.querySelector('.course-checkbox');
+        checkbox.addEventListener('change', () => {
+          if (checkbox.checked) {
+            // Add course to selected courses
+            if (!state.selectedCourses.semester2.some(c => c.code === course.code)) {
+              state.selectedCourses.semester2.push(course);
+            }
+          } else {
+            // Remove course from selected courses
+            state.selectedCourses.semester2 = state.selectedCourses.semester2.filter(c => c.code !== course.code);
+          }
+          
+          updateSemester2Credits();
+        });
+      });
+      
+      updateSemester2Credits();
+    }
+
+    // Update Semester 2 credit counter
+    function updateSemester2Credits() {
+      const totalCredits = state.selectedCourses.semester2.reduce((sum, course) => sum + course.credits, 0);
+      document.getElementById('sem2-credits').textContent = totalCredits;
+      
+      const percentage = Math.min((totalCredits / 45) * 100, 100);
+      document.getElementById('sem2-credit-bar').style.width = `${percentage}%`;
+    }
+
+    // Search functionality for Semester 2
+    document.getElementById('sem2-search').addEventListener('input', (e) => {
+      const searchTerm = e.target.value.toLowerCase();
+      const courseItems = document.querySelectorAll('#sem2-course-list .course-item');
+      
+      courseItems.forEach(item => {
+        const courseName = item.querySelector('.course-name').textContent.toLowerCase();
+        const courseCode = item.querySelector('.course-code').textContent.toLowerCase();
+        
+        if (courseName.includes(searchTerm) || courseCode.includes(searchTerm)) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+
+    // Load Semester 3 courses based on specialization
+    function loadSemester3Courses() {
+      const courseList = document.getElementById('sem3-course-list');
+      courseList.innerHTML = '';
+      
+      // Add core courses first
+      coursesData.semester3.core.forEach(course => {
+        const isSelected = state.selectedCourses.semester3.some(c => c.code === course.code);
+        
+        const courseItem = document.createElement('div');
+        courseItem.className = 'course-item';
+        courseItem.innerHTML = `
+          <input type="checkbox" class="course-checkbox" data-code="${course.code}" data-credits="${course.credits}" ${isSelected ? 'checked' : ''} ${course.required ? 'disabled checked' : ''}>
+          <div class="course-info">
+            <div class="course-code">${course.code}</div>
+            <div class="course-name">${course.name}</div>
+            <div class="course-credits">${course.credits} credit${course.credits > 1 ? 's' : ''} ${course.required ? '(Required)' : ''}</div>
+          </div>
+        `;
+        
+        courseList.appendChild(courseItem);
+        
+        // Add event listener to checkbox
+        const checkbox = courseItem.querySelector('.course-checkbox');
+        checkbox.addEventListener('change', () => {
+          if (checkbox.checked) {
+            // Add course to selected courses
+            if (!state.selectedCourses.semester3.some(c => c.code === course.code)) {
+              state.selectedCourses.semester3.push(course);
+            }
+          } else {
+            // Remove course from selected courses
+            state.selectedCourses.semester3 = state.selectedCourses.semester3.filter(c => c.code !== course.code);
+          }
+          
+          updateSemester3Credits();
+        });
+      });
+      
+      // Add specialization courses if a specialization is selected
+      if (state.specialization && coursesData.semester3.specializations[state.specialization]) {
+        coursesData.semester3.specializations[state.specialization].forEach(course => {
+          const isSelected = state.selectedCourses.semester3.some(c => c.code === course.code);
+          
+          const courseItem = document.createElement('div');
+          courseItem.className = 'course-item';
+          courseItem.innerHTML = `
+            <input type="checkbox" class="course-checkbox" data-code="${course.code}" data-credits="${course.credits}" ${isSelected ? 'checked' : ''}>
+            <div class="course-info">
+              <div class="course-code">${course.code}</div>
+              <div class="course-name">${course.name}</div>
+              <div class="course-credits">${course.credits} credit${course.credits > 1 ? 's' : ''}</div>
+              <span class="recommendation-tag">Recommended</span>
+            </div>
+          `;
+          
+          courseList.appendChild(courseItem);
+          
+          // Add event listener to checkbox
+          const checkbox = courseItem.querySelector('.course-checkbox');
+          checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+              // Add course to selected courses
+              if (!state.selectedCourses.semester3.some(c => c.code === course.code)) {
+                state.selectedCourses.semester3.push(course);
+              }
+            } else {
+              // Remove course from selected courses
+              state.selectedCourses.semester3 = state.selectedCourses.semester3.filter(c => c.code !== course.code);
+            }
+            
+            updateSemester3Credits();
+          });
+        });
+      }
+      
+      // Add required courses automatically if not already selected
+      coursesData.semester3.core.forEach(course => {
+        if (course.required && !state.selectedCourses.semester3.some(c => c.code === course.code)) {
+          state.selectedCourses.semester3.push(course);
+        }
+      });
+      
+      updateSemester3Credits();
+    }
+
+    // Update Semester 3 credit counter
+    function updateSemester3Credits() {
+      const totalCredits = state.selectedCourses.semester3.reduce((sum, course) => sum + course.credits, 0);
+      document.getElementById('sem3-credits').textContent = totalCredits;
+      
+      const percentage = Math.min((totalCredits / 45) * 100, 100);
+      document.getElementById('sem3-credit-bar').style.width = `${percentage}%`;
+    }
+
+    // Specialization selection
+    document.getElementById('specialization-select').addEventListener('change', (e) => {
+      state.specialization = e.target.value;
+      loadSemester3Courses();
+    });
+
+    // Update summary page
+    function updateSummary() {
+      // Semester 1 summary
+      const sem1Summary = document.getElementById('summary-sem1');
+      sem1Summary.innerHTML = '';
+      state.selectedCourses.semester1.forEach(course => {
+        const courseItem = document.createElement('div');
+        courseItem.className = 'summary-course-item';
+        courseItem.textContent = `${course.code} - ${course.name} (${course.credits} credits)`;
+        sem1Summary.appendChild(courseItem);
+      });
+      const sem1Credits = state.selectedCourses.semester1.reduce((sum, course) => sum + course.credits, 0);
+      document.getElementById('summary-sem1-credits').textContent = sem1Credits;
+      
+      // Semester 2 summary
+      const sem2Summary = document.getElementById('summary-sem2');
+      sem2Summary.innerHTML = '';
+      state.selectedCourses.semester2.forEach(course => {
+        const courseItem = document.createElement('div');
+        courseItem.className = 'summary-course-item';
+        courseItem.textContent = `${course.code} - ${course.name} (${course.credits} credits)`;
+        sem2Summary.appendChild(courseItem);
+      });
+      const sem2Credits = state.selectedCourses.semester2.reduce((sum, course) => sum + course.credits, 0);
+      document.getElementById('summary-sem2-credits').textContent = sem2Credits;
+      
+      // Semester 3 summary
+      const sem3Summary = document.getElementById('summary-sem3');
+      sem3Summary.innerHTML = '';
+      state.selectedCourses.semester3.forEach(course => {
+        const courseItem = document.createElement('div');
+        courseItem.className = 'summary-course-item';
+        courseItem.textContent = `${course.code} - ${course.name} (${course.credits} credits)`;
+        sem3Summary.appendChild(courseItem);
+      });
+      const sem3Credits = state.selectedCourses.semester3.reduce((sum, course) => sum + course.credits, 0);
+      document.getElementById('summary-sem3-credits').textContent = sem3Credits;
+      
+      // Total credits
+      const totalCredits = sem1Credits + sem2Credits + sem3Credits;
+      document.getElementById('summary-total-credits').textContent = totalCredits;
+    }
+
+    // Navigation event listeners
+    document.getElementById('sem1-next').addEventListener('click', () => {
+      loadSemester2Courses();
+      goToStep(2);
+    });
+
+    document.getElementById('sem2-back').addEventListener('click', () => {
+      goToStep(1);
+    });
+
+    document.getElementById('sem2-next').addEventListener('click', () => {
+      loadSemester3Courses();
+      goToStep(3);
+    });
+
+    document.getElementById('sem3-back').addEventListener('click', () => {
+      goToStep(2);
+    });
+
+    document.getElementById('sem3-next').addEventListener('click', () => {
+      updateSummary();
+      goToStep(4);
+    });
+
+    document.getElementById('summary-back').addEventListener('click', () => {
+      goToStep(3);
+    });
+ 
+    document.getElementById('print-summary').addEventListener('click', () => {
+      window.print();
+    });
+
+    // Initialize the page
+    loadSemester1Courses();
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'948ea87390950698',t:'MTc0ODc4MDM1Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+</body></html>
