@@ -1,0 +1,1568 @@
+{
+  "sem1_b1_b4": [
+    {
+      "course_code": "CSE1005",
+      "course_name": "Programming in Python",
+      "labs_per_week": 4,
+      "classes_per_week": 0,
+      "credits": 2
+    },
+    {
+      "course_code": "MAT1001",
+      "course_name": "Linear Algebra and Calculus",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "FRE1001",
+      "course_name": "Basic French",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 2
+    },
+    {
+      "course_code": "PHY1001",
+      "course_name": "Physics of Opto Electronic Devices",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+    {
+      "course_code": "ENG1002",
+      "course_name": "Communicative English",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "CHE1001",
+      "course_name": "Environmental Studies",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 0
+    }
+  ],
+  "sem1_b5": [
+    {
+      "course_code": "BIT1001",
+      "course_name": "Introduction to Biotechnology",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "MAT1001",
+      "course_name": "Linear Algebra and Calculus",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "PHY1001",
+      "course_name": "Physics of Opto Electronic Devices",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+    {
+      "course_code": "ENG1002",
+      "course_name": "Communicative English",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+     {
+      "course_code": "CSE1005",
+      "course_name": "Programming in Python",
+      "labs_per_week": 4,
+      "classes_per_week": 0,
+      "credits": 2
+    },
+    {
+      "course_code": "CHE1001",
+      "course_name": "Environmental Studies",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 0
+    }
+  ],
+  "sem1_b6_b7": [
+    {
+      "course_code": "CSE1005",
+      "course_name": "Programming in Python",
+      "labs_per_week": 4,
+      "classes_per_week": 0,
+      "credits": 2
+    },
+    {
+      "course_code": "MAT1001",
+      "course_name": "Linear Algebra and Calculus",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "ENG1002",
+      "course_name": "Communicative English",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "CHE1001",
+      "course_name": "Environmental Studies",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 0
+    },
+    {
+      "course_code": "PSY1001",
+      "course_name": "Understanding Self for Effectiveness",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "KAN1002",
+      "course_name": "Communicative Kannada",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 2
+    },
+    {
+      "course_code": "PHY1001",
+      "course_name": "Physics of Opto Electronic Devices",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    }
+  ],
+  "sem1_b8_b11": [
+    {
+      "course_code": "CSE1005",
+      "course_name": "Programming in Python",
+      "labs_per_week": 4,
+      "classes_per_week": 0,
+      "credits": 2
+    },
+    {
+      "course_code": "MAT1001",
+      "course_name": "Linear Algebra and Calculus",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "ECE1001",
+      "course_name": "Fundamentals of Electrical and Electronics Engineering",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+    {
+      "course_code": "PSY1001",
+      "course_name": "Understanding Self for Effectiveness",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "KAN1001",
+      "course_name": "Communicative Kannada / Advanced Kannada",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 2
+    },
+    {
+      "course_code": "ENG1001",
+      "course_name": "Technical English Communication",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    }
+  ],
+  "sem_1_core": [
+    {
+      "course_code": "CSE1005",
+      "course_name": "Programming in Python",
+      "labs_per_week": 4,
+      "classes_per_week": 0,
+      "credits": 2
+    },
+    {
+      "course_code": "MAT1001",
+      "course_name": "Linear Algebra and Calculus",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "FRE1001",
+      "course_name": "Basic French",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 2
+    },
+    {
+      "course_code": "PHY1001",
+      "course_name": "Physics of Opto Electronic Devices",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+    {
+      "course_code": "ENG1002",
+      "course_name": "Communicative English",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "CHE1001",
+      "course_name": "Environmental Studies",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 0
+    },
+    {
+      "course_code": "KAN1002",
+      "course_name": "Communicative Kannada",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 2
+    },
+    {
+      "course_code": "PSY1001",
+      "course_name": "Understanding Self for Effectiveness",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+     {
+      "course_code": "ECE1001",
+      "course_name": "Fundamentals of Electrical and Electronics Engineering",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+     {
+      "course_code": "ENG1001",
+      "course_name": "Technical English Communication",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+      {
+      "course_code": "BIT1001",
+      "course_name": "Introduction to Biotechnology",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    }
+  ],
+  "sem2_b1_b4": [
+    {
+      "course_code": "CSE1017",
+      "course_name": "Programming in C and C++",
+      "labs_per_week": 4,
+      "classes_per_week": 2,
+      "credits": 4
+    },
+    {
+      "course_code": "MAT1002",
+      "course_name": "Transform Techniques, Differential Equations and Applications",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "BIT1001",
+      "course_name": "Basic Human Nutrition",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 2
+    },
+    {
+      "course_code": "ECE1001",
+      "course_name": "Fundamentals of Electrical and Electronics Engineering",
+      "labs_per_week": 2,
+      "classes_per_week": 3,
+      "credits": 4
+    },
+    {
+      "course_code": "ENG1003",
+      "course_name": "Professional English",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "CSE2002",
+      "course_name": "Web Technology",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+    {
+      "course_code": "CSE2015",
+      "course_name": "Source Code Management",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "PSY1001",
+      "course_name": "Understanding Self for Effectiveness",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "KAN1004",
+      "course_name": "Kannada Literature",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "KAN1005",
+      "course_name": "Kannada Kali",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    }
+  ],
+  "sem2_b5": [
+    {
+      "course_code": "CHE1002",
+      "course_name": "Chemistry for Biologists",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 4
+    },
+    {
+      "course_code": "PHY1006",
+      "course_name": "Physics for Biologists",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 4
+    },
+    {
+      "course_code": "MAT1011",
+      "course_name": "Applied Biostatistics",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "ENG1003",
+      "course_name": "Professional English",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "CSC1019",
+      "course_name": "Programming in C",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 2
+    },
+    {
+      "course_code": "BIT1004",
+      "course_name": "Introduction to Life Sciences",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 2
+    },
+    {
+      "course_code": "MAT1001",
+      "course_name": "Linear Algebra and Calculus",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "MAT1002",
+      "course_name": "Differential Equations and Transform Techniques",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "PSY1002",
+      "course_name": "Dynamics of Human Behaviour",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "BIT1003",
+      "course_name": "Bridge Course for Biology",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 0
+    }
+  ],
+  "sem2_b6_b7": [
+    {
+      "course_code": "CSE1017",
+      "course_name": "Programming in C and C++",
+      "labs_per_week": 4,
+      "classes_per_week": 2,
+      "credits": 4
+    },
+    {
+      "course_code": "MAT1002",
+      "course_name": "Transform Techniques, Differential Equations and Applications",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "ECE1001",
+      "course_name": "Fundamentals of Electrical and Electronics Engineering",
+      "labs_per_week": 1,
+      "classes_per_week": 3,
+      "credits": 4
+    },
+    {
+      "course_code": "FRE1001",
+      "course_name": "Basic French",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 2
+    },
+    {
+      "course_code": "GER1001",
+      "course_name": "Basic German",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 2
+    },
+    {
+      "course_code": "ENG1003",
+      "course_name": "Professional English",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "BIT1001",
+      "course_name": "Basic Human Nutrition",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 2
+    },
+    {
+      "course_code": "CSE2015",
+      "course_name": "Source Code Management",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "CSE2002",
+      "course_name": "Web Technology",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+    {
+      "course_code": "PSY1002",
+      "course_name": "Dynamics of Human Behaviour",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    }
+  ],
+  "sem2_b8_b11": [
+    {
+      "course_code": "CSE1017",
+      "course_name": "Programming in C and C++",
+      "labs_per_week": 4,
+      "classes_per_week": 2,
+      "credits": 4
+    },
+    {
+      "course_code": "MAT1002",
+      "course_name": "Transform Techniques, Differential Equations and Applications",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "PHY1001",
+      "course_name": "Physics of Opto Electronic Devices",
+      "labs_per_week": 1,
+      "classes_per_week": 3,
+      "credits": 3
+    },
+    {
+      "course_code": "CHE1001",
+      "course_name": "Environmental Studies",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 0
+    },
+    {
+      "course_code": "FRE1001",
+      "course_name": "Basic French",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 2
+    },
+    {
+      "course_code": "GER1001",
+      "course_name": "Basic German",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 2
+    },
+    {
+      "course_code": "ENG1003",
+      "course_name": "Professional English",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "BIT1001",
+      "course_name": "Basic Human Nutrition",
+      "labs_per_week": 0,
+      "classes_per_week": 2,
+      "credits": 2
+    },
+    {
+      "course_code": "CSE2015",
+      "course_name": "Source Code Management",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "CSE2002",
+      "course_name": "Web Technology",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+    {
+      "course_code": "PSY1002",
+      "course_name": "Dynamics of Human Behaviour",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    }
+  ],
+  "sem2_offered": [
+    {
+      "category": "general",
+      "courses": [
+        {
+          "course_code": "KAN1004",
+          "course_name": "Kannada Literature",
+          "labs_per_week": 0,
+          "classes_per_week": 3,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2002",
+          "course_name": "Web Technology",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "PSY1001",
+          "course_name": "Understanding Self for Effectiveness",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "CSE2015",
+          "course_name": "Source Code Management",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "CSE1017",
+          "course_name": "Programming in C and C++",
+          "labs_per_week": 4,
+          "classes_per_week": 2,
+          "credits": 4
+        },
+        { "course_code": "SSK1001",
+          "course_name": "Being Corporate Ready",
+          "labs_per_week": 1,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "ENG1003",
+          "course_name": "Professional English",
+          "labs_per_week": 1,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "PHY1001",
+          "course_name": "Physics of Opto Electronic Devices",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "KAN1005",
+          "course_name": "Kannada Kali",
+          "labs_per_week": 1,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "ECE1001",
+          "course_name": "Fundamentals of Electrical and Electronics Engineering",
+          "labs_per_week": 1,
+          "classes_per_week": 3,
+          "credits": 3
+        },
+        {
+          "course_code": "MGT1503",
+          "course_name": "Foundations of Economics",
+          "labs_per_week": 0,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "PSY1002",
+          "course_name": "Dynamics of Human Behaviour",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "MAT1002",
+          "course_name": "Differential Equations and Transform Techniques",
+          "labs_per_week": 0,
+          "classes_per_week": 3,
+          "credits": 3
+        },
+        {
+          "course_code": "BIT1001",
+          "course_name": "Basic Human Nutrition",
+          "labs_per_week": 0,
+          "classes_per_week": 2,
+          "credits": 2
+        },
+        {
+          "course_code": "GER1001",
+          "course_name": "Basic German",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 2
+        },
+        {
+          "course_code": "FRE1001",
+          "course_name": "Basic French",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 2
+        },
+        {
+          "course_code": "CHE1002",
+          "course_name": "Chemistry for Biologists",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 4
+        },
+        {
+          "course_code": "PHY1006",
+          "course_name": "Physics for Biologists",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 4
+        },
+        {
+          "course_code": "MAT1011",
+          "course_name": "Applied Biostatistics",
+          "labs_per_week": 0,
+          "classes_per_week": 3,
+          "credits": 3
+        },
+        {
+          "course_code": "ENG1003",
+          "course_name": "Professional English",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "BIT1004",
+          "course_name": "Introduction to Life Sciences",
+          "labs_per_week": 0,
+          "classes_per_week": 2,
+          "credits": 2
+        },
+        {
+          "course_code": "MAT1001",
+          "course_name": "Linear Algebra and Calculus",
+          "labs_per_week": 0,
+          "classes_per_week": 3,
+          "credits": 3
+        },
+        {
+          "course_code": "PSY1002",
+          "course_name": "Dynamics of Human Behaviour",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "BIT1003",
+          "course_name": "Bridge Course for Biology",
+          "labs_per_week": 0,
+          "classes_per_week": 2,
+          "credits": 0
+        }
+      ]
+    }
+  ],
+"sem3_recommended": [
+  {
+    "category": "b1_b6",
+    "courses": [
+      {
+        "course_code": "CSE2001",
+        "course_name": "Data Structures and Algorithms",
+        "labs_per_week": 2,
+        "classes_per_week": 3,
+        "credits": 4
+      },
+      {
+        "course_code": "CSE3001",
+        "course_name": "Object Oriented System Design",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 4
+      }
+    ]
+  },
+  {
+    "category": "b7_b11",
+    "courses": [
+      {
+        "course_code": "CSE2001",
+        "course_name": "Data Structures and Algorithms",
+        "labs_per_week": 2,
+        "classes_per_week": 3,
+        "credits": 4
+      },
+      {
+        "course_code": "CSE3002",
+        "course_name": "Computer Organization and Architecture",
+        "labs_per_week": 1,
+        "classes_per_week": 3,
+        "credits": 4
+      }
+    ]
+  }
+],
+  "sem3_core_courses":  [
+     {
+          "course_code": "KAN1004",
+          "course_name": "Kannada Literature",
+          "labs_per_week": 0,
+          "classes_per_week": 3,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2002",
+          "course_name": "Web Technology",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "PSY1001",
+          "course_name": "Understanding Self for Effectiveness",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "CSE2015",
+          "course_name": "Source Code Management",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "CSE1017",
+          "course_name": "Programming in C and C++",
+          "labs_per_week": 4,
+          "classes_per_week": 2,
+          "credits": 4
+        },
+        { "course_code": "SSK1001",
+          "course_name": "Being Corporate Ready",
+          "labs_per_week": 1,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "ENG1003",
+          "course_name": "Professional English",
+          "labs_per_week": 1,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "PHY1001",
+          "course_name": "Physics of Opto Electronic Devices",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "KAN1005",
+          "course_name": "Kannada Kali",
+          "labs_per_week": 1,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "ECE1001",
+          "course_name": "Fundamentals of Electrical and Electronics Engineering",
+          "labs_per_week": 1,
+          "classes_per_week": 3,
+          "credits": 3
+        },
+        {
+          "course_code": "MGT1503",
+          "course_name": "Foundations of Economics",
+          "labs_per_week": 0,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "PSY1002",
+          "course_name": "Dynamics of Human Behaviour",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "MAT1002",
+          "course_name": "Differential Equations and Transform Techniques",
+          "labs_per_week": 0,
+          "classes_per_week": 3,
+          "credits": 3
+        },
+        {
+          "course_code": "BIT1001",
+          "course_name": "Basic Human Nutrition",
+          "labs_per_week": 0,
+          "classes_per_week": 2,
+          "credits": 2
+        },
+        {
+          "course_code": "GER1001",
+          "course_name": "Basic German",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 2
+        },
+        {
+          "course_code": "FRE1001",
+          "course_name": "Basic French",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 2
+        },
+        {
+          "course_code": "CHE1002",
+          "course_name": "Chemistry for Biologists",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 4
+        },
+        {
+          "course_code": "PHY1006",
+          "course_name": "Physics for Biologists",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 4
+        },
+        {
+          "course_code": "MAT1011",
+          "course_name": "Applied Biostatistics",
+          "labs_per_week": 0,
+          "classes_per_week": 3,
+          "credits": 3
+        },
+        {
+          "course_code": "ENG1003",
+          "course_name": "Professional English",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "BIT1004",
+          "course_name": "Introduction to Life Sciences",
+          "labs_per_week": 0,
+          "classes_per_week": 2,
+          "credits": 2
+        },
+        {
+          "course_code": "MAT1001",
+          "course_name": "Linear Algebra and Calculus",
+          "labs_per_week": 0,
+          "classes_per_week": 3,
+          "credits": 3
+        },
+        {
+          "course_code": "PSY1002",
+          "course_name": "Dynamics of Human Behaviour",
+          "labs_per_week": 2,
+          "classes_per_week": 0,
+          "credits": 1
+        },
+        {
+          "course_code": "BIT1003",
+          "course_name": "Bridge Course for Biology",
+          "labs_per_week": 0,
+          "classes_per_week": 2,
+          "credits": 0
+        },
+    {
+      "course_code": "CSE2001",
+      "course_name": "Data Structures and Algorithms",
+      "labs_per_week": 2,
+      "classes_per_week": 3,
+      "credits": 4
+    },
+    {
+      "course_code": "CSE1006",
+      "course_name": "Software Engineering",
+      "labs_per_week": 3,
+      "classes_per_week": 0,
+      "credits": 3
+    },
+    {
+      "course_code": "CSE2045",
+      "course_name": "Algorithmic Design and Analysis",
+      "labs_per_week": 3,
+      "classes_per_week": 2,
+      "credits": 4
+    },
+    {
+      "course_code": "CSE3016",
+      "course_name": "Object Oriented Modelling Design using UML",
+      "labs_per_week": 3,
+      "classes_per_week": 0,
+      "credits": 3
+    },
+    {
+      "course_code": "ECE2006",
+      "course_name": "Computer Organization and Architecture",
+      "labs_per_week": 3,
+      "classes_per_week": 0,
+      "credits": 3
+    },
+    {
+      "course_code": "CSE2006",
+      "course_name": "Cloud Computing",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+    {
+      "course_code": "CSE2009",
+      "course_name": "Data analytics and Visualization",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+    {
+      "course_code": "CSE3002",
+      "course_name": "Fundamentals of Artificial Intelligence and Machine Learning",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+    {
+      "course_code": "CSE3003",
+      "course_name": "Cryptography and network security",
+      "labs_per_week": 3,
+      "classes_per_week": 0,
+      "credits": 3
+    },
+    {
+      "course_code": "CSE2046",
+      "course_name": "Operating Systems with Linux Internals",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+    {
+      "course_code": "CSE2006",
+      "course_name": "Communication Networks",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+    {
+      "course_code": "CSE2007",
+      "course_name": "Relational Database Management System",
+      "labs_per_week": 2,
+      "classes_per_week": 2,
+      "credits": 3
+    },
+    {
+      "course_code": "CSE2015",
+      "course_name": "Source Code Management",
+      "labs_per_week": 2,
+      "classes_per_week": 0,
+      "credits": 1
+    },
+    {
+      "course_code": "ECE1003",
+      "course_name": "Digital Design, Microprocessors and Microcontrollers",
+      "labs_per_week": 3,
+      "classes_per_week": 2,
+      "credits": 4
+    },
+    {
+      "course_code": "MAT2002",
+      "course_name": "Discrete Mathematics and Graph Theory",
+      "labs_per_week": 0,
+      "classes_per_week": 3,
+      "credits": 3
+    }
+  ],
+  "open_electives": [
+    {
+      "category": "cse_core",
+      "courses": [
+        {
+          "course_code": "CSE3004",
+          "course_name": "Parallel and Distributed Computing",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2016",
+          "course_name": "Software Quality Assurance",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2019",
+          "course_name": "Wearable Computing",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "category": "aiml",
+      "courses": [
+        {
+          "course_code": "CSE3010",
+          "course_name": "AI/ML Applications",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3011",
+          "course_name": "Machine Learning Techniques",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3015",
+          "course_name": "Natural Language Processing",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3016",
+          "course_name": "Deep Neural Networks",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3012",
+          "course_name": "Optimization Techniques in Machine Learning",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "category": "cyber_security",
+      "courses": [
+        {
+          "course_code": "CSE3002",
+          "course_name": "Intrusion Detection and Prevention System",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3003",
+          "course_name": "Ethical Hacking",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3005",
+          "course_name": "Networking and System Administration",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3006",
+          "course_name": "Social Media Policy and Security",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3004",
+          "course_name": "Cyber Forensics",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3024",
+          "course_name": "Penetration Testing and Incident Response",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3025",
+          "course_name": "Blockchain and Distributed Ledger Technology",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "category": "data_analytics",
+      "courses": [
+        {
+          "course_code": "CSE3010",
+          "course_name": "R Programming for Data Analytics",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3011",
+          "course_name": "Exploratory Data Analysis",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3013",
+          "course_name": "Data Visualization",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3026",
+          "course_name": "Predictive Analytics",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3027",
+          "course_name": "Social Media Analytics",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3028",
+          "course_name": "Healthcare Analytics",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3029",
+          "course_name": "Business Analytics Fundamentals",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "category": "iot",
+      "courses": [
+        {
+          "course_code": "CSE2001",
+          "course_name": "IoT: Sensors and Actuators",
+          "labs_per_week": 0,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2002",
+          "course_name": "IoT Platforms and Application Development",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2011",
+          "course_name": "Wireless Communication in IoT",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2003",
+          "course_name": "IoT Architecture and Protocols",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2004",
+          "course_name": "Middleware for IoT",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2010",
+          "course_name": "Cloud Computing for IoT",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2030",
+          "course_name": "Big Data Analytics for IoT",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2031",
+          "course_name": "Edge Computing for IoT",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2032",
+          "course_name": "Internet of Medical Things",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "category": "cloud_computing",
+      "courses": [
+        {
+          "course_code": "CSE2017",
+          "course_name": "Database and Networks Management",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2018",
+          "course_name": "Cloud Security",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2014",
+          "course_name": "Design and Operation of Data Center",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2016",
+          "course_name": "System Provisioning and Monitoring",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2018",
+          "course_name": "Cloud Computing Platforms",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2019",
+          "course_name": "Edge Computing",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2020",
+          "course_name": "Middleware Technologies",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "category": "robotics",
+      "courses": [
+        {
+          "course_code": "CSE3009",
+          "course_name": "Robotics: Sensors and Actuators",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3009",
+          "course_name": "Robotic Operating System",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3009",
+          "course_name": "Robotic Process Automation",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3009",
+          "course_name": "Robotics Networks and Fuzzy Logic",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3000",
+          "course_name": "Machine Learning",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3004",
+          "course_name": "Mechanics",
+          "labs_per_week": 1,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3008",
+          "course_name": "Computer Vision",
+          "labs_per_week": 3,
+          "classes_per_week": 0,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3003",
+          "course_name": "Building Robots",
+          "labs_per_week": 0,
+          "classes_per_week": 6,
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "category": "big_data",
+      "courses": [
+        {
+          "course_code": "CSE3001",
+          "course_name": "Big Data Security and Privacy",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE3004",
+          "course_name": "Big Data Storage",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2004",
+          "course_name": "Data Engineering Pipelines",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2005",
+          "course_name": "Data Integration Techniques",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "category": "devops",
+      "courses": [
+        {
+          "course_code": "CSE2071",
+          "course_name": "DevOps",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2072",
+          "course_name": "DevOps Automation",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2073",
+          "course_name": "Advanced Linux and Shell Scripting",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2074",
+          "course_name": "Continuous Integration and Continuous Deployment",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2075",
+          "course_name": "Jenkins, SonarQube and Nexus",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2076",
+          "course_name": "Microservices and Service Oriented Architecture",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2077",
+          "course_name": "Infrastructure Provisioning",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2078",
+          "course_name": "Monitoring and Logging",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        },
+        {
+          "course_code": "CSE2079",
+          "course_name": "Containerization and Orchestration",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 3
+        }
+      ]
+    },
+    {
+      "category": "biotechnology",
+      "courses": [
+        {
+          "course_code": "BIT2001",
+          "course_name": "Biochemistry and Molecular Biology",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 4
+        },
+        {
+          "course_code": "BIT2002",
+          "course_name": "Genetics and Genomics",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 4
+        },
+        {
+          "course_code": "BIT2003",
+          "course_name": "Microbiology and Immunology",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 4
+        },
+        {
+          "course_code": "BIT2004",
+          "course_name": "Biotechnology and Society",
+          "labs_per_week": 0,
+          "classes_per_week": 3,
+          "credits": 3
+        },
+        {
+          "course_code": "BIT2005",
+          "course_name": "Bioprocess Engineering and Technology",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 4
+        },
+        {
+          "course_code": "BIT2006",
+          "course_name": "Bioinformatics and Computational Biology",
+          "labs_per_week": 2,
+          "classes_per_week": 2,
+          "credits": 4
+        },
+        {
+          "course_code": "BIT2007",
+          "course_name": "Biotechnology in Agriculture and Food Production",
+          "labs_per_week": 0,
+          "classes_per_week": 3,
+          "credits": 3
+        },
+        {
+          "course_code": "BIT2008",
+          "course_name": "Biotechnology in Medicine and Healthcare",
+          "labs_per_week": 0,
+          "classes_per_week": 3,
+          "credits": 3
+        }
+      ]
+    }
+  ]
+}

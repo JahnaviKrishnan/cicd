@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Dr. Smith",
+    "department": "CSE",
+    "designation": "Professor",
+    "email": "smith@amity.edu",
+    "employee_id": "EMP1001",
+    "pinHash": "$2b$10$5E9Goewg0PxmZslWBWXnOucAwCvrx7xBMnBkTRJcJxs.Mi0xsa5bm"
+  },
+  {
+    "name": "jahnavi",
+    "department": "Engineering",
+    "designation": "Assistant Professor ",
+    "email": "jahnavi.krishnan@s.amity.edu",
+    "employee_id": "E23406",
+    "pinHash": "$2b$10$DI2OARTq1a5nnnvp92cBZ.R9xfWHPpU16gjAAMNJC6Gyl6EFPPzcG"
+  },
+  {
+    "name": "jahnawws",
+    "department": "Business",
+    "designation": "jhb",
+    "email": "jahnavi.krishnan@t.amity.edu",
+    "employee_id": "E23403",
+    "pinHash": "$2b$10$pa1wwyfF8u8.Ia9OYDKWGezhu2ZRTLzjTdEqlr7iZJ/Fa3UYVKt5S"
+  },
+  {
+    "name": "Dr. Jahnavi Krishnan",
+    "department": "Computer Science",
+    "designation": "Associate Professor",
+    "email": "jahnavi.krishnan@u.amity.edu",
+    "employee_id": "E50973",
+    "pinHash": "$2b$10$YkgU5F60X5hnI7BjigU7/OdkDLr8z0QKgHietMYxBdNQGjPTef0TO"
+  },
+  {
+    "name": "Dr.Kokilapriya",
+    "department": "Business",
+    "designation": "Program Lead - Quantum Computing",
+    "email": "kokila@amity.blr.edu",
+    "employee_id": "E6037",
+    "pinHash": "$2b$10$GmaFa6MTbebxvrKDuZ801ubI4/JMuD.8wMWhsVqyo1kMR/Fq/OziS"
+  },
+  {
+    "name": "dr.harikambhoji",
+    "department": "Computer Science",
+    "designation": "Program Lead - bhashanga",
+    "email": "hari@amity.blr.edu",
+    "employee_id": "E6028",
+    "pinHash": "$2b$10$RY6g.eKz/d5pxOZCV4FeFuVc9AFRMRzVZSbUkVB/omFfXZbhR7ZJW"
+  },
+  {
+    "name": "Dr.Madhyamavati",
+    "department": "Computer Science",
+    "designation": "Assistant professor - Kharaharapriya",
+    "email": "madhya.mavati@blr.amity.edu",
+    "employee_id": "E60225",
+    "pinHash": "$2b$10$AyWWcdaFKEpSG4.SH1nOkOBJ9j2h089b6dw0pmQkUh47DcLYxQCZS"
+  },
+  {
+    "name": "Dr.Simhendramadhyama",
+    "department": "Computer Science",
+    "designation": "Assistant professor - ASET",
+    "email": "Simha.Madhyama@blr.amity.edu",
+    "employee_id": "E60257",
+    "pinHash": "$2b$10$ROzOpGfhXAvsrE6ZieQaQOYk9BgiliMgIPnMvJb86UFgi49vDMwe6"
+  },
+  {
+    "name": "mahashree",
+    "department": "Computer Science",
+    "designation": "Associate Professor",
+    "email": "maha.s@blr.amity.edy",
+    "employee_id": "E60256",
+    "pinHash": "$2b$10$zSkyZq2G5QDQ./32bMaQYehHaGGqpGbxjYwyiETR1MIBTJjxvLakq"
+  },
+  {
+    "name": "2we4r5t6",
+    "department": "Computer Science",
+    "designation": "asst prof",
+    "email": "gbug@blr.amity.edu",
+    "employee_id": "122345",
+    "pinHash": "$2b$10$8jIEUCgDg33JtGWptdfl7OzdmMcX7RpJv9mA2LvRMhizpPsIQrlgW"
+  },
+  {
+    "name": "jahnavi",
+    "department": "Computer Science",
+    "designation": "Assistant Professor ",
+    "email": "dgg@bnnb",
+    "employee_id": "E50223",
+    "pinHash": "$2b$10$68BW/25gnH/4VJoxwMUnQOhcKbsTq8wvDj7t9l6isRHBB56oMlkL."
+  },
+  {
+    "name": "weer",
+    "department": "Law",
+    "designation": "Assistant Professor ",
+    "email": "dgg@amity.edu",
+    "employee_id": "E5123",
+    "pinHash": "$2b$10$NEmYQlRsOqxeIAcDtMafgOfVoiFZrHf/XT.DCveqmLAmXwHRuIO7y"
+  }
+]

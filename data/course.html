@@ -1,0 +1,2187 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Selection Portal - Amity University Bengaluru</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --amity-blue: #0A4E95;
+      --amity-gold: #FFB702;
+      --light-blue: #E6F0FA;
+      --light-gold: #FFF5E0;
+      --dark-blue: #083B72;
+      --gray-100: #F7FAFC;
+      --gray-200: #EDF2F7;
+      --gray-300: #E2E8F0;
+      --gray-400: #CBD5E0;
+      --gray-500: #A0AEC0;
+      --gray-600: #718096;
+      --gray-700: #4A5568;
+      --gray-800: #2D3748;
+      --gray-900: #1A202C;
+      --red-500: #F56565;
+      --green-500: #48BB78;
+      --yellow-500: #ECC94B;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.347), #ffb702 0%, #0a4e95 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      color: var(--gray-800);
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* Header Styles */
+    .header-wrapper {
+      max-width: 900px;
+      width: 100%;
+      margin: 2rem auto 0 auto;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      background: linear-gradient(90deg, #ffb702 0%, #0a4e95 100%);
+      display: flex;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      gap: 1rem;
+      color: white;
+    }
+
+    .header-logo {
+      height: 50px;
+      width: auto;
+    }
+
+    .header-text {
+      font-family: "Constantia", serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      user-select: none;
+    }
+
+    .university-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .portal-title {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: white;
+    }
+
+    /* Footer Styles */
+    .footer-wrapper {
+      max-width: 900px;
+      width: 100%;
+      margin: 1.5rem auto 2rem auto;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    footer.amity-gradient {
+      padding: 0.75rem 1rem;
+      text-align: center;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 500;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.347), #ffb702 0%, #0a4e95 100%);
+    }
+
+    /* Main Content Styles */
+    .main-container {
+      max-width: 900px;
+      width: 100%;
+      margin: 1rem auto;
+      background: white;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      padding-bottom: 2rem;
+    }
+
+    /* Roadmap Styles */
+    .roadmap-container {
+      margin-bottom: 2rem;
+      padding: 0 1.5rem;
+    }
+
+    .roadmap {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin: 2rem 0;
+    }
+
+    .roadmap-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      width: 33.333%;
+    }
+
+    .step-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: white;
+      border: 3px solid var(--gray-300);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      position: relative;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .step-circle.active {
+      border-color: var(--amity-blue);
+      box-shadow: 0 0 0 4px rgba(10, 78, 149, 0.2);
+    }
+
+    .step-circle.completed {
+      border-color: var(--amity-gold);
+      background-color: var(--light-gold);
+    }
+
+    .step-icon {
+      font-size: 1.8rem;
+      color: var(--gray-500);
+      transition: all 0.3s ease;
+    }
+
+    .step-circle.active .step-icon {
+      color: var(--amity-blue);
+    }
+
+    .step-circle.completed .step-icon {
+      color: var(--amity-gold);
+    }
+
+    .step-number {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: var(--gray-300);
+      color: var(--gray-700);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+
+    .step-circle.active .step-number {
+      background-color: var(--amity-blue);
+      color: white;
+    }
+
+    .step-circle.completed .step-number {
+      background-color: var(--amity-gold);
+      color: white;
+    }
+
+    .step-label {
+      font-weight: 600;
+      color: var(--gray-700);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .roadmap-step.active .step-label {
+      color: var(--amity-blue);
+    }
+
+    .roadmap-step.completed .step-label {
+      color: var(--amity-gold);
+    }
+
+    /* Tab Container */
+    .tab-container {
+      display: flex;
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #e2e8f0;
+      margin-bottom: 1.5rem;
+    }
+
+    .tab {
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    .tab.active {
+      border-bottom: 3px solid #0a4e95;
+      color: #0a4e95;
+      background-color: white;
+    }
+
+    /* Card Styles */
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      padding: 1.5rem;
+      margin: 0 1.5rem 1.5rem;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--amity-blue);
+    }
+
+    /* Form Controls */
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--gray-700);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--gray-300);
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--amity-blue);
+      box-shadow: 0 0 0 3px rgba(10, 78, 149, 0.1);
+    }
+
+    .search-container {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--gray-500);
+    }
+
+    .search-input {
+      padding-left: 2.5rem;
+    }
+
+    /* Button Styles */
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, var(--amity-blue), var(--dark-blue));
+      color: white;
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 4px 12px rgba(10, 78, 149, 0.2);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background-color: white;
+      color: var(--amity-blue);
+      border: 1px solid var(--amity-blue);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--light-blue);
+    }
+
+    .btn-gold, .btn-login {
+      background: linear-gradient(90deg, var(--amity-gold), #E09600);
+      color: white;
+    }
+
+    .btn-gold:hover, .btn-login:hover {
+      box-shadow: 0 4px 12px rgba(255, 183, 2, 0.2);
+      transform: translateY(-1px);
+    }
+
+    .btn-sm {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+    }
+
+    .btn-icon {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Course Selection Styles */
+    .course-selection-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .course-list {
+      border: 1px solid var(--gray-300);
+      border-radius: 8px;
+      overflow: hidden;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+
+    .course-item {
+      padding: 1rem;
+      border-bottom: 1px solid var(--gray-200);
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .course-item:last-child {
+      border-bottom: none;
+    }
+
+    .course-item:hover {
+      background-color: var(--gray-100);
+    }
+
+    .course-checkbox {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .course-info {
+      flex: 1;
+    }
+
+    .course-code {
+      font-weight: 600;
+      color: var(--amity-blue);
+      margin-bottom: 0.25rem;
+    }
+
+    .course-name {
+      margin-bottom: 0.25rem;
+    }
+
+    .course-meta {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.875rem;
+      color: var(--gray-600);
+    }
+
+    .course-credits {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .course-type {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .course-type.core {
+      background-color: var(--light-blue);
+      color: var(--amity-blue);
+    }
+
+    .course-type.elective {
+      background-color: var(--light-gold);
+      color: #B07800;
+    }
+
+    .course-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .course-action-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--gray-500);
+      transition: all 0.2s ease;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .course-action-btn:hover {
+      background-color: var(--gray-200);
+      color: var(--gray-800);
+    }
+
+    .course-action-btn.add:hover {
+      color: var(--green-500);
+    }
+
+    .course-action-btn.remove:hover {
+      color: var(--red-500);
+    }
+
+    .selected-courses-container {
+      margin-top: 1.5rem;
+    }
+
+    .selected-courses-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .selected-courses-title {
+      font-weight: 600;
+      color: var(--gray-800);
+    }
+
+    .credit-counter {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+    }
+
+    .credit-progress {
+      width: 100px;
+      height: 8px;
+      background-color: var(--gray-200);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .credit-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--amity-gold), var(--amity-blue));
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .selected-courses-list {
+      border: 1px solid var(--gray-300);
+      border-radius: 8px;
+      overflow-y: auto;
+      padding: 1rem;
+      background-color: var(--gray-100);
+      min-height: 200px;
+      max-height: 400px;
+    }
+
+    .selected-course-item {
+      background-color: white;
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.75rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .selected-course-info {
+      flex: 1;
+    }
+
+    .selected-course-code {
+      font-weight: 600;
+      color: var(--amity-blue);
+      margin-bottom: 0.25rem;
+    }
+
+    .selected-course-name {
+      font-size: 0.875rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .selected-course-meta {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.75rem;
+      color: var(--gray-600);
+    }
+
+    .remove-course-btn {
+      color: var(--red-500);
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .remove-course-btn:hover {
+      background-color: #FEE2E2;
+    }
+
+    /* Credit Warning */
+    .credit-warning {
+      background-color: #FEF3C7;
+      border-left: 4px solid var(--yellow-500);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 6px;
+      display: none;
+    }
+
+    .credit-warning.show {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Tooltip */
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+    .tooltip .tooltip-content {
+      visibility: hidden;
+      width: 300px;
+      background-color: var(--gray-800);
+      color: white;
+      text-align: left;
+      border-radius: 6px;
+      padding: 1rem;
+      position: absolute;
+      z-index: 10;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      pointer-events: none;
+    }
+
+    .tooltip .tooltip-content::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: var(--gray-800) transparent transparent transparent;
+    }
+
+    .tooltip:hover .tooltip-content {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .tooltip-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .tooltip-section {
+      margin-bottom: 0.5rem;
+    }
+
+    .tooltip-label {
+      font-size: 0.75rem;
+      color: var(--gray-400);
+    }
+
+    .tooltip-value {
+      font-size: 0.875rem;
+    }
+
+    /* Navigation Buttons */
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+
+    /* Modal Styles */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .modal-overlay.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal {
+      background-color: white;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transform: translateY(-20px);
+      transition: all 0.3s ease;
+    }
+
+    .modal-overlay.show .modal {
+      transform: translateY(0);
+    }
+
+    .modal-header {
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--gray-200);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--gray-800);
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--gray-500);
+      transition: all 0.2s ease;
+    }
+
+    .modal-close:hover {
+      color: var(--gray-800);
+    }
+
+    .modal-body {
+      padding: 1.5rem;
+    }
+
+    .modal-footer {
+      padding: 1.5rem;
+      border-top: 1px solid var(--gray-200);
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+    }
+
+    /* Summary Styles */
+    .summary-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .summary-heading {
+      font-weight: 600;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--gray-200);
+      color: var(--amity-blue);
+    }
+
+    .summary-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .summary-table th,
+    .summary-table td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .summary-table th {
+      font-weight: 600;
+      color: var(--gray-700);
+      background-color: var(--gray-100);
+    }
+
+    .summary-total {
+      font-weight: 600;
+      text-align: right;
+      margin-top: 1rem;
+      color: var(--gray-800);
+    }
+
+    /* Batch Selector */
+    .batch-selector {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .batch-btn {
+      padding: 0.5rem 1.5rem;
+      border-radius: 20px;
+      background-color: white;
+      border: 1px solid var(--gray-300);
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-weight: 500;
+    }
+
+    .batch-btn:hover {
+      border-color: var(--amity-blue);
+      color: var(--amity-blue);
+    }
+
+    .batch-btn.active {
+      background-color: var(--amity-blue);
+      color: white;
+      border-color: var(--amity-blue);
+    }
+
+    /* Step Content */
+    .step-content {
+      display: none;
+    }
+
+    .step-content.active {
+      display: block;
+    }
+
+    /* Search Results */
+    .search-results {
+      border: 1px solid var(--gray-300);
+      border-radius: 8px;
+      max-height: 300px;
+      overflow-y: auto;
+      margin-bottom: 1.5rem;
+      background-color: white;
+    }
+
+    .search-result-item {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--gray-200);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .search-result-item:last-child {
+      border-bottom: none;
+    }
+
+    .search-result-item:hover {
+      background-color: var(--gray-100);
+    }
+
+    .search-result-info {
+      flex: 1;
+    }
+
+    .search-result-code {
+      font-weight: 600;
+      color: var(--amity-blue);
+      margin-bottom: 0.25rem;
+    }
+
+    .search-result-name {
+      font-size: 0.875rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .search-result-meta {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.75rem;
+      color: var(--gray-600);
+    }
+
+    .add-course-btn {
+      color: var(--green-500);
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .add-course-btn:hover {
+      background-color: #E6FFE6;
+    }
+
+    /* Empty State */
+    .empty-state {
+      text-align: center;
+      padding: 2rem;
+      color: var(--gray-500);
+    }
+
+    .empty-state-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--gray-400);
+    }
+
+    .empty-state-text {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .empty-state-subtext {
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .roadmap {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .navigation-buttons {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .navigation-buttons .btn {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .card {
+        padding: 1rem;
+      }
+
+      .card-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+      }
+    }
+
+    .amity-gradient {
+      background: -webkit-linear-gradient(0deg, #ffb702, #0a4e95);
+      background: linear-gradient(90deg, #ffb702, #0a4e95);
+    }
+
+    .amity-blue {
+      color: #0a4e95;
+    }
+
+    .amity-gold {
+      color: #ffb702;
+    }
+
+    .login-container {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      background: white;
+      overflow: hidden;
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .input-field {
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 12px 16px;
+      transition: all 0.3s ease;
+    }
+
+    .input-field:focus {
+      border-color: #0a4e95;
+      box-shadow: 0 0 0 3px rgba(10, 78, 149, 0.1);
+      outline: none;
+    }
+
+    .btn-login {
+      background: -webkit-linear-gradient(0deg, #ffb702, #0a4e95);
+      background: linear-gradient(90deg, #ffb702, #0a4e95);
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .btn-login:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(10, 78, 149, 0.2);
+    }
+
+    .login-header {
+      position: relative;
+    }
+
+    .login-header::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: -webkit-linear-gradient(0deg, #ffb702, #0a4e95);
+      background: linear-gradient(90deg, #ffb702, #0a4e95);
+    }
+
+    .sample-notice {
+      background-color: rgba(255, 183, 2, 0.1);
+      border-left: 4px solid #ffb702;
+      padding: 8px 16px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    @media (min-width: 768px) {
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header-wrapper">
+    <header class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Amity_University_logo.png/250px-Amity_University_logo.png" alt="Amity University Logo" class="header-logo">
+      <div>
+        <div class="header-text">Amity University Bengaluru</div>
+        <div class="portal-title">Course Selection Portal</div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <!-- Roadmap -->
+    <div class="roadmap-container">
+      <div class="roadmap">
+        <div class="roadmap-step active" id="roadmap-step-1">
+          <div class="step-circle active" onclick="goToStep(1)">
+            <i class="fas fa-book-open step-icon"></i>
+            <div class="step-number">1</div>
+          </div>
+          <div class="step-label">Semester 1</div>
+        </div>
+        <div class="roadmap-step" id="roadmap-step-2">
+          <div class="step-circle" onclick="goToStep(2)">
+            <i class="fas fa-tasks step-icon"></i>
+            <div class="step-number">2</div>
+          </div>
+          <div class="step-label">Semester 2</div>
+        </div>
+        <div class="roadmap-step" id="roadmap-step-3">
+          <div class="step-circle" onclick="goToStep(3)">
+            <i class="fas fa-star step-icon"></i>
+            <div class="step-number">3</div>
+          </div>
+          <div class="step-label">Semester 3</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 1: Semester 1 -->
+    <div class="step-content active" id="step-1">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Semester 1 Course Selection</h2>
+          <div class="credit-counter">
+            <span>Credits: <span id="sem1-credit-count">0</span>/45</span>
+            <div class="credit-progress">
+              <div class="credit-bar" id="sem1-credit-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="credit-warning" id="sem1-credit-warning">
+          <i class="fas fa-exclamation-triangle"></i> You've reached the maximum of 45 credits. Remove some courses to add more.
+        </div>
+
+        <div class="batch-selector">
+          <button class="batch-btn active" data-batch="1-4">Batch 1-4</button>
+          <button class="batch-btn" data-batch="5">Batch 5</button>
+          <button class="batch-btn" data-batch="6-11">Batch 6-11</button>
+        </div>
+
+        <div class="course-selection-container">
+          <div>
+            <h3 class="selected-courses-title">Predefined Courses</h3>
+            <div class="course-list" id="sem1-predefined-courses"></div>
+          </div>
+        </div>
+
+        <div class="selected-courses-container">
+          <div class="selected-courses-header">
+            <h3 class="selected-courses-title">Selected Courses</h3>
+          </div>
+          <div class="selected-courses-list" id="sem1-selected-courses">
+            <!-- Selected courses will be populated here -->
+            <div class="empty-state" id="sem1-empty-state">
+              <i class="fas fa-info-circle empty-state-icon"></i>
+              <div class="empty-state-text">No courses selected yet</div>
+              <div class="empty-state-subtext">Select courses from the list above</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="navigation-buttons">
+          <div></div>
+          <button class="btn btn-login btn-icon" id="sem1-next-btn">
+            Next: Semester 2 <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 2: Semester 2 -->
+    <div class="step-content" id="step-2">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Semester 2 Course Selection</h2>
+          <div class="credit-counter">
+            <span>Credits: <span id="sem2-credit-count">0</span>/45</span>
+            <div class="credit-progress">
+              <div class="credit-bar" id="sem2-credit-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="credit-warning" id="sem2-credit-warning">
+          <i class="fas fa-exclamation-triangle"></i> You've reached the maximum of 45 credits. Remove some courses to add more.
+        </div>
+
+        <div class="search-container">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" class="form-control search-input" id="sem2-search" placeholder="Search courses by name or code...">
+        </div>
+
+        <div class="search-results" id="sem2-search-results">
+          <!-- Search results will be populated here -->
+          <div class="empty-state">
+            <i class="fas fa-search empty-state-icon"></i>
+            <div class="empty-state-text">Type to search for courses</div>
+          </div>
+        </div>
+
+        <div class="selected-courses-container">
+          <div class="selected-courses-header">
+            <h3 class="selected-courses-title">Selected Courses</h3>
+          </div>
+          <div class="selected-courses-list" id="sem2-selected-courses">
+            <!-- Selected courses will be populated here -->
+            <div class="empty-state" id="sem2-empty-state">
+              <i class="fas fa-info-circle empty-state-icon"></i>
+              <div class="empty-state-text">No courses selected yet</div>
+              <div class="empty-state-subtext">Search and add courses above</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="navigation-buttons">
+          <button class="btn btn-secondary btn-icon" id="sem2-prev-btn">
+            <i class="fas fa-arrow-left"></i> Back: Semester 1
+          </button>
+          <button class="btn btn-login btn-icon" id="sem2-next-btn">
+            Next: Semester 3 <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3: Semester 3 -->
+    <div class="step-content" id="step-3">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Semester 3 Course Selection</h2>
+          <div class="credit-counter">
+            <span>Credits: <span id="sem3-credit-count">0</span>/45</span>
+            <div class="credit-progress">
+              <div class="credit-bar" id="sem3-credit-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="credit-warning" id="sem3-credit-warning">
+          <i class="fas fa-exclamation-triangle"></i> You've reached the maximum of 45 credits. Remove some courses to add more.
+        </div>
+
+        <div class="search-container">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" class="form-control search-input" id="sem3-search" placeholder="Search courses by name or code...">
+        </div>
+
+        <div class="search-results" id="sem3-search-results">
+          <!-- Search results will be populated here -->
+          <div class="empty-state">
+            <i class="fas fa-search empty-state-icon"></i>
+            <div class="empty-state-text">Type to search for courses</div>
+          </div>
+        </div>
+
+        <div class="selected-courses-container">
+          <div class="selected-courses-header">
+            <h3 class="selected-courses-title">Selected Courses</h3>
+          </div>
+          <div class="selected-courses-list" id="sem3-selected-courses">
+            <!-- Selected courses will be populated here -->
+            <div class="empty-state" id="sem3-empty-state">
+              <i class="fas fa-info-circle empty-state-icon"></i>
+              <div class="empty-state-text">No courses selected yet</div>
+              <div class="empty-state-subtext">Search and add courses above</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="navigation-buttons">
+          <button class="btn btn-secondary btn-icon" id="sem3-prev-btn">
+            <i class="fas fa-arrow-left"></i> Back: Semester 2
+          </button>
+          <button class="btn btn-login btn-icon" id="confirm-selection-btn">
+            Confirm Selection <i class="fas fa-check"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer-wrapper">
+    <footer class="amity-gradient">
+      © 2023 Amity University Bengaluru. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- Confirmation Modal -->
+  <div class="modal-overlay" id="confirmation-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title">Course Selection Summary</h3>
+        <button class="modal-close" id="close-modal">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="summary-section">
+          <h4 class="summary-heading">Semester 1</h4>
+          <table class="summary-table" id="sem1-summary-table">
+            <thead>
+              <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Type</th>
+                <th>Credits</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Will be populated dynamically -->
+            </tbody>
+          </table>
+          <div class="summary-total">Total Credits: <span id="sem1-summary-credits">0</span></div>
+        </div>
+
+        <div class="summary-section">
+          <h4 class="summary-heading">Semester 2</h4>
+          <table class="summary-table" id="sem2-summary-table">
+            <thead>
+              <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Type</th>
+                <th>Credits</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Will be populated dynamically -->
+            </tbody>
+          </table>
+          <div class="summary-total">Total Credits: <span id="sem2-summary-credits">0</span></div>
+        </div>
+
+        <div class="summary-section">
+          <h4 class="summary-heading">Semester 3</h4>
+          <table class="summary-table" id="sem3-summary-table">
+            <thead>
+              <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Type</th>
+                <th>Credits</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Will be populated dynamically -->
+            </tbody>
+          </table>
+          <div class="summary-total">Total Credits: <span id="sem3-summary-credits">0</span></div>
+        </div>
+
+        <div class="summary-section">
+          <div class="summary-total">Overall Total Credits: <span id="total-summary-credits">0</span></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="edit-selection-btn">Edit Selection</button>
+        <button class="btn btn-primary" id="download-csv-btn">Download CSV</button>
+        <button class="btn btn-login" id="submit-selection-btn">Submit Selection</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Sample course data
+    const coursesData = {
+      semester1: {
+        "batch1-4": [
+          { 
+            id: "cs101", 
+            code: "CS101", 
+            name: "Introduction to Computer Science", 
+            credits: 4, 
+            type: "core",
+            prerequisites: "None",
+            faculty: "Dr. Rajesh Kumar",
+            description: "Fundamental concepts of computer science including algorithms, programming basics, and computational thinking."
+          },
+          { 
+            id: "cs102", 
+            code: "CS102", 
+            name: "Programming Fundamentals", 
+            credits: 4, 
+            type: "core",
+            prerequisites: "None",
+            faculty: "Dr. Priya Sharma",
+            description: "Introduction to programming concepts using Python, including variables, control structures, functions, and basic data structures."
+          },
+          { 
+            id: "math101", 
+            code: "MATH101", 
+            name: "Calculus I", 
+            credits: 3, 
+            type: "core",
+            prerequisites: "None",
+            faculty: "Dr. Anand Verma",
+            description: "Limits, continuity, derivatives, applications of derivatives, and introduction to integration."
+          },
+          { 
+            id: "eng101", 
+            code: "ENG101", 
+            name: "Technical Communication", 
+            credits: 3, 
+            type: "core",
+            prerequisites: "None",
+            faculty: "Prof. Sarah Johnson",
+            description: "Effective communication skills for technical contexts, including report writing, presentations, and documentation."
+          },
+          { 
+            id: "phy101", 
+            code: "PHY101", 
+            name: "Physics for Computing", 
+            credits: 4, 
+            type: "elective",
+            prerequisites: "None",
+            faculty: "Dr. Vikram Singh",
+            description: "Principles of physics relevant to computing, including electricity, magnetism, and basic electronics."
+          },
+          { 
+            id: "dsa101", 
+            code: "DSA101", 
+            name: "Data Structures & Algorithms Basics", 
+            credits: 4, 
+            type: "elective",
+            prerequisites: "None",
+            faculty: "Dr. Amit Patel",
+            description: "Introduction to fundamental data structures and algorithms, including arrays, linked lists, stacks, queues, and basic sorting algorithms."
+          },
+          { 
+            id: "stat101", 
+            code: "STAT101", 
+            name: "Probability & Statistics", 
+            credits: 3, 
+            type: "elective",
+            prerequisites: "None",
+            faculty: "Dr. Meera Nair",
+            description: "Basic concepts of probability, random variables, distributions, and statistical inference."
+          }
+        ],
+        "batch5": [
+          { 
+            id: "cs101", 
+            code: "CS101", 
+            name: "Introduction to Computer Science", 
+            credits: 4, 
+            type: "core",
+            prerequisites: "None",
+            faculty: "Dr. Rajesh Kumar",
+            description: "Fundamental concepts of computer science including algorithms, programming basics, and computational thinking."
+          },
+          { 
+            id: "cs103", 
+            code: "CS103", 
+            name: "Object-Oriented Programming", 
+            credits: 4, 
+            type: "core",
+            prerequisites: "None",
+            faculty: "Dr. Sunil Mehta",
+            description: "Principles of object-oriented programming using Java, including classes, objects, inheritance, polymorphism, and encapsulation."
+          },
+          { 
+            id: "math101", 
+            code: "MATH101", 
+            name: "Calculus I", 
+            credits: 3, 
+            type: "core",
+            prerequisites: "None",
+            faculty: "Dr. Anand Verma",
+            description: "Limits, continuity, derivatives, applications of derivatives, and introduction to integration."
+          },
+          { 
+            id: "eng101", 
+            code: "ENG101", 
+            name: "Technical Communication", 
+            credits: 3, 
+            type: "core",
+            prerequisites: "None",
+            faculty: "Prof. Sarah Johnson",
+            description: "Effective communication skills for technical contexts, including report writing, presentations, and documentation."
+          },
+          { 
+            id: "dsa101", 
+            code: "DSA101", 
+            name: "Data Structures & Algorithms Basics", 
+            credits: 4, 
+            type: "elective",
+            prerequisites: "None",
+            faculty: "Dr. Amit Patel",
+            description: "Introduction to fundamental data structures and algorithms, including arrays, linked lists, stacks, queues, and basic sorting algorithms."
+          },
+          { 
+            id: "db101", 
+            code: "DB101", 
+            name: "Database Fundamentals", 
+            credits: 3, 
+            type: "elective",
+            prerequisites: "None",
+            faculty: "Dr. Lakshmi Rao",
+            description: "Introduction to database concepts, ER modeling, relational model, and basic SQL."
+          },
+          { 
+            id: "stat101", 
+            code: "STAT101", 
+            name: "Probability & Statistics", 
+            credits: 3, 
+            type: "elective",
+            prerequisites: "None",
+            faculty: "Dr. Meera Nair",
+            description: "Basic concepts of probability, random variables, distributions, and statistical inference."
+          }
+        ],
+        "batch6-11": [
+          { 
+            id: "cs101", 
+            code: "CS101", 
+            name: "Introduction to Computer Science", 
+            credits: 4, 
+            type: "core",
+            prerequisites: "None",
+            faculty: "Dr. Rajesh Kumar",
+            description: "Fundamental concepts of computer science including algorithms, programming basics, and computational thinking."
+          },
+          { 
+            id: "cs104", 
+            code: "CS104", 
+            name: "Web Development Fundamentals", 
+            credits: 4, 
+            type: "core",
+            prerequisites: "None",
+            faculty: "Prof. Rahul Gupta",
+            description: "Introduction to web development, including HTML, CSS, JavaScript, and responsive design principles."
+          },
+          { 
+            id: "math101", 
+            code: "MATH101", 
+            name: "Calculus I", 
+            credits: 3, 
+            type: "core",
+            prerequisites: "None",
+            faculty: "Dr. Anand Verma",
+            description: "Limits, continuity, derivatives, applications of derivatives, and introduction to integration."
+          },
+          { 
+            id: "eng101", 
+            code: "ENG101", 
+            name: "Technical Communication", 
+            credits: 3, 
+            type: "core",
+            prerequisites: "None",
+            faculty: "Prof. Sarah Johnson",
+            description: "Effective communication skills for technical contexts, including report writing, presentations, and documentation."
+          },
+          { 
+            id: "dsa101", 
+            code: "DSA101", 
+            name: "Data Structures & Algorithms Basics", 
+            credits: 4, 
+            type: "elective",
+            prerequisites: "None",
+            faculty: "Dr. Amit Patel",
+            description: "Introduction to fundamental data structures and algorithms, including arrays, linked lists, stacks, queues, and basic sorting algorithms."
+          },
+          { 
+            id: "ai101", 
+            code: "AI101", 
+            name: "Introduction to AI", 
+            credits: 3, 
+            type: "elective",
+            prerequisites: "None",
+            faculty: "Dr. Neha Sharma",
+            description: "Overview of artificial intelligence concepts, history, applications, and basic techniques."
+          },
+          { 
+            id: "stat101", 
+            code: "STAT101", 
+            name: "Probability & Statistics", 
+            credits: 3, 
+            type: "elective",
+            prerequisites: "None",
+            faculty: "Dr. Meera Nair",
+            description: "Basic concepts of probability, random variables, distributions, and statistical inference."
+          }
+        ]
+      },
+      semester2: [
+        { 
+          id: "cs201", 
+          code: "CS201", 
+          name: "Data Structures & Algorithms", 
+          credits: 4, 
+          type: "core",
+          prerequisites: "CS101",
+          faculty: "Dr. Ravi Shankar",
+          description: "Advanced data structures and algorithms, including trees, graphs, dynamic programming, and algorithm analysis."
+        },
+        { 
+          id: "cs202", 
+          code: "CS202", 
+          name: "Computer Architecture", 
+          credits: 3, 
+          type: "core",
+          prerequisites: "CS101",
+          faculty: "Dr. Anil Kumar",
+          description: "Computer organization, processor architecture, memory hierarchy, I/O systems, and performance evaluation."
+        },
+        { 
+          id: "math201", 
+          code: "MATH201", 
+          name: "Discrete Mathematics", 
+          credits: 3, 
+          type: "core",
+          prerequisites: "MATH101",
+          faculty: "Dr. Sunita Patel",
+          description: "Logic, set theory, relations, functions, graph theory, and combinatorics with applications to computer science."
+        },
+        { 
+          id: "cs203", 
+          code: "CS203", 
+          name: "Operating Systems", 
+          credits: 4, 
+          type: "core",
+          prerequisites: "CS101",
+          faculty: "Dr. Prakash Iyer",
+          description: "Process management, memory management, file systems, I/O systems, and virtualization."
+        },
+        { 
+          id: "cs204", 
+          code: "CS204", 
+          name: "Database Management Systems", 
+          credits: 4, 
+          type: "elective",
+          prerequisites: "None",
+          faculty: "Dr. Sanjay Mishra",
+          description: "Database design, normalization, transaction processing, query optimization, and database security."
+        },
+        { 
+          id: "cs205", 
+          code: "CS205", 
+          name: "Software Engineering", 
+          credits: 3, 
+          type: "elective",
+          prerequisites: "CS101",
+          faculty: "Prof. Deepa Krishnan",
+          description: "Software development lifecycle, requirements engineering, design patterns, testing, and project management."
+        },
+        { 
+          id: "cs206", 
+          code: "CS206", 
+          name: "Computer Networks", 
+          credits: 4, 
+          type: "elective",
+          prerequisites: "CS101",
+          faculty: "Dr. Vijay Reddy",
+          description: "Network architectures, protocols, routing, transport layer, application layer, and network security."
+        },
+        { 
+          id: "math202", 
+          code: "MATH202", 
+          name: "Linear Algebra", 
+          credits: 3, 
+          type: "elective",
+          prerequisites: "MATH101",
+          faculty: "Dr. Kavita Sharma",
+          description: "Vector spaces, linear transformations, matrices, determinants, eigenvalues, and eigenvectors."
+        }
+      ],
+      semester3: [
+        { 
+          id: "cs301", 
+          code: "CS301", 
+          name: "Design & Analysis of Algorithms", 
+          credits: 4, 
+          type: "core",
+          prerequisites: "CS201",
+          faculty: "Dr. Ramesh Nair",
+          description: "Advanced algorithm design techniques, complexity analysis, NP-completeness, and approximation algorithms."
+        },
+        { 
+          id: "cs302", 
+          code: "CS302", 
+          name: "Theory of Computation", 
+          credits: 3, 
+          type: "core",
+          prerequisites: "MATH201",
+          faculty: "Dr. Anjali Desai",
+          description: "Automata theory, formal languages, computability, and complexity theory."
+        },
+        { 
+          id: "cs303", 
+          code: "CS303", 
+          name: "Software Project Management", 
+          credits: 3, 
+          type: "core",
+          prerequisites: "CS205",
+          faculty: "Prof. Rajiv Malhotra",
+          description: "Project planning, estimation, risk management, team management, and quality assurance."
+        },
+        { 
+          id: "ds301", 
+          code: "DS301", 
+          name: "Introduction to Data Science", 
+          credits: 4, 
+          type: "elective",
+          prerequisites: "STAT101",
+          faculty: "Dr. Priya Menon",
+          description: "Data acquisition, cleaning, exploration, visualization, and basic statistical modeling."
+        },
+        { 
+          id: "ds302", 
+          code: "DS302", 
+          name: "Machine Learning Fundamentals", 
+          credits: 4, 
+          type: "elective",
+          prerequisites: "STAT101, MATH202",
+          faculty: "Dr. Arjun Reddy",
+          description: "Supervised and unsupervised learning algorithms, model evaluation, and feature engineering."
+        },
+        { 
+          id: "ai301", 
+          code: "AI301", 
+          name: "Artificial Intelligence", 
+          credits: 4, 
+          type: "elective",
+          prerequisites: "CS201",
+          faculty: "Dr. Suresh Menon",
+          description: "Search algorithms, knowledge representation, reasoning, planning, and intelligent agents."
+        },
+        { 
+          id: "ai303", 
+          code: "AI303", 
+          name: "Deep Learning", 
+          credits: 4, 
+          type: "elective",
+          prerequisites: "AI302",
+          faculty: "Dr. Vikram Desai",
+          description: "Neural networks, convolutional networks, recurrent networks, and deep learning frameworks."
+        },
+        { 
+          id: "cs304", 
+          code: "CS304", 
+          name: "Security Policies and Compliance", 
+          credits: 3, 
+          type: "elective",
+          prerequisites: "None",
+          faculty: "Dr. Neha Patel",
+          description: "Security governance, risk management, compliance frameworks, and security auditing."
+        },
+        { 
+          id: "cc301", 
+          code: "CC301", 
+          name: "Cloud Architecture", 
+          credits: 4, 
+          type: "elective",
+          prerequisites: "CS203, CS206",
+          faculty: "Dr. Vivek Kumar",
+          description: "Cloud service models, deployment models, virtualization, and cloud infrastructure."
+        },
+        { 
+          id: "cc304", 
+          code: "CC304", 
+          name: "DevOps for Cloud", 
+          credits: 3, 
+          type: "elective",
+          prerequisites: "CS205",
+          faculty: "Prof. Divya Krishnan",
+          description: "Continuous integration, continuous deployment, containerization, and infrastructure as code."
+        }
+      ]
+    };
+
+    // State management
+    const state = {
+      currentStep: 1,
+      selectedBatch: "batch1-4",
+      selectedCourses: {
+        semester1: [],
+        semester2: [],
+        semester3: []
+      }
+    };
+
+    // DOM Elements
+    const roadmapSteps = document.querySelectorAll('.roadmap-step');
+    const stepContents = document.querySelectorAll('.step-content');
+    const batchButtons = document.querySelectorAll('.batch-btn');
+    const confirmationModal = document.getElementById('confirmation-modal');
+    const closeModalBtn = document.getElementById('close-modal');
+    const editSelectionBtn = document.getElementById('edit-selection-btn');
+    const downloadCsvBtn = document.getElementById('download-csv-btn');
+    const submitSelectionBtn = document.getElementById('submit-selection-btn');
+
+    // Navigation buttons
+    const sem1NextBtn = document.getElementById('sem1-next-btn');
+    const sem2PrevBtn = document.getElementById('sem2-prev-btn');
+    const sem2NextBtn = document.getElementById('sem2-next-btn');
+    const sem3PrevBtn = document.getElementById('sem3-prev-btn');
+    const confirmSelectionBtn = document.getElementById('confirm-selection-btn');
+
+    // Credit warnings
+    const sem1CreditWarning = document.getElementById('sem1-credit-warning');
+    const sem2CreditWarning = document.getElementById('sem2-credit-warning');
+    const sem3CreditWarning = document.getElementById('sem3-credit-warning');
+
+    // Search inputs
+    const sem2Search = document.getElementById('sem2-search');
+    const sem3Search = document.getElementById('sem3-search');
+
+    // Initialize the page
+    function init() {
+      // Load semester 1 courses for the default batch
+      loadSemester1Courses();
+      
+      // Set up event listeners
+      setupEventListeners();
+    }
+
+    // Set up event listeners
+    function setupEventListeners() {
+      // Batch selection
+      batchButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          batchButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          
+          state.selectedBatch = button.getAttribute('data-batch');
+          if (state.selectedBatch === "1-4") state.selectedBatch = "batch1-4";
+          if (state.selectedBatch === "6-11") state.selectedBatch = "batch6-11";
+          
+          loadSemester1Courses();
+        });
+      });
+      
+      // Navigation buttons
+      sem1NextBtn.addEventListener('click', () => goToStep(2));
+      sem2PrevBtn.addEventListener('click', () => goToStep(1));
+      sem2NextBtn.addEventListener('click', () => goToStep(3));
+      sem3PrevBtn.addEventListener('click', () => goToStep(2));
+      
+      // Confirmation modal
+      confirmSelectionBtn.addEventListener('click', showConfirmationModal);
+      closeModalBtn.addEventListener('click', hideConfirmationModal);
+      editSelectionBtn.addEventListener('click', hideConfirmationModal);
+      downloadCsvBtn.addEventListener('click', downloadCourseSelectionCSV);
+      submitSelectionBtn.addEventListener('click', submitCourseSelection);
+      
+      // Search functionality
+      sem2Search.addEventListener('input', () => searchCourses('semester2'));
+      sem3Search.addEventListener('input', () => searchCourses('semester3'));
+    }
+
+    // Step navigation
+    function goToStep(stepNumber) {
+      // Update state
+      state.currentStep = stepNumber;
+      
+      // Update roadmap
+      roadmapSteps.forEach((step, index) => {
+        step.classList.remove('active', 'completed');
+        if (index + 1 === stepNumber) {
+          step.classList.add('active');
+        } else if (index + 1 < stepNumber) {
+          step.classList.add('completed');
+        }
+      });
+      
+      // Update step content visibility
+      stepContents.forEach((content, index) => {
+        content.classList.remove('active');
+        if (index + 1 === stepNumber) {
+          content.classList.add('active');
+        }
+      });
+    }
+
+    // Load semester 1 courses
+    function loadSemester1Courses() {
+      const courseList = document.getElementById('sem1-predefined-courses');
+      courseList.innerHTML = '';
+      
+      let batchKey = state.selectedBatch;
+      
+      // Clear selected courses for semester 1
+      state.selectedCourses.semester1 = [];
+      
+      coursesData.semester1[batchKey].forEach(course => {
+        const courseItem = createSem1CourseItem(course);
+        courseList.appendChild(courseItem);
+      });
+      
+      updateCreditCount('semester1');
+    }
+
+    // Create a semester 1 course item
+    function createSem1CourseItem(course) {
+      const courseItem = document.createElement('div');
+      courseItem.className = 'course-item';
+      courseItem.setAttribute('data-id', course.id);
+      
+      courseItem.innerHTML = `
+        <input type="checkbox" class="course-checkbox" id="checkbox-${course.id}">
+        <div class="course-info">
+          <div class="course-code">${course.code}</div>
+          <div class="course-name">${course.name}</div>
+          <div class="course-meta">
+            <div class="course-credits">
+              <i class="fas fa-graduation-cap"></i> ${course.credits} credit${course.credits !== 1 ? 's' : ''}
+            </div>
+            <div class="course-type ${course.type}">${course.type === 'core' ? 'Core' : 'Elective'}</div>
+          </div>
+        </div>
+        <div class="course-actions">
+          <div class="tooltip">
+            <button class="course-action-btn info">
+              <i class="fas fa-info-circle"></i>
+            </button>
+            <div class="tooltip-content">
+              <div class="tooltip-title">${course.code}: ${course.name}</div>
+              
+              <div class="tooltip-section">
+                <div class="tooltip-label">Credits</div>
+                <div class="tooltip-value">${course.credits}</div>
+              </div>
+              
+              <div class="tooltip-section">
+                <div class="tooltip-label">Type</div>
+                <div class="tooltip-value">${course.type === 'core' ? 'Core' : 'Elective'}</div>
+              </div>
+              
+              <div class="tooltip-section">
+                <div class="tooltip-label">Prerequisites</div>
+                <div class="tooltip-value">${course.prerequisites || 'None'}</div>
+              </div>
+              
+              <div class="tooltip-section">
+                <div class="tooltip-label">Faculty</div>
+                <div class="tooltip-value">${course.faculty}</div>
+              </div>
+              
+              <div class="tooltip-section">
+                <div class="tooltip-label">Description</div>
+                <div class="tooltip-value">${course.description}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      
+      // Add event listener to checkbox
+      const checkbox = courseItem.querySelector('.course-checkbox');
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+          addCourse(course, 'semester1');
+        } else {
+          removeCourse(course.id, 'semester1');
+        }
+      });
+      
+      // Auto-select core courses
+      if (course.type === 'core') {
+        checkbox.checked = true;
+        addCourse(course, 'semester1');
+      }
+      
+      return courseItem;
+    }
+
+    // Search courses for semester 2 and 3
+    function searchCourses(semester) {
+      const searchInput = document.getElementById(`${semester.substring(0, 4)}-search`);
+      const searchResults = document.getElementById(`${semester.substring(0, 4)}-search-results`);
+      const query = searchInput.value.toLowerCase().trim();
+      
+      // Clear previous results
+      searchResults.innerHTML = '';
+      
+      if (query.length < 2) {
+        searchResults.innerHTML = `
+          <div class="empty-state">
+            <i class="fas fa-search empty-state-icon"></i>
+            <div class="empty-state-text">Type at least 2 characters to search</div>
+          </div>
+        `;
+        return;
+      }
+      
+      // Filter courses based on search query
+      const filteredCourses = coursesData[semester].filter(course => 
+        course.code.toLowerCase().includes(query) || 
+        course.name.toLowerCase().includes(query)
+      );
+      
+      if (filteredCourses.length === 0) {
+        searchResults.innerHTML = `
+          <div class="empty-state">
+            <i class="fas fa-exclamation-circle empty-state-icon"></i>
+            <div class="empty-state-text">No courses found</div>
+            <div class="empty-state-subtext">Try a different search term</div>
+          </div>
+        `;
+        return;
+      }
+      
+      // Display search results
+      filteredCourses.forEach(course => {
+        const isSelected = state.selectedCourses[semester].some(c => c.id === course.id);
+        
+        const resultItem = document.createElement('div');
+        resultItem.className = 'search-result-item';
+        
+        resultItem.innerHTML = `
+          <div class="search-result-info">
+            <div class="search-result-code">${course.code}</div>
+            <div class="search-result-name">${course.name}</div>
+            <div class="search-result-meta">
+              <div class="course-credits">
+                <i class="fas fa-graduation-cap"></i> ${course.credits} credit${course.credits !== 1 ? 's' : ''}
+              </div>
+              <div class="course-type ${course.type}">${course.type === 'core' ? 'Core' : 'Elective'}</div>
+            </div>
+          </div>
+          <button class="add-course-btn" ${isSelected ? 'disabled' : ''}>
+            <i class="fas ${isSelected ? 'fa-check' : 'fa-plus'}"></i>
+          </button>
+        `;
+        
+        // Add event listener to add button
+        const addButton = resultItem.querySelector('.add-course-btn');
+        if (!isSelected) {
+          addButton.addEventListener('click', () => {
+            addCourse(course, semester);
+            searchCourses(semester); // Refresh search results
+          });
+        }
+        
+        searchResults.appendChild(resultItem);
+      });
+    }
+
+    // Add course to selected courses
+    function addCourse(course, semester) {
+      // Check if course is already selected
+      if (state.selectedCourses[semester].some(c => c.id === course.id)) {
+        return;
+      }
+      
+      // Check if adding this course would exceed the credit limit
+      const currentCredits = calculateTotalCredits(semester);
+      if (currentCredits + course.credits > 45) {
+        // Show warning
+        document.getElementById(`${semester.substring(0, 4)}-credit-warning`).classList.add('show');
+        setTimeout(() => {
+          document.getElementById(`${semester.substring(0, 4)}-credit-warning`).classList.remove('show');
+        }, 3000);
+        
+        // Uncheck the checkbox if it's semester 1
+        if (semester === 'semester1') {
+          document.getElementById(`checkbox-${course.id}`).checked = false;
+        }
+        
+        return;
+      }
+      
+      // Add course to selected courses
+      state.selectedCourses[semester].push(course);
+      
+      // Update UI
+      updateSelectedCoursesList(semester);
+      updateCreditCount(semester);
+    }
+
+    // Remove course from selected courses
+    function removeCourse(courseId, semester) {
+      // Remove course from state
+      state.selectedCourses[semester] = state.selectedCourses[semester].filter(c => c.id !== courseId);
+      
+      // Update UI
+      updateSelectedCoursesList(semester);
+      updateCreditCount(semester);
+    }
+
+    // Update selected courses list
+    function updateSelectedCoursesList(semester) {
+      const selectedCoursesList = document.getElementById(`${semester.substring(0, 4)}-selected-courses`);
+      const emptyState = document.getElementById(`${semester.substring(0, 4)}-empty-state`);
+      
+      // Clear previous list
+      selectedCoursesList.innerHTML = '';
+      
+      if (state.selectedCourses[semester].length === 0) {
+        selectedCoursesList.appendChild(emptyState);
+        return;
+      }
+      
+      // Add selected courses to the list
+      state.selectedCourses[semester].forEach(course => {
+        const courseItem = document.createElement('div');
+        courseItem.className = 'selected-course-item';
+        
+        courseItem.innerHTML = `
+          <div class="selected-course-info">
+            <div class="selected-course-code">${course.code}</div>
+            <div class="selected-course-name">${course.name}</div>
+            <div class="selected-course-meta">
+              <div class="course-credits">
+                <i class="fas fa-graduation-cap"></i> ${course.credits} credit${course.credits !== 1 ? 's' : ''}
+              </div>
+              <div class="course-type ${course.type}">${course.type === 'core' ? 'Core' : 'Elective'}</div>
+            </div>
+          </div>
+          <button class="remove-course-btn" data-id="${course.id}">
+            <i class="fas fa-times"></i>
+          </button>
+        `;
+        
+        // Add event listener to remove button
+        const removeButton = courseItem.querySelector('.remove-course-btn');
+        removeButton.addEventListener('click', () => {
+          // If it's semester 1, also uncheck the checkbox
+          if (semester === 'semester1') {
+            document.getElementById(`checkbox-${course.id}`).checked = false;
+          }
+          
+          removeCourse(course.id, semester);
+        });
+        
+        selectedCoursesList.appendChild(courseItem);
+      });
+    }
+
+    // Calculate total credits for a semester
+    function calculateTotalCredits(semester) {
+      return state.selectedCourses[semester].reduce((total, course) => total + course.credits, 0);
+    }
+
+    // Update credit count and progress bar
+    function updateCreditCount(semester) {
+      const totalCredits = calculateTotalCredits(semester);
+      const creditCount = document.getElementById(`${semester.substring(0, 4)}-credit-count`);
+      const creditBar = document.getElementById(`${semester.substring(0, 4)}-credit-bar`);
+      
+      creditCount.textContent = totalCredits;
+      creditBar.style.width = `${(totalCredits / 45) * 100}%`;
+    }
+
+    // Show confirmation modal
+    function showConfirmationModal() {
+      // Populate summary tables
+      populateSummaryTable('semester1');
+      populateSummaryTable('semester2');
+      populateSummaryTable('semester3');
+      
+      // Calculate total credits
+      const totalCredits = 
+        calculateTotalCredits('semester1') + 
+        calculateTotalCredits('semester2') + 
+        calculateTotalCredits('semester3');
+      
+      document.getElementById('total-summary-credits').textContent = totalCredits;
+      
+      // Show modal
+      confirmationModal.classList.add('show');
+    }
+
+    // Hide confirmation modal
+    function hideConfirmationModal() {
+      confirmationModal.classList.remove('show');
+    }
+
+    // Populate summary table
+    function populateSummaryTable(semester) {
+      const tableBody = document.getElementById(`${semester.substring(0, 4)}-summary-table`).querySelector('tbody');
+      const summaryCredits = document.getElementById(`${semester.substring(0, 4)}-summary-credits`);
+      
+      // Clear previous content
+      tableBody.innerHTML = '';
+      
+      // Add courses to table
+      state.selectedCourses[semester].forEach(course => {
+        const row = document.createElement('tr');
+        
+        row.innerHTML = `
+          <td>${course.code}</td>
+          <td>${course.name}</td>
+          <td>${course.type === 'core' ? 'Core' : 'Elective'}</td>
+          <td>${course.credits}</td>
+        `;
+        
+        tableBody.appendChild(row);
+      });
+      
+      // Update total credits
+      summaryCredits.textContent = calculateTotalCredits(semester);
+    }
+
+    // Download course selection as CSV
+    function downloadCourseSelectionCSV() {
+      // Create CSV content
+      let csvContent = "Semester,Course Code,Course Name,Type,Credits\n";
+      
+      // Add semester 1 courses
+      state.selectedCourses.semester1.forEach(course => {
+        csvContent += `1,${course.code},"${course.name}",${course.type === 'core' ? 'Core' : 'Elective'},${course.credits}\n`;
+      });
+      
+      // Add semester 2 courses
+      state.selectedCourses.semester2.forEach(course => {
+        csvContent += `2,${course.code},"${course.name}",${course.type === 'core' ? 'Core' : 'Elective'},${course.credits}\n`;
+      });
+      
+      // Add semester 3 courses
+      state.selectedCourses.semester3.forEach(course => {
+        csvContent += `3,${course.code},"${course.name}",${course.type === 'core' ? 'Core' : 'Elective'},${course.credits}\n`;
+      });
+      
+      // Create download link
+      const encodedUri = encodeURI("data:text/csv;charset=utf-8," + csvContent);
+      const link = document.createElement("a");
+      link.setAttribute("href", encodedUri);
+      link.setAttribute("download", "course_selection.csv");
+      document.body.appendChild(link);
+      
+      // Trigger download
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    // Submit course selection
+    function submitCourseSelection() {
+      alert("Your course selection has been submitted successfully!");
+      hideConfirmationModal();
+    }
+
+    // Initialize the page
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94908a2f70dec1c4',t:'MTc0ODgwMDA4NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+</body></html>
